@@ -1,0 +1,59 @@
+.mobile {
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.5rem 2rem;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: var(--primary-color);
+	font-size: 2.4rem;
+}
+.hamburger {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hamburger .icon {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	background: none;
+	border: none;
+	cursor: pointer;
+}
+
+.hamburger .icon .bar::before,
+.hamburger .icon .bar,
+.hamburger .icon .bar::after {
+	position: absolute;
+	display: flex;
+	width: 3.4rem;
+	height: 0.3rem;
+	background-color: #fff;
+	border-radius: 2rem;
+	transition: transform 0.3s ease-in;
+}
+
+.hamburger .icon .bar::after {
+	content: "";
+	left: 0;
+	top: 1rem;
+}
+
+.hamburger .icon .bar::before {
+	content: "";
+	left: 0;
+	bottom: 1rem;
+}
+.hamburger .icon.active .bar::before {
+	transform: translateY(1rem) rotate(90deg);
+}
+.hamburger .icon.active .bar {
+	transform: rotate(-45deg);
+}
+.hamburger .icon.active .bar::after {
+	transform: translateY(-1rem);
+}
