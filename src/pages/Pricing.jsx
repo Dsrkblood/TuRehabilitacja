@@ -1,1 +1,4 @@
-export default function Pricing() {}
+export default function Pricing() {
+	console.log("Cennik");
+	return <></>;
+}

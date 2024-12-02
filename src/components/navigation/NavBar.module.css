@@ -6,13 +6,22 @@
 	top: 0;
 	left: 0;
 	width: 100%;
+	height: 5rem;
 	background-color: var(--primary-color);
 	font-size: 2.4rem;
+	z-index: 5;
+}
+.logo {
+	width: 20rem;
+	/* background-image: url("/logo.png");
+	background-size: cover;
+	background-position: center; */
 }
 .hamburger {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	z-index: 2;
 }
 .hamburger .icon {
 	position: relative;
@@ -56,4 +65,22 @@
 }
 .hamburger .icon.active .bar::after {
 	transform: translateY(-1rem);
+}
+.sidebar {
+	position: absolute;
+	top: 5rem;
+	right: -20rem;
+	height: 100vh;
+	transition: right 0.5s;
+}
+.sidebar.active {
+	right: 0px;
+}
+.sideBarLinks {
+	/* margin-top: 5rem; */
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	background-color: rgba(255, 255, 255, 0.8);
+	height: 100%;
 }
