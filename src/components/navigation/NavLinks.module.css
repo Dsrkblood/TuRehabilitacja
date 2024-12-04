@@ -1,0 +1,21 @@
+.sidebar {
+	position: fixed;
+	flex-direction: column;
+	justify-content: space-between;
+	top: 5rem;
+	right: -100%;
+	height: calc(100vh - 5rem);
+	background: var(--sidebar);
+	transition: right .5s;
+	z-index: 5;
+}
+.sidebar.active {
+	position: fixed;
+	right: 0px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}

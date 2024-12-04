@@ -1,0 +1,17 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 0.4rem;
+	height: 5rem;
+	background: var(--primary-gradient);
+	z-index: 5;
+	border: 8rem black;
+}
+
+.header .media,
+.header .contact {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
