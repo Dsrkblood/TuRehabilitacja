@@ -12,7 +12,7 @@
 	height: 100%;
 }
 .HeroImg {
-	background-image: url("/public/heroImg.webp");
+	background-image: url("/heroImg.webp");
 	background-position: bottom;
 	background-size: cover;
 	width: 100%;

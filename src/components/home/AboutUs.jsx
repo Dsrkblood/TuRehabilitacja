@@ -1,5 +1,8 @@
 export default function AboutUs() {
-	return(
-        <h1>O nas</h1>
-    )
+	return (
+		<>
+			<h1>O nas</h1>
+		
+        </>
+	);
 }

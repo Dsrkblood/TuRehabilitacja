@@ -1,7 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import classes from "./NavBar.module.css";
 import LinkNav from "./LinkNav";
-import { Outlet } from "react-router";
 
 export default function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -38,11 +37,11 @@ export default function NavBar() {
 		<>
 			<div className={classes.mobile}>
 				<div className={classes.logo}>TuRehabilitacja</div>
-				<div className={classes.hamburger}>
+				<div>
 					<button
 						ref={buttonRef}
 						onClick={handleOpenNav}
-						className={`${classes.icon} ${isOpen ? classes.active : ""}`}>
+						className={`${classes.button} ${isOpen ? classes.active : ""}`}>
 						<div className={classes.bar}></div>
 					</button>
 				</div>
@@ -56,8 +55,9 @@ export default function NavBar() {
 						<LinkNav link='kontakt'>Kontakt</LinkNav>
 					</div>
 				</div>
+				<div
+					className={`${classes.overlay} ${isOpen ? classes.show : ""}`}></div>
 			</div>
-			<Outlet />
 		</>
 	);
 }
