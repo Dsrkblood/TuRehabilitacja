@@ -9,16 +9,6 @@
 	border: 8rem black;
 }
 
-/* .header .media,
-.header .contact {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-} */
-.test {
-	position: relative;
-	z-index: 5;
-}
 .nav {
 	position: sticky;
 	top: 0;
@@ -34,13 +24,15 @@
 }
 
 .test {
-	position: relative;
-	
+	position: sticky;
+	top: 0;
+	left: 0;
 }
 
 .logo {
 	width: 20rem;
 	padding-inline: 1rem;
+	color: var(--secondary-color);
 	/* wstawić logo */
 }
 /* Hamburger menu */

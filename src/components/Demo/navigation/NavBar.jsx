@@ -36,23 +36,26 @@ export default function NavBar() {
 	}, [isOpen]);
 	return (
 		<>
-			<nav className={classes.nav}>
-				<div className={classes.logo}>TuRehabilitacja</div>
-				<div className={classes.po}>
-					<button
-						ref={buttonRef}
-						onClick={handleOpenNav}
-						className={`${classes.button} ${isOpen ? classes.active : ""}`}>
-						<div className={classes.bar}></div>
-					</button>
-				</div>
-
-				<NavLinks isOpen={isOpen} ref={sidebarRef} />
-
-				<div
-					className={`${classes.overlay} ${isOpen ? classes.show : ""}`}></div>
-			</nav>
 			<HeaderLinks />
+			<div className={classes.test}>
+				<nav className={classes.nav}>
+					<div className={classes.logo}>TuRehabilitacja</div>
+					<div className={classes.po}>
+						<button
+							ref={buttonRef}
+							onClick={handleOpenNav}
+							className={`${classes.button} ${isOpen ? classes.active : ""}`}>
+							<div className={classes.bar}></div>
+						</button>
+					</div>
+
+					<div
+						className={`${classes.overlay} ${
+							isOpen ? classes.show : ""
+						}`}></div>
+				</nav>
+				<NavLinks isOpen={isOpen} ref={sidebarRef} />
+			</div>
 		</>
 	);
 }

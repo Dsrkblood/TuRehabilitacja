@@ -9,11 +9,7 @@ html {
 }
 
 :root {
-	--primary-gradient: linear-gradient(90deg, #003f5c, #005f99);
-	--primary-color: #005f99;
-	--secondary-color: #f0f8ff;
-	--sidebar: #f0f8ffcb;
-	--active-color: #38b6a6;
+	--navColor: #f7f7f7e6;
 }
 
 body {
@@ -21,15 +17,15 @@ body {
 	display: flex;
 	flex-direction: column;
 	height: 100%;
+	height: 200vh;
 	width: 100%;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
-	background-color: #0c0c0c;
-	/* overflow-x: hidden; */
+	background-color: #b4b4b4;
 }
 
 #root {
+	/* overflow-x: hidden; */
 	width: 100%;
 	height: 100%;
-	
 }

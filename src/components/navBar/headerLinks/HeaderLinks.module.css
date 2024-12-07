@@ -1,0 +1,29 @@
+.container {
+	display: flex;
+	flex-direction: column
+}
+
+.links {
+	display: flex;
+	justify-content: space-between;
+}
+
+.link {
+	margin: 0.2rem 0.4rem;
+	padding: 0.2rem 0.5rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+/* facebook color */
+.facebook {
+	color: #0866ff;
+}
+/* contact */
+.contact {
+	color: #3a86ff;
+}
+/* booksy */
+.booksy {
+	color: #33b5bd;
+    font-weight: 700;
+}

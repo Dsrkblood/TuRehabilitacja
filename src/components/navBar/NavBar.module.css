@@ -1,0 +1,78 @@
+.header {
+	position: sticky;
+	top: 0;
+	background-color: var(--navColor);
+	box-shadow: 0 0.4rem 1rem -0.2rem #000000;
+}
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0.9rem;
+	top: 0;
+	font-size: 2rem;
+	color: black;
+	background-color: var(--navColor);
+}
+
+.menuButton {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: none;
+	border: none;
+}
+
+.menuButton:focus {
+	outline: none;
+}
+
+.burgerIcon,
+.burgerIcon::after,
+.burgerIcon::before {
+	position: absolute;
+	width: 3.6rem;
+	height: 0.4rem;
+	background-color: black;
+	border-radius: 2rem;
+	transition: transform 0.2s ease-in;
+}
+
+.burgerIcon::after {
+	content: "";
+	top: 1rem;
+	left: 0;
+}
+
+.burgerIcon::before {
+	content: "";
+	top: -1rem;
+	left: 0;
+}
+
+.burgerIcon.active {
+	transform: rotate(-45deg);
+}
+.burgerIcon.active::after {
+	transform: translateY(-1rem);
+}
+.burgerIcon.active::before {
+	transform: translateY(1rem) rotate(90deg);
+}
+
+.sidebar {
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	top: 9rem;
+	right: -250px;
+	height: 100%;
+	width: 40%;
+	background-color: var(--navColor);
+	transition: right 0.3s ease-in;
+}
+.sidebar.open {
+	right: 0;
+}

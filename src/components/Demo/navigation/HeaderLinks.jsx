@@ -4,12 +4,14 @@ export default function HeaderLinks() {
 		<header className={classes.header}>
 			<div className={classes.media}>
 				<a
+					className={classes.link}
 					href='https://www.facebook.com/profile.php?id=61568131195051'
 					target='_blank'
 					rel='noopener noreferrer'>
 					<i class='fa-brands fa-facebook-f'></i>TuRehabilitacja
 				</a>
 				<a
+					className={classes.link}
 					href='https://booksy.com/pl-pl/'
 					target='_blank'
 					rel='noopener noreferrer'>
@@ -17,10 +19,10 @@ export default function HeaderLinks() {
 				</a>
 			</div>
 			<div className={classes.contact}>
-				<a href='tel:+000000000'>
+				<a className={classes.link} href='tel:+000000000'>
 					<i class='fa-solid fa-square-phone'></i>000 000 000
 				</a>
-				<a href='mailto:turehabilitacja@gmail.com'>
+				<a className={classes.link} href='mailto:turehabilitacja@gmail.com'>
 					<i class='fa-solid fa-envelope'></i>turehabilitacja@gmail.com
 				</a>
 			</div>

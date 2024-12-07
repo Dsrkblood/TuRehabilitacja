@@ -15,3 +15,18 @@
 	justify-content: space-between;
 	align-items: center;
 }
+
+.link {
+	font-size: 1rem;
+	color: var(--active-color);
+	transition: color 0.3s;
+}
+
+.link:hover {
+	color: var(--secondary-color);
+}
+
+.link i {
+	margin: 0 0.3rem 0 0.3rem;
+	font-size: 1rem;
+}
