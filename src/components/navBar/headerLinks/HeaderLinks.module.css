@@ -1,6 +1,6 @@
 .container {
 	display: flex;
-	flex-direction: column
+	flex-direction: column;
 }
 
 .links {
@@ -9,21 +9,38 @@
 }
 
 .link {
-	margin: 0.2rem 0.4rem;
+	margin: 0.4rem 0.4rem;
 	padding: 0.2rem 0.5rem;
 	font-size: 1.2rem;
 	font-weight: 400;
 }
-/* facebook color */
-.facebook {
+
+.contact,
+.contact:visited {
 	color: #0866ff;
+	transition: color 0.3s ease-in;
 }
-/* contact */
-.contact {
-	color: #3a86ff;
+
+.contact:hover {
+	color: #054db3;
 }
-/* booksy */
-.booksy {
+
+.booksy,
+.booksy:visited {
 	color: #33b5bd;
-    font-weight: 700;
+	transition: color 0.3s ease-in;
+}
+
+.booksy:hover {
+	color: #2a959c;
+}
+
+span {
+	font-weight: 900;
+}
+
+@media (min-width: 481px) {
+	.link {
+		font-size: 1.4rem;
+	}
 }

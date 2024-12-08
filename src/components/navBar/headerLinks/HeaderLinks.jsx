@@ -9,7 +9,7 @@ export default function HeaderLinks() {
 					<i className='fa-solid fa-square-phone'></i> 123 456 789
 				</a>
 				<a
-					className={`${classes.link} ${classes.facebook}`}
+					className={`${classes.link} ${classes.contact}`}
 					href='https://www.facebook.com/profile.php?id=61568131195051&locale=pl_PL'
 					target='_blank'
 					rel='noopener noreferrer'>
@@ -29,7 +29,8 @@ export default function HeaderLinks() {
 					target='_blank'
 					rel='noopener noreferrer'>
 					{" "}
-					Zapisz się na <i className='fa-solid fa-share'></i> Booksy
+					Zapisz się na <i className='fa-solid fa-share'></i>{" "}
+					<span>Booksy</span>
 				</a>
 			</div>
 		</div>

@@ -1,1 +1,3 @@
-export default function Treatments() {}
+export default function Treatments() {
+	console.log("uslugi");
+}

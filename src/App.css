@@ -10,6 +10,10 @@ html {
 
 :root {
 	--navColor: #f7f7f7e6;
+	--primaryColor: #1a1a1a;
+	/* kolory sidebar do poprawy */
+	--sidebarLink: #3a86ff;
+	--sidebarActiveLink: #0547b1;
 }
 
 body {
@@ -25,7 +29,6 @@ body {
 }
 
 #root {
-	/* overflow-x: hidden; */
 	width: 100%;
 	height: 100%;
 }
