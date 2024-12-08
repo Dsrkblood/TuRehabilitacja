@@ -55,28 +55,30 @@ export default function NavBar() {
 		<>
 			<header className={classes.header}>
 				<HeaderLinks />
-			<nav className={classes.nav}>
-				<div className={classes.logo}>tuRehabilitacja</div>
-				<div className={classes.container}>
-					<button
-						ref={buttonRef}
-						onClick={handleOpenSidebar}
-						className={classes.menuButton}>
-						<div
-							className={`${classes.burgerIcon} ${
-								isOpen ? classes.active : ""
-							}`}></div>
-					</button>
-				</div>
-				<div
-					ref={sidebarRef}
-					className={`${classes.sidebar} ${isOpen ? classes.open : ""}`}>
-					<NavLink>Manu</NavLink>
-					<NavLink>Usługi</NavLink>
-					<NavLink>Cennik</NavLink>
-					<NavLink>Kontakt</NavLink>
-				</div>
-			</nav>
+				<nav className={classes.nav}>
+					<div className={classes.logo}>tuRehabilitacja</div>
+					<div className={classes.container}>
+						<button
+							ref={buttonRef}
+							onClick={handleOpenSidebar}
+							className={classes.menuButton}>
+							<div
+								className={`${classes.burgerIcon} ${
+									isOpen ? classes.active : ""
+								}`}></div>
+						</button>
+					</div>
+				</nav>
+				
+					<div
+						ref={sidebarRef}
+						className={`${classes.sidebar} ${isOpen ? classes.open : ""}`}>
+						<NavLink>Manu</NavLink>
+						<NavLink>Usługi</NavLink>
+						<NavLink>Cennik</NavLink>
+						<NavLink>Kontakt</NavLink>
+					</div>
+				
 			</header>
 		</>
 	);
