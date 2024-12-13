@@ -1,0 +1,20 @@
+.link {
+	margin: 2rem 1rem 1rem;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	color: var(--primaryColor);
+	transition: color 0.3s ease-in;
+}
+
+.link:last-child {
+	margin-right: 0;
+}
+
+.link:hover {
+	color: var(--sidebarLink);
+}
+
+.active {
+	color: var(--sidebarActiveLink);
+}

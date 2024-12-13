@@ -3,13 +3,13 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	top: calc(--header-height);
+	top: 9rem;
 	right: -250px;
-	height: calc(100vh - 10rem);
-	background-color: var(--navColor);
+	height: calc(100% - 9rem);
+	background-color: var(--mainBgc);
 	transition: right 0.3s ease-in;
 	overflow: hidden;
-	z-index: 3;
+	z-index: 5;
 }
 
 .sidebar.open {
@@ -31,4 +31,16 @@
 	padding-top: 1rem;
 	color: var(--primaryColor);
 	border-top: 0.1rem solid var(--primaryColor);
+}
+
+@media (min-width: 481px) {
+	.sidebar {
+		top: 10rem;
+		height: calc(100% - 10rem);
+	}
+}
+@media (min-width: 768px) {
+	.sidebar {
+		display: none;
+	}
 }

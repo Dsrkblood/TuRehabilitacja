@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import HeaderLinks from "./headerLinks/HeaderLinks";
 import classes from "./NavBar.module.css";
 import SidebarLinks from "./sidebarLinks/SidebarLinks";
+import DesktopLinks from "./desktopNav/DesktopLinks";
 
 export default function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +39,7 @@ export default function NavBar() {
 		<>
 			<header className={classes.header}>
 				<HeaderLinks />
-				<nav className={classes.nav}>
+				<nav className={classes.navMobile}>
 					<div className={classes.logo}>tuRehabilitacja</div>
 
 					<button
@@ -51,10 +52,13 @@ export default function NavBar() {
 							}`}></div>
 					</button>
 				</nav>
+				<nav className={classes.navDesktop}>
+					<div className={classes.logo}>tuRehabilitacja</div>
+					<DesktopLinks />
+				</nav>
 				<SidebarLinks ref={sidebarRef} isOpen={isOpen} />
-				<div
-					className={`${classes.overlay} ${isOpen ? classes.show : ""}`}></div>
 			</header>
+			<div className={`${classes.overlay} ${isOpen ? classes.show : ""}`}></div>
 		</>
 	);
 }
