@@ -1,15 +1,20 @@
 import classes from "./CirclePhoto.module.css";
 
-export default function CirclePhoto({ icon, children }) {
+export default function CirclePhoto({ icon, offer, children }) {
 	const dynamicClass = `${classes.offerImg} ${classes[icon]}`;
 	return (
-		<div className={classes.offer}>
-			<div className={classes.container}>
-				<div className={classes.circle}>
-					<div className={dynamicClass}></div>
+		// Naprawić wielkość kwadratów
+		<>
+			<div className={classes.offer}>
+				<div className={classes.containerImg}>
+					<div className={classes.circleImg}>
+						<div className={dynamicClass}></div>
+					</div>
+				</div>
+				<div className={classes.containerTitle}>
+					<h3 className={classes.offerTitle}>{children}</h3>
 				</div>
 			</div>
-			<p className={classes.offerTitle}>{children}</p>
-		</div>
+		</>
 	);
 }

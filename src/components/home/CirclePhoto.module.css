@@ -1,27 +1,26 @@
 .offer {
 	display: flex;
-	/* flex-direction: column; */
 	justify-content: center;
 	align-items: center;
 	width: 100%;
-	padding: 0 2rem;
+	padding: 0.5rem 2rem;
 }
 
 .offer:nth-child(odd) {
 	flex-direction: row-reverse;
 }
 
-.container {
+.containerImg {
 	display: flex;
 	align-items: center;
 	justify-content: start;
 	min-width: 50%;
 }
-.offer:nth-child(odd) .container {
-    justify-content: end;
+.offer:nth-child(odd) .containerImg {
+	justify-content: end;
 }
 
-.circle {
+.circleImg {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -32,20 +31,6 @@
 	box-shadow: 0 0 1rem -0.5rem black;
 }
 
-.offerPhoto {
-	height: 13rem;
-	width: 13rem;
-	border-radius: 100%;
-	/* object-fit: contain;
-   overflow: hidden; */
-}
-
-.offerTitle {
-	width: 50%;
-	margin: 5rem 2rem;
-	color: var(--primaryColor);
-	text-transform: uppercase;
-}
 .offerImg {
 	height: 13rem;
 	width: 13rem;
@@ -53,16 +38,64 @@
 	background-position: center;
 	background-size: cover;
 }
+.containerTitle {
+	width: 50%;
+}
+.offerTitle {
+	color: var(--primaryColor);
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	text-align: right;
+}
+.offer:nth-child(odd) .offerTitle {
+	text-align: left;
+}
+
 .classic {
-	background-image: url("public/massage/classic-640.jpg");
+	background-image: url("/massage/classic-640.jpg");
 }
 
 .relax {
-	background-image: url("/public/massage/relax-640.jpg");
+	background-image: url("/massage/relax-640.jpg");
 }
 .sport {
-	background-image: url("/public/massage/sport-640.jpg");
+	background-image: url("/massage/sport-640.jpg");
 }
 .izometric {
-	background-image: url("/public/massage/izometric-640.jpg");
+	background-image: url("/massage/izometric-640.jpg");
+}
+
+@media (min-width: 481px) {
+	.offer {
+		width: 44rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.offer,
+	.offer:nth-child(odd) {
+		height: 100%;
+		width: 50%;
+		flex-direction: column;
+		justify-content: start;
+	}
+	.containerImg,
+	.offer:nth-child(odd) .containerImg {
+		justify-content: center;
+		align-items: center;
+	}
+	.circleImg {
+		width: 20rem;
+		height: 20rem;
+	}
+	.offerImg {
+		width: 18rem;
+		height: 18rem;
+	}
+	.offerTitle,
+	.offer:nth-child(odd) .offerTitle {
+		margin: 1rem 0;
+		text-align: center;
+		font-size: 2.4rem;
+	}
 }

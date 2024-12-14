@@ -2,7 +2,6 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem 0.5rem;
 	width: 100%;
 	background-color: var(--sectionBackgroundColor);
 }
@@ -11,22 +10,26 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 0.5rem 2rem;
 }
 
-.container:first-child{
-	width: 30%;
-}
-.container:last-child{
-	width: 35%;
-}
-
-p,
-a {
+.footer p,
+.footer a {
 	margin: 0.5rem 0;
 	color: var(--primaryColor);
 	font-weight: 500;
 	transition: color 0.3s ease-in;
 }
-a:hover {
+.footer a:hover {
 	color: var(--tertiaryColor);
+}
+
+.brand {
+	margin: 0;
+	padding: 0.5rem 0;
+	font-size: 1.2rem;
+	text-align: center;
+	font-weight: 600;
+	color: var(--tertiaryColor);
+	background-color: var(--secondaryColor);
 }

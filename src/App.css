@@ -11,7 +11,7 @@ html {
 :root {
 	--primaryColor: #2b79c1;
 	--secondaryColor: #27303f;
-	--tertiaryColor: #4E92D1;
+	--tertiaryColor: #4e92d1;
 
 	--linkColor: #64748b;
 	--linkHoverColor: #4b586b;
@@ -37,6 +37,8 @@ body {
 	width: 100%;
 	height: 100%;
 }
+
+
 
 a {
 	text-decoration: none;
