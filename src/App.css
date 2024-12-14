@@ -9,14 +9,17 @@ html {
 }
 
 :root {
-	--mainBgc: #f7f7f7e6;
-	--secondBgc: #e4e4e4;
-	--primaryColor: #1a1a1a;
-	--secondaryColor: #3a86ff;
-	--footer: #3a86ff;
-	/* kolory sidebar do poprawy */
-	--sidebarLink: #3a86ff;
-	--sidebarActiveLink: #0547b1;
+	--primaryColor: #2b79c1;
+	--secondaryColor: #27303f;
+	--tertiaryColor: #4E92D1;
+
+	--linkColor: #64748b;
+	--linkHoverColor: #4b586b;
+	--linkActiveColor: #3a4350;
+
+	--generalBackgroundColor: #e4e4e4;
+	--sectionBackgroundColor: #f7f7f7;
+	--navigationBackgroundColor: #f7f7f7e6;
 }
 
 body {
@@ -27,7 +30,7 @@ body {
 	width: 100%;
 	font-family: "Roboto", sans-serif;
 	font-weight: 400;
-	background-color: var(--secondBgc);
+	background-color: var(--generalBackgroundColor);
 }
 
 #root {

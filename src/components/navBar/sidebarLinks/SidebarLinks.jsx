@@ -24,12 +24,15 @@ const SidebarLink = forwardRef(({ isOpen }, ref) => {
 			</div>
 			<div className={classes.copy}>
 				<p>TuRehabilitacja &copy; {year}</p>
-				<a
-					href='https://github.com/Dsrkblood'
-					target='_blank'
-					rel='noopener noreferrer'>
-					created by Dsrkblood
-				</a>
+				<p>
+					created by
+					<a
+						href='https://github.com/Dsrkblood'
+						target='_blank'
+						rel='noopener noreferrer'>
+						<span className={classes.span}> Dsrkblood</span>
+					</a>
+				</p>
 			</div>
 		</div>
 	);

@@ -17,12 +17,12 @@
 
 .contact,
 .contact:visited {
-	color: #0866ff;
+	color: var(--primaryColor);
 	transition: color 0.3s ease-in;
 }
 
 .contact:hover {
-	color: #054db3;
+	color: var(--tertiaryColor);
 }
 
 .booksy,

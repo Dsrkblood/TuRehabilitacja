@@ -2,8 +2,8 @@
 	position: sticky;
 	top: 0;
 	height: 9rem;
-	background-color: var(--mainBgc);
-	box-shadow: 0 0rem 0.8rem -0.5rem var(--primaryColor);
+	background-color: var(--navigationBackgroundColor);
+	box-shadow: 0 0rem 1rem -0.4rem var(--primaryColor);
 	z-index: 5;
 }
 
@@ -12,7 +12,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5rem 1rem;
-	color: var(--primaryColor);
+	color: var(--secondaryColor);
 }
 
 .navDesktop {
@@ -20,7 +20,7 @@
 	justify-content: space-between;
 	align-items: center;
 	padding: 0.5rem 1rem;
-	color: var(--primaryColor);
+	color: var(--linkActiveColor);
 }
 /* wkleić logo firmy */
 .logo {
@@ -47,7 +47,7 @@
 	position: absolute;
 	width: 3.5rem;
 	height: 0.4rem;
-	background-color: var(--primaryColor);
+	background-color: var(--secondaryColor);
 	border-radius: 2rem;
 	transition: transform 0.3s ease-in;
 }
@@ -99,6 +99,9 @@
 }
 
 @media (min-width: 768px) {
+	.header{
+		height: auto;
+	}
 	.navMobile {
 		display: none;
 	}

@@ -2,15 +2,16 @@
 	margin: 1rem 0.2rem;
 	padding: 0.5rem 1rem;
 	font-size: 1.6rem;
-	color: var(--sidebarLink);
-	transition: color 0.3s ease-in, text-shadow 0.3s ease-in;
+	color: var(--tertiaryColor);
+	transition: color 0.3s ease-in;
 }
 /* Do poprawy kolory */
 .link.active {
-	color: var(--sidebarActiveLink);
-	text-shadow: 0 0 0.5rem var(--sidebarLink);
+	color: var(--secondaryColor);
 }
 
 .icon {
 	margin-right: 1rem;
 }
+
+

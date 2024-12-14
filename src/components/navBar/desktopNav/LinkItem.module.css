@@ -12,9 +12,9 @@
 }
 
 .link:hover {
-	color: var(--sidebarLink);
+	color: var(--linkHoverColor);
 }
 
 .active {
-	color: var(--sidebarActiveLink);
+	color: var(--linkActiveColor);
 }

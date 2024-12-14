@@ -1,0 +1,56 @@
+.offer {
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+}
+
+.offer:nth-child(odd) {
+	flex-direction: row-reverse;
+}
+
+.circle {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 15rem;
+	height: 15rem;
+	border-radius: 100%;
+	background-color: var(--sectionBackgroundColor);
+	box-shadow: 0 0 1rem -0.5rem black;
+}
+
+.offerPhoto {
+	height: 13rem;
+	width: 13rem;
+	border-radius: 100%;
+	/* object-fit: contain;
+   overflow: hidden; */
+}
+
+.offerTitle {
+	margin: 5rem 2rem;
+	color: var(--primaryColor);
+	text-transform: uppercase;
+}
+.offerImg {
+	height: 13rem;
+	width: 13rem;
+	border-radius: 100%;
+	background-position: center;
+	background-size: cover;
+}
+.classic {
+	background-image: url("../../../public/massage/classic-640.jpg");
+}
+
+.relax {
+	background-image: url("../../../public/massage/relax-640.jpg");
+}
+.sport{
+    background-image: url("../../../public/massage/sport-640.jpg");
+}
+.izometric{
+    background-image: url("../../../public/massage/izometric-640.jpg");
+}
+

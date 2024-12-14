@@ -3,11 +3,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem 0 1rem;
+	margin: 2rem 0 4rem;
+	padding-bottom: 2rem;
 }
 
 .container:nth-child(even) {
-	background-color: var(--mainBgc);
+	background-color: var(--sectionBackgroundColor);
 }
 
 .container h1,
@@ -17,7 +18,7 @@ h2 {
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: -0.1rem;
-	color: var(--primaryColor);
+	color: var(--secondaryColor);
 }
 
 .container h2 {
@@ -31,31 +32,6 @@ h2 {
 	font-size: 1.4rem;
 	letter-spacing: 0.05rem;
 	text-align: justify;
-	color: var(--secondaryColor);
+	color: var(--linkColor);
 }
 
-.offer {
-	margin: 1rem;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-.circle {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	font-size: 5rem;
-	width: 8rem;
-	height: 8rem;
-	border-radius: 100%;
-	background-color: var(--secondBgc);
-	box-shadow: 0 0 1rem black;
-}
-
-.offer p {
-	margin-top: 1rem;
-	color: var(--primaryColor);
-	text-transform: uppercase;
-}

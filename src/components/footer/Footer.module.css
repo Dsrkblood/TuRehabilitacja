@@ -1,12 +1,9 @@
 .footer {
-	/* position: fixed;
-	bottom: 0;
-	left: 0; */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	width: 100%;
-	background-color: var(--navColor);
+	background-color: var(--sectionBackgroundColor);
 	z-index: 2;
 }
 .container {
@@ -15,20 +12,23 @@
 	justify-content: center;
 	align-items: center;
 	margin: 1rem 0.5rem;
-	width: 32%;
-	height: 100%;
+	width: 30%;
+	/* height: 100%; */
 }
 .container:first-child {
 	text-align: justify;
-	width: 25%;
+	max-width: 30%;
+}
+.container:last-child {
+	width: 45%;
 }
 p,
 a {
 	margin: 0.5rem 0;
-	color: var(--footer);
+	color: var(--primaryColor);
 	font-weight: 500;
 	transition: color 0.3s ease-in;
 }
 a:hover {
-	color: var(--sidebarLink);
+	color: var(--tertiaryColor);
 }

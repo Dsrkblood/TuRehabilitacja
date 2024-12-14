@@ -1,8 +1,13 @@
+import CirclePhoto from "./CirclePhoto";
 import classes from "./MainContent.module.css";
+
+// import classic from "/massage/classic-640.jpg";
+// import relax from "/massage/relax-640.jpg";
 
 export default function MainContent() {
 	return (
 		<>
+			<div>Tutaj możemy dać grafikę lokalu jeśli będzie już dostępna</div>
 			<section className={classes.container}>
 				<h1>o nas</h1>
 				<p>
@@ -22,31 +27,40 @@ export default function MainContent() {
 			</section>
 			<section className={classes.container}>
 				<h2>W czym możemy Tobie pomóc?</h2>
-				<div className={classes.offer}>
-					<div className={classes.circle}>
-						<i class='fa-solid fa-spa'></i>
-					</div>
-					<p>masaż klasyczny</p>
-				</div>
-				<div className={classes.offer}>
-					<div className={classes.circle}>
-						<i class='fa-solid fa-person-running'></i>
-					</div>
-					<p>masaż sportowy</p>
-				</div>
-				<div className={classes.offer}>
-					<div className={classes.circle}>
-						<i class='fa-solid fa-suitcase-medical'></i>
-					</div>
-					<p>masaż leczniczy</p>
-				</div>
-				<div className={classes.offer}>
-					<div className={classes.circle}>
-						<i class='fa-solid fa-face-laugh-beam'></i>
-					</div>
-					<p>masaż twarzy</p>
-				</div>
+				<CirclePhoto icon='classic'>masaż klasyczny</CirclePhoto>
+				<CirclePhoto icon='relax'>Masaż relaksacyjny</CirclePhoto>
+				<CirclePhoto icon='sport'>masaż sportowy</CirclePhoto>
+				<CirclePhoto icon='izometric'>Masaż izometryczny</CirclePhoto>
+				<CirclePhoto icon='fa-solid fa-suitcase-medical'>
+					masaż leczniczy
+				</CirclePhoto>
+				<CirclePhoto icon='fa-solid fa-suitcase-medical'>
+					Drenaż limfatyczny
+				</CirclePhoto>
+				<CirclePhoto icon='fa-solid fa-suitcase-medical'>
+					Masaż bańką chińską
+				</CirclePhoto>
+				<CirclePhoto icon='fa-solid fa-face-laugh-beam'>
+					masaż twarzy
+				</CirclePhoto>
+				<CirclePhoto icon='fa-solid fa-face-laugh-beam'>
+					masaż dla kobiet w ciąży
+				</CirclePhoto>
+				<CirclePhoto icon='fa-solid fa-face-laugh-beam'>
+					Fala uderzeniowa
+				</CirclePhoto>
+				<CirclePhoto icon='fa-solid fa-face-laugh-beam'>
+					Kinezyterapia
+				</CirclePhoto>
+				<CirclePhoto icon='fa-solid fa-face-laugh-beam'>
+					Trening funkcjonalny
+				</CirclePhoto>
 			</section>
+			<div>
+				Tutaj możemy wstawić mapę dojazdu lub opinie z google jeśli będzie się
+				dało to zrobić!!! Ewentualnie można je dać nat usługami aby wyświetlały
+				się wcześniej i zachęcały do skorzystania z usług
+			</div>
 		</>
 	);
 }
