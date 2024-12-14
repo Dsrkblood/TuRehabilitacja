@@ -5,8 +5,8 @@ export default function HeaderLinks() {
 			<div className={classes.links}>
 				<a
 					className={`${classes.link} ${classes.contact}`}
-					href='tel:000000000'>
-					<i className='fa-solid fa-square-phone'></i> 123 456 789
+					href='tel:501389646'>
+					<i className='fa-solid fa-square-phone'></i> 501 389 646
 				</a>
 				<a
 					className={`${classes.link} ${classes.contact}`}

@@ -2,26 +2,24 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 1rem 0.5rem;
 	width: 100%;
 	background-color: var(--sectionBackgroundColor);
-	z-index: 2;
 }
 .container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 1rem 0.5rem;
+}
+
+.container:first-child{
 	width: 30%;
-	/* height: 100%; */
 }
-.container:first-child {
-	text-align: justify;
-	max-width: 30%;
+.container:last-child{
+	width: 35%;
 }
-.container:last-child {
-	width: 45%;
-}
+
 p,
 a {
 	margin: 0.5rem 0;

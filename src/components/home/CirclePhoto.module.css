@@ -3,10 +3,22 @@
 	/* flex-direction: column; */
 	justify-content: center;
 	align-items: center;
+	width: 100%;
+	padding: 0 2rem;
 }
 
 .offer:nth-child(odd) {
 	flex-direction: row-reverse;
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	justify-content: start;
+	min-width: 50%;
+}
+.offer:nth-child(odd) .container {
+    justify-content: end;
 }
 
 .circle {
@@ -29,6 +41,7 @@
 }
 
 .offerTitle {
+	width: 50%;
 	margin: 5rem 2rem;
 	color: var(--primaryColor);
 	text-transform: uppercase;
@@ -41,16 +54,15 @@
 	background-size: cover;
 }
 .classic {
-	background-image: url("../../../public/massage/classic-640.jpg");
+	background-image: url("public/massage/classic-640.jpg");
 }
 
 .relax {
-	background-image: url("../../../public/massage/relax-640.jpg");
+	background-image: url("/public/massage/relax-640.jpg");
 }
-.sport{
-    background-image: url("../../../public/massage/sport-640.jpg");
+.sport {
+	background-image: url("/public/massage/sport-640.jpg");
 }
-.izometric{
-    background-image: url("../../../public/massage/izometric-640.jpg");
+.izometric {
+	background-image: url("/public/massage/izometric-640.jpg");
 }
-
