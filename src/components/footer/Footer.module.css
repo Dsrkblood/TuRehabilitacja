@@ -15,9 +15,10 @@
 
 .footer p,
 .footer a {
-	margin: 0.5rem 0;
-	color: var(--primaryColor);
+	padding: 0.5rem 0;
+	font-size: 1.2rem;
 	font-weight: 500;
+	color: var(--primaryColor);
 	transition: color 0.3s ease-in;
 }
 .footer a:hover {
@@ -30,6 +31,20 @@
 	font-size: 1.2rem;
 	text-align: center;
 	font-weight: 600;
-	color: var(--tertiaryColor);
+	color: var(--linkColor);
 	background-color: var(--secondaryColor);
+}
+
+@media (min-width: 481px) {
+	.footer p,
+	.footer a {
+		font-size: 1.4rem;
+		margin: 0.5rem 0;
+	}
+	.brand{
+		font-size: 1.4rem;
+	}
+}
+
+@media (min-width: 768px) {
 }

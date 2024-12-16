@@ -1,14 +1,15 @@
 import { useEffect, useRef, useState } from "react";
+import { DATA } from "../../data.js";
 import HeaderLinks from "./headerLinks/HeaderLinks";
-import classes from "./NavBar.module.css";
 import SidebarLinks from "./sidebarLinks/SidebarLinks";
 import DesktopLinks from "./desktopNav/DesktopLinks";
+
+import classes from "./NavBar.module.css";
 
 export default function NavBar() {
 	const [isOpen, setIsOpen] = useState(false);
 	const sidebarRef = useRef(null);
 	const buttonRef = useRef(null);
-
 	function handleOpenSidebar() {
 		setIsOpen(prevOpen => !prevOpen);
 	}
@@ -38,9 +39,9 @@ export default function NavBar() {
 	return (
 		<>
 			<header className={classes.header}>
-				<HeaderLinks />
+				<HeaderLinks data={DATA.contact} />
 				<nav className={classes.navMobile}>
-					<div className={classes.logo}>tuRehabilitacja</div>
+					<div className={classes.logo}>{DATA.aboutUs.company}</div>
 
 					<button
 						ref={buttonRef}
@@ -53,10 +54,14 @@ export default function NavBar() {
 					</button>
 				</nav>
 				<nav className={classes.navDesktop}>
-					<div className={classes.logo}>tuRehabilitacja</div>
+					<div className={classes.logo}>{DATA.aboutUs.company}</div>
 					<DesktopLinks />
 				</nav>
-				<SidebarLinks ref={sidebarRef} isOpen={isOpen} />
+				<SidebarLinks
+					data={DATA.aboutUs}
+					ref={sidebarRef}
+					isOpen={isOpen}
+				/>
 			</header>
 			<div className={`${classes.overlay} ${isOpen ? classes.show : ""}`}></div>
 		</>

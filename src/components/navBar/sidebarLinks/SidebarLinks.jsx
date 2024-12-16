@@ -1,9 +1,8 @@
 import { forwardRef } from "react";
 import classes from "./SidebarLinks.module.css";
 import LinkItem from "./LinkItem";
-const SidebarLink = forwardRef(({ isOpen }, ref) => {
+const SidebarLink = forwardRef(({ isOpen, data}, ref) => {
 	const year = new Date().getFullYear();
-
 	return (
 		<div
 			ref={ref}
@@ -23,7 +22,9 @@ const SidebarLink = forwardRef(({ isOpen }, ref) => {
 				</LinkItem>
 			</div>
 			<div className={classes.copy}>
-				<p>TuRehabilitacja &copy; {year}</p>
+				<p>
+					{data.company} &copy; {year}
+				</p>
 				<p>
 					created by
 					<a

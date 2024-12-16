@@ -40,24 +40,24 @@ h2 {
 }
 
 @media (min-width: 768px) {
-	.containerDesktop{
+	.containerDesktop {
 		display: flex;
 		flex-direction: row;
 		padding: 0 2rem;
 		max-width: 90rem;
 	}
-	.paragraph{
+	.paragraph {
 		width: 50%;
 	}
-	.map{
+	.map {
 		display: block;
 		width: 50%;
 	}
 	.row {
-		width: 90%;
 		display: flex;
+		flex-direction: column;
 		justify-content: center;
-		align-items: center;
-		flex-wrap: wrap;
+		padding: 0 2rem;
+		max-width: 90rem;
 	}
 }

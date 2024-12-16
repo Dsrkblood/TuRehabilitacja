@@ -1,23 +1,25 @@
+import { DATA } from "../../data.js";
 import classes from "./Footer.module.css";
 
 export default function Footer() {
+	const phone = DATA.contact.phone.replace(/\s+/g, "");
 	const year = new Date().getFullYear();
 	return (
 		<>
 			<div className={classes.footer}>
 				<div className={classes.container}>
-					<p>01-866 Warszawa</p>
-					<p>Podczaszyńskiego 31/U1</p>
+					<p>{`${DATA.contact.postcode} ${DATA.contact.city}`}</p>
+					<p>{DATA.contact.street}</p>
 				</div>
 				<div className={classes.container}>
-					<a href='mailto:turehabilitacja@gmail.com'>
-						turehabilitacja@gmail.com
-					</a>
-					<a href='tel:501389646'>501 389 646</a>
+					<a href={`mailto:${DATA.contact.email}`}>{DATA.contact.email}</a>
+					<a href={`tel:${phone}`}>{DATA.contact.phone}</a>
 				</div>
 			</div>
 			<div className={classes.brand}>
-				<p>TuRehabilitacja &copy; {year}</p>
+				<p>
+					{DATA.aboutUs.company} &copy; {year}
+				</p>
 			</div>
 		</>
 	);
