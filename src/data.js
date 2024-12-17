@@ -1,12 +1,14 @@
 import masaz_klasyczny from "/massage/masaz_klasyczny.jpg";
-import masaz_relaksacyjny from "/massage/masaz_klasyczny.jpg";
-import masaz_sportowy from "/massage/masaz_klasyczny.jpg";
-import masaz_leczniczy from "/massage/masaz_klasyczny.jpg";
-import terapia_manualna from "/massage/masaz_klasyczny.jpg";
-import drenaz_limfatyczny from "/massage/masaz_klasyczny.jpg";
-import masaz_banka_chinska from "/massage/masaz_klasyczny.jpg";
-import masaz_twarzy from "/massage/masaz_klasyczny.jpg";
-import masaz_dla_kobiet_w_ciazy from "/massage/masaz_klasyczny.jpg";
+import masaz_relaksacyjny from "/massage/masaz_relaksacyjny.jpg";
+import masaz_sportowy from "/massage/masaz_sportowy.jpg";
+import masaz_leczniczy from "/massage/masaz_leczniczy.jpg";
+import terapia_manualna from "/massage/terapia_manualna.jpg";
+import drenaz_limfatyczny from "/massage/drenaz_limfatyczny.jpg";
+import masaz_banka_chinska from "/massage/masaz_banka_chinska.jpg";
+import masaz_twarzy from "/massage/masaz_twarzy.jpg";
+import masaz_dla_kobiet_w_ciazy from "/massage/masaz_dla_kobiet_w_ciazy.jpg";
+
+//Potrzebne zdjęcia do uzupełnienia
 import fala_uderzeniowa_aplikacja_lecznicza from "/massage/masaz_klasyczny.jpg";
 import fala_uderzeniowa_aplikacja_antycellulitowa from "/massage/masaz_klasyczny.jpg";
 import kinezyterapia from "/massage/masaz_klasyczny.jpg";
@@ -20,31 +22,38 @@ export const DATA = {
 		openinghours: {
 			monday: {
 				day: "poniedziałek",
-				time: "8 - 19",
+				timeStart: "8",
+				timeEnd: "19",
 			},
 			tuesday: {
 				day: "wtorek",
-				time: "8 - 19",
+				timeStart: "8",
+				timeEnd: "19",
 			},
 			wednesday: {
 				day: "środa",
-				time: "8 - 19",
+				timeStart: "8",
+				timeEnd: "19",
 			},
 			thursday: {
 				day: "czwartek",
-				time: "8 - 19",
+				timeStart: "8",
+				timeEnd: "19",
 			},
 			friday: {
 				day: "piątek",
-				time: "8 - 19",
+				timeStart: "8",
+				timeEnd: "19",
 			},
 			saturday: {
 				day: "sobota",
-				time: "nieczynne",
+				timeStart: null,
+				timeEnd: null,
 			},
 			sunday: {
 				day: "niedziela",
-				time: "nieczynne",
+				timeStart: null,
+				timeEnd: null,
 			},
 		},
 		phone: "501 389 646",

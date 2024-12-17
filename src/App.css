@@ -20,6 +20,8 @@ html {
 	--generalBackgroundColor: #e4e4e4;
 	--sectionBackgroundColor: #f7f7f7;
 	--navigationBackgroundColor: #f7f7f7e6;
+
+	--alertColor: #d9534f;
 }
 
 body {

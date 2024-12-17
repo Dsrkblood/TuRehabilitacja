@@ -4,6 +4,7 @@
 	font-size: 1.6rem;
 	color: var(--tertiaryColor);
 	transition: color 0.3s ease-in;
+	letter-spacing: .2rem;
 }
 /* Do poprawy kolory */
 .link.active {
