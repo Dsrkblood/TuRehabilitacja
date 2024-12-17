@@ -10,10 +10,14 @@ export default function MainContent() {
 		summaryOptions: offer.summaryOptions,
 		img: offer.image,
 	}));
-
 	return (
 		<>
-			<div>Tutaj możemy dać grafikę lokalu jeśli będzie już dostępna</div>
+			<div
+				className={classes.mainPhoto}
+				style={{
+					backgroundImage: `url(${DATA.aboutUs.photo})`,
+				}}></div>
+
 			<section className={classes.container}>
 				<h1>o nas</h1>
 				<div className={classes.containerDesktop}>
