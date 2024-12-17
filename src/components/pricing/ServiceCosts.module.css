@@ -1,0 +1,72 @@
+.section {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 1rem 4rem;
+}
+.header {
+	font-size: 3.6rem;
+	font-weight: 300;
+	letter-spacing: 0.2rem;
+	text-transform: uppercase;
+	margin-bottom: 2rem;
+}
+.listTable {
+	min-width: 30rem;
+	list-style: none;
+	letter-spacing: 0.1rem;
+}
+.listItem {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0.5rem 0;
+	font-size: 1.2rem;
+	color: var(--primaryColor);
+	border-bottom: 0.1rem solid #00000040;
+}
+.listItemTitle {
+	width: 60%;
+	text-align: left;
+}
+.listItemCol {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+.priceBox {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* text-align: left; */
+}
+.priceBox p {
+	width: 50%;
+}
+
+.sale {
+	color: var(--alertColor);
+	font-weight: 600;
+}
+
+.saleOn {
+	text-decoration: line-through;
+}
+@media (min-width: 768px) {
+	.listTable {
+		min-width: 60rem;
+	}
+	.listItem {
+		font-size: 1.6rem;
+	}
+	.listItemCol {
+		width: 15rem;
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+	}
+}

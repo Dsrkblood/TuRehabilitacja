@@ -1,4 +1,4 @@
-import mainPhoto from "/mainPhoto.jpg"
+import mainPhoto from "/mainPhoto.jpg";
 import masaz_klasyczny from "/massage/masaz_klasyczny.jpg";
 import masaz_relaksacyjny from "/massage/masaz_relaksacyjny.jpg";
 import masaz_sportowy from "/massage/masaz_sportowy.jpg";
@@ -81,7 +81,10 @@ export const DATA = {
 			priceLong: 180,
 			timeShort: 30,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: 80,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: 150,
 			saleOn: false,
 			image: masaz_klasyczny,
 		},
@@ -96,7 +99,10 @@ export const DATA = {
 			priceLong: 180,
 			timeShort: 30,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: 150,
 			saleOn: false,
 			image: masaz_relaksacyjny,
 		},
@@ -115,7 +121,10 @@ export const DATA = {
 			priceLong: 180,
 			timeShort: 30,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: masaz_sportowy,
 		},
@@ -126,11 +135,14 @@ export const DATA = {
 				"redukuje napięcie i ból mięśni, przyśpiesza regenerację tkanek, zmniejsza odczucie sztywności.",
 			summaryOptions: false,
 			description: "",
-			priceShort: undefined,
+			priceShort: null,
 			priceLong: 180,
-			timeShort: undefined,
+			timeShort: null,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: masaz_leczniczy,
 		},
@@ -141,11 +153,14 @@ export const DATA = {
 				"jest to metoda diagnostyki i leczenia zaburzeń układu ruchu. Przynosi zdecydowaną ulgę w bólu kręgosłupa i stawów obwodowych.",
 			summaryOptions: false,
 			description: "",
-			priceShort: undefined,
+			priceShort: null,
 			priceLong: 180,
 			timeShort: 45,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: 100,
 			saleOn: false,
 			image: terapia_manualna,
 		},
@@ -156,11 +171,14 @@ export const DATA = {
 				"polega na pozbyciu się zastojów limfatycznych. Jest polecany pacjentom u których występują obrzęki kończyn, zarówno po urazach jak i w przebiegu chorób przewlekłych oraz dla osób wykonujących pracę stojąca.",
 			summaryOptions: false,
 			description: "",
-			priceShort: undefined,
+			priceShort: null,
 			priceLong: 180,
-			timeShort: undefined,
+			timeShort: null,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: drenaz_limfatyczny,
 		},
@@ -175,7 +193,10 @@ export const DATA = {
 			priceLong: 180,
 			timeShort: 30,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: masaz_banka_chinska,
 		},
@@ -190,11 +211,14 @@ export const DATA = {
 					"Powięziowy o dzialaniu przeciwzmarszczkowym - poprawia krążenie krwi, zmniejsza napięcie mięśni, poprawia wygląd skóry twarzy i zwiększa jej elastyczność.",
 			},
 			description: "",
-			priceShort: 120,
-			priceLong: undefined,
-			timeShort: 30,
-			timeLong: undefined,
-			sale: "",
+			priceShort: null,
+			priceLong: 120,
+			timeShort: null,
+			timeLong: 30,
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: masaz_twarzy,
 		},
@@ -205,11 +229,14 @@ export const DATA = {
 				"w tym wyjątkowym dla Kobiety stanie Jej ciało szczególnie wymaga troski i zaopiekowania. Masaż może przynieść duża ulgę w bólu nie tylko kręgosłupa, ale też zmęczonych ramion i nóg. ",
 			summaryOptions: false,
 			description: "",
-			priceShort: undefined,
+			priceShort: null,
 			priceLong: 180,
-			timeShort: undefined,
+			timeShort: null,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: masaz_dla_kobiet_w_ciazy,
 		},
@@ -220,11 +247,14 @@ export const DATA = {
 				"jest to wysokiej klasy sprzęt, który pomaga rozbić zwapnienia takie jak ostroga piętowa, łokieć golfisty/tenisisty, a także wspomóc leczenie przewlekłego i otrego bólu tkanek miękkich.",
 			summaryOptions: false,
 			description: "",
-			priceShort: 80,
-			priceLong: undefined,
-			timeShort: undefined,
-			timeLong: undefined,
-			sale: "",
+			priceShort: null,
+			priceLong: 80,
+			timeShort: null,
+			timeLong: null,
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: fala_uderzeniowa_aplikacja_lecznicza,
 		},
@@ -235,11 +265,14 @@ export const DATA = {
 				"ma za zadanie rozbicie komórek tłuszczowych, ktore dzięki zwiększenonemu krążeniu są szybszciej usuwane z organizmu. Efekty widoczne są już po kilku zabiegach. ",
 			summaryOptions: false,
 			description: "",
-			priceShort: 80,
-			priceLong: undefined,
-			timeShort: undefined,
-			timeLong: undefined,
-			sale: "",
+			priceShort: null,
+			priceLong: 80,
+			timeShort: null,
+			timeLong: null,
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: fala_uderzeniowa_aplikacja_antycellulitowa,
 		},
@@ -258,7 +291,10 @@ export const DATA = {
 			priceLong: 180,
 			timeShort: 30,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: kinezyterapia,
 		},
@@ -273,7 +309,10 @@ export const DATA = {
 			priceLong: 180,
 			timeShort: 30,
 			timeLong: 60,
-			sale: "",
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
 			saleOn: false,
 			image: trening_funkcjonalny,
 		},

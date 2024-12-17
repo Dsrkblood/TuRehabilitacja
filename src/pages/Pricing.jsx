@@ -1,4 +1,9 @@
+import ServiceCosts from "../components/pricing/ServiceCosts";
+
 export default function Pricing() {
-	console.log("Cennik");
-	return <></>;
+	return (
+		<>
+			<ServiceCosts />
+		</>
+	);
 }
