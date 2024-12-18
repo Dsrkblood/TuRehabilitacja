@@ -19,7 +19,7 @@ export const DATA = {
 	contact: {
 		city: "Warszawa",
 		postcode: "01-886",
-		street: "Podczaszyńskiego 31/U1",
+		street: "Podczaszyńskiego 31",
 		openinghours: {
 			monday: {
 				day: "poniedziałek",
@@ -62,6 +62,7 @@ export const DATA = {
 		facebook:
 			"https://www.facebook.com/profile.php?id=61568131195051&locale=pl_PL",
 		booksy: "https://booksy.com/pl-pl/",
+		saleData: "2025-01-31",
 	},
 	aboutUs: {
 		photo: mainPhoto,
@@ -82,10 +83,9 @@ export const DATA = {
 			timeShort: 30,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
-			saleShort: 80,
+			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: 150,
-			saleOn: false,
+			saleLong: 160,
 			image: masaz_klasyczny,
 		},
 		offer2: {
@@ -102,8 +102,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: 150,
-			saleOn: false,
+			saleLong: 160,
 			image: masaz_relaksacyjny,
 		},
 		offer3: {
@@ -124,8 +123,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: null,
-			saleOn: false,
+			saleLong: 160,
 			image: masaz_sportowy,
 		},
 		offer4: {
@@ -142,8 +140,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: null,
-			saleOn: false,
+			saleLong: 160,
 			image: masaz_leczniczy,
 		},
 		offer5: {
@@ -160,8 +157,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: 100,
-			saleOn: false,
+			saleLong: 160,
 			image: terapia_manualna,
 		},
 		offer6: {
@@ -178,8 +174,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: null,
-			saleOn: false,
+			saleLong: 160,
 			image: drenaz_limfatyczny,
 		},
 		offer7: {
@@ -196,8 +191,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: null,
-			saleOn: false,
+			saleLong: 160,
 			image: masaz_banka_chinska,
 		},
 		offer8: {
@@ -218,8 +212,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: null,
-			saleOn: false,
+			saleLong: 100,
 			image: masaz_twarzy,
 		},
 		offer9: {
@@ -236,8 +229,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: null,
-			saleOn: false,
+			saleLong: 160,
 			image: masaz_dla_kobiet_w_ciazy,
 		},
 		offer10: {
@@ -255,30 +247,47 @@ export const DATA = {
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: null,
-			saleOn: false,
 			image: fala_uderzeniowa_aplikacja_lecznicza,
 		},
 		offer11: {
 			id: 11,
-			title: "Fala uderzeniowa aplikacja antycellulitowa ",
+			title:
+				"Fala uderzeniowa aplikacja antycellulitowa | wybrana partia ciała ",
 			summary:
 				"ma za zadanie rozbicie komórek tłuszczowych, ktore dzięki zwiększenonemu krążeniu są szybszciej usuwane z organizmu. Efekty widoczne są już po kilku zabiegach. ",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
-			priceLong: 80,
+			priceLong: 100,
 			timeShort: null,
 			timeLong: null,
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: null,
-			saleOn: false,
 			image: fala_uderzeniowa_aplikacja_antycellulitowa,
 		},
 		offer12: {
 			id: 12,
-			title: "Kinezyterapia",
+			title:
+				"Fala uderzeniowa aplikacja antycellulitowa | pakiet - uda, pośladki, brzuch ",
+			summary:
+				"ma za zadanie rozbicie komórek tłuszczowych, ktore dzięki zwiększenonemu krążeniu są szybszciej usuwane z organizmu. Efekty widoczne są już po kilku zabiegach. ",
+			summaryOptions: false,
+			description: "",
+			priceShort: null,
+			priceLong: 250,
+			timeShort: null,
+			timeLong: null,
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: null,
+			image: fala_uderzeniowa_aplikacja_antycellulitowa,
+		},
+		offer13: {
+			id: 13,
+			title: "Kinezyterapia (ćwiczenia)",
 			summary: "są to ćwiczenia rehabilitacyjne. Wyróżniamy tu ćwiczenia: ",
 			summaryOptions: {
 				option1:
@@ -294,12 +303,11 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: null,
-			saleOn: false,
+			saleLong: 160,
 			image: kinezyterapia,
 		},
-		offer13: {
-			id: 13,
+		offer14: {
+			id: 14,
 			title: "Trening funkcjonalny",
 			summary:
 				"ma na celu wzmocnienie mięśni głębokich, będących naszym fundamentem. Następnie skupiamy się na ich elastyczności, sile,  poprawie czucia głębokiego i lepszej koordynacji. Ćwiczenia tego typu mogą być dostosowane zarówno do pacjentów, którzy na codzień wykonują pracę biurową jak i dla osób uprawiających sport (amatorsko i zawodowo). Pomagają zabezpieczyć organizm przed nawracającym bólem i kontuzjami.",
@@ -312,8 +320,7 @@ export const DATA = {
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
-			saleLong: null,
-			saleOn: false,
+			saleLong: 160,
 			image: trening_funkcjonalny,
 		},
 	},

@@ -1,5 +1,6 @@
 import classes from "./ServiceCosts.module.css";
 import { DATA } from "../../data.js";
+import Sale from "./Sale.jsx";
 
 export default function ServiceCosts() {
 	const offers = Object.values(DATA.offers).map(offer => ({
@@ -13,9 +14,22 @@ export default function ServiceCosts() {
 		saleLong: offer.saleLong,
 		img: offer.image,
 	}));
+
+	const today = new Date();
+	const finishSale = new Date(DATA.contact.saleData);
+	finishSale.setHours(23, 59, 0, 0);
+
 	return (
 		<section className={classes.section}>
 			<h1 className={classes.header}>Cennik</h1>
+			{today <= finishSale ? (
+				<>
+					<h2 className={classes.promoHeader}>Promocja z okazji otwarcia!</h2>
+					<p className={classes.promoParagraph}>
+						Skorzystaj z oferty do 31 stycznia 2025 r.
+					</p>{" "}
+				</>
+			) : null}
 			<ul className={classes.listTable}>
 				{offers.map(offer => (
 					<li className={classes.listItem} key={offer.id}>
@@ -49,7 +63,9 @@ export default function ServiceCosts() {
 									<>
 										<p
 											className={`${classes.standard} ${
-												offer.saleShort ? classes.saleOn : ""
+												today <= finishSale && offer.saleShort
+													? classes.saleOn
+													: ""
 											}
                                     }`}>
 											{offer.priceShort}zł
@@ -62,7 +78,9 @@ export default function ServiceCosts() {
 								{offer.priceLong ? (
 									<p
 										className={`${classes.standard} ${
-											offer.saleLong ? classes.saleOn : ""
+											today <= finishSale && offer.saleLong
+												? classes.saleOn
+												: ""
 										}
                                     }`}>
 										{offer.priceLong}
@@ -74,30 +92,15 @@ export default function ServiceCosts() {
 							</div>
 							{/* Wyprzedaż */}
 							<div className={classes.priceBox}>
-								{offer.saleShort ? (
-									<>
-										<p className={classes.sale}>
-											{offer.saleShort}
-											zł
-										</p>
-										/
-									</>
-								) : (
-									<p></p>
-								)}
-								{offer.saleLong ? (
-									<p className={classes.sale}>
-										{offer.saleLong}
-										zł
-									</p>
-								) : (
-									<p></p>
-								)}
+								{today <= finishSale ? <Sale data={offer} /> : null}
 							</div>
 						</div>
 					</li>
 				))}
 			</ul>
+			<p className={classes.bonusOffer}>
+				Dodatkowo do pakietu 10 zabiegów jest 10% zniżki!
+			</p>
 		</section>
 	);
 }
