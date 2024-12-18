@@ -41,9 +41,9 @@ export default function NavBar() {
 			<header className={classes.header}>
 				<HeaderLinks data={DATA.contact} />
 				<nav className={classes.navMobile}>
-					<div className={classes.logoContainer}>
+					
 						<div className={classes.logo}></div>
-					</div>
+					
 
 					<button
 						ref={buttonRef}
@@ -56,9 +56,9 @@ export default function NavBar() {
 					</button>
 				</nav>
 				<nav className={classes.navDesktop}>
-					<div className={classes.logoContainer}>
+					
 						<div className={classes.logo}></div>
-					</div>
+					
 					<DesktopLinks />
 				</nav>
 				<SidebarLinks data={DATA.aboutUs} ref={sidebarRef} isOpen={isOpen} />
