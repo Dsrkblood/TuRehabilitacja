@@ -2,7 +2,7 @@ import classes from "./CirclePhoto.module.css";
 
 export default function CirclePhoto({ data }) {
 	const summaryTable = Object.values(data.summaryOptions).map(offer => offer);
-	if ((data.id === 12)) {
+	if (data.id === 12) {
 		null;
 	} else {
 		return (

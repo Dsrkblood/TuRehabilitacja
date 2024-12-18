@@ -58,13 +58,16 @@
 }
 
 .listContainer {
-	margin: 1rem;
+	display: none;
+	list-style: disc;
 }
 
 .listItem {
-	display: none;
-	margin: 0.5rem 0;
-	font-size: 1.2em;
+	margin-left: 1rem;
+	margin-top: 1rem;
+	font-size: 1.4em;
+	line-height: 1.6rem;
+	color: var(--secondaryColor);
 }
 
 @media (min-width: 481px) {
@@ -101,7 +104,7 @@
 	.summaryOffer {
 		display: inline;
 	}
-	.listItem {
+	.listContainer {
 		display: block;
 	}
 }

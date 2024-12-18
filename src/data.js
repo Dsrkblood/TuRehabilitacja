@@ -75,7 +75,7 @@ export const DATA = {
 			id: 1,
 			title: "Masaż klasyczny",
 			summary:
-				"jest to najstarsza metoda masażu. Ma działanie lecznicze i relaksacyjne, poprawia krążenie krwi, zmniejsza dolegliwości bólowe.",
+				"Jest to najstarsza metoda masażu. Ma działanie lecznicze i relaksacyjne, poprawia krążenie krwi, zmniejsza dolegliwości bólowe.",
 			summaryOptions: false,
 			description: "",
 			priceShort: 100,
@@ -92,7 +92,7 @@ export const DATA = {
 			id: 2,
 			title: "Masaż relaksacyjny",
 			summary:
-				"ma na celu wyciszenie i odpoczynek dla ciała i duszy. Wprowadza ciało w stan idealnej harmonii.",
+				"Ma na celu wyciszenie i odpoczynek dla ciała i duszy. Wprowadza ciało w stan idealnej harmonii.",
 			summaryOptions: false,
 			description: "",
 			priceShort: 100,
@@ -108,12 +108,12 @@ export const DATA = {
 		offer3: {
 			id: 3,
 			title: "Masaż sportowy",
-			summary: " proponujemy dwa rodzaje masażu sportowego :",
+			summary: " Proponujemy dwa rodzaje masażu sportowego :",
 			summaryOptions: {
 				option1:
 					"Regeneracja po treningu - ma na celu zredukowanie nadmiernych napięć mięśniowych i przygotowanie ich do następnego treningu",
 				option2:
-					" Masaż izometryczny - ma na celu wzmocnienie siły mięśniowej, dzięki odpowiedniej sekwencji ruchów masażysty i współpracy pacjenta. Jest polecany pacjentom po kontuzjach, którzy chcą szybko wrócić do formy oraz dla osób, które przygotowują się do zawodów, dla wzmocnienia efektów treningu.",
+					"Masaż izometryczny - ma na celu wzmocnienie siły mięśniowej, dzięki odpowiedniej sekwencji ruchów masażysty i współpracy pacjenta. Jest polecany pacjentom po kontuzjach, którzy chcą szybko wrócić do formy oraz dla osób, które przygotowują się do zawodów, dla wzmocnienia efektów treningu.",
 			},
 			description: "",
 			priceShort: 100,
@@ -130,7 +130,7 @@ export const DATA = {
 			id: 4,
 			title: "Masaż leczniczy",
 			summary:
-				"redukuje napięcie i ból mięśni, przyśpiesza regenerację tkanek, zmniejsza odczucie sztywności.",
+				"Redukuje napięcie i ból mięśni, przyśpiesza regenerację tkanek, zmniejsza odczucie sztywności.",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
@@ -147,7 +147,7 @@ export const DATA = {
 			id: 5,
 			title: "Terapia manualna",
 			summary:
-				"jest to metoda diagnostyki i leczenia zaburzeń układu ruchu. Przynosi zdecydowaną ulgę w bólu kręgosłupa i stawów obwodowych.",
+				"Jest to metoda diagnostyki i leczenia zaburzeń układu ruchu. Przynosi zdecydowaną ulgę w bólu kręgosłupa i stawów obwodowych.",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
@@ -164,7 +164,7 @@ export const DATA = {
 			id: 6,
 			title: "Drenaż limfatyczny",
 			summary:
-				"polega na pozbyciu się zastojów limfatycznych. Jest polecany pacjentom u których występują obrzęki kończyn, zarówno po urazach jak i w przebiegu chorób przewlekłych oraz dla osób wykonujących pracę stojąca.",
+				"Polega na pozbyciu się zastojów limfatycznych. Jest polecany pacjentom u których występują obrzęki kończyn, zarówno po urazach jak i w przebiegu chorób przewlekłych oraz dla osób wykonujących pracę stojąca.",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
@@ -181,7 +181,7 @@ export const DATA = {
 			id: 7,
 			title: "Masaż bańką chińska",
 			summary:
-				"jest to masaż o działaniu antycellulitowym i odchudzającym. Skóra po zabiegu staje się jędrna i elastyczna.",
+				"Jest to masaż o działaniu antycellulitowym i odchudzającym. Skóra po zabiegu staje się jędrna i elastyczna.",
 			summaryOptions: false,
 			description: "",
 			priceShort: 100,
@@ -197,7 +197,7 @@ export const DATA = {
 		offer8: {
 			id: 8,
 			title: "Masaż twarzy",
-			summary: "proponujemy dwa rodzaje masażu twarzy: ",
+			summary: "Proponujemy dwa rodzaje masażu twarzy: ",
 			summaryOptions: {
 				option1:
 					"Relaksacyjny - masaż ten pozwoli Ci się wyciszyć i zrelaksować.",
@@ -219,7 +219,7 @@ export const DATA = {
 			id: 9,
 			title: "Masaż dla kobiet w ciąży",
 			summary:
-				"w tym wyjątkowym dla Kobiety stanie Jej ciało szczególnie wymaga troski i zaopiekowania. Masaż może przynieść duża ulgę w bólu nie tylko kręgosłupa, ale też zmęczonych ramion i nóg. ",
+				"W tym wyjątkowym dla Kobiety stanie Jej ciało szczególnie wymaga troski i zaopiekowania. Masaż może przynieść duża ulgę w bólu nie tylko kręgosłupa, ale też zmęczonych ramion i nóg. ",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
@@ -234,9 +234,9 @@ export const DATA = {
 		},
 		offer10: {
 			id: 10,
-			title: "Fala uderzeniowa aplikacja lecznicza",
+			title: "Fala uderzeniowa - aplikacja lecznicza",
 			summary:
-				"jest to wysokiej klasy sprzęt, który pomaga rozbić zwapnienia takie jak ostroga piętowa, łokieć golfisty/tenisisty, a także wspomóc leczenie przewlekłego i otrego bólu tkanek miękkich.",
+				"Jest to wysokiej klasy sprzęt, który pomaga rozbić zwapnienia takie jak ostroga piętowa, łokieć golfisty/tenisisty, a także wspomóc leczenie przewlekłego i otrego bólu tkanek miękkich.",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
@@ -252,9 +252,9 @@ export const DATA = {
 		offer11: {
 			id: 11,
 			title:
-				"Fala uderzeniowa aplikacja antycellulitowa | wybrana partia ciała ",
+				"Fala uderzeniowa - aplikacja antycellulitowa | wybrana partia ciała ",
 			summary:
-				"ma za zadanie rozbicie komórek tłuszczowych, ktore dzięki zwiększenonemu krążeniu są szybszciej usuwane z organizmu. Efekty widoczne są już po kilku zabiegach. ",
+				"Ma za zadanie rozbicie komórek tłuszczowych, ktore dzięki zwiększenonemu krążeniu są szybszciej usuwane z organizmu. Efekty widoczne są już po kilku zabiegach. ",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
@@ -270,9 +270,9 @@ export const DATA = {
 		offer12: {
 			id: 12,
 			title:
-				"Fala uderzeniowa aplikacja antycellulitowa | pakiet - uda, pośladki, brzuch ",
+				"Fala uderzeniowa - aplikacja antycellulitowa | pakiet - uda, pośladki, brzuch ",
 			summary:
-				"ma za zadanie rozbicie komórek tłuszczowych, ktore dzięki zwiększenonemu krążeniu są szybszciej usuwane z organizmu. Efekty widoczne są już po kilku zabiegach. ",
+				"Ma za zadanie rozbicie komórek tłuszczowych, ktore dzięki zwiększenonemu krążeniu są szybszciej usuwane z organizmu. Efekty widoczne są już po kilku zabiegach. ",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
@@ -288,12 +288,12 @@ export const DATA = {
 		offer13: {
 			id: 13,
 			title: "Kinezyterapia (ćwiczenia)",
-			summary: "są to ćwiczenia rehabilitacyjne. Wyróżniamy tu ćwiczenia: ",
+			summary: "Są to ćwiczenia rehabilitacyjne. Wyróżniamy tu ćwiczenia: ",
 			summaryOptions: {
 				option1:
-					"przygotowujące do zabiegu operacyjnego np. Endopotezoplastyki stawów",
-				option2: "rehabilitacyjne po zabiegach operacyjnych oraz urazach ",
-				option2: "z zakresu profilaktyki bólu kręgosłupa ",
+					"Przygotowujące do zabiegu operacyjnego np. Endopotezoplastyki stawów",
+				option2: "Rehabilitacyjne po zabiegach operacyjnych oraz urazach ",
+				option2: "Z zakresu profilaktyki bólu kręgosłupa ",
 			},
 			description: "",
 			priceShort: 100,
@@ -310,7 +310,7 @@ export const DATA = {
 			id: 14,
 			title: "Trening funkcjonalny",
 			summary:
-				"ma na celu wzmocnienie mięśni głębokich, będących naszym fundamentem. Następnie skupiamy się na ich elastyczności, sile,  poprawie czucia głębokiego i lepszej koordynacji. Ćwiczenia tego typu mogą być dostosowane zarówno do pacjentów, którzy na codzień wykonują pracę biurową jak i dla osób uprawiających sport (amatorsko i zawodowo). Pomagają zabezpieczyć organizm przed nawracającym bólem i kontuzjami.",
+				"Ma na celu wzmocnienie mięśni głębokich, będących naszym fundamentem. Następnie skupiamy się na ich elastyczności, sile,  poprawie czucia głębokiego i lepszej koordynacji. Ćwiczenia tego typu mogą być dostosowane zarówno do pacjentów, którzy na codzień wykonują pracę biurową jak i dla osób uprawiających sport (amatorsko i zawodowo). Pomagają zabezpieczyć organizm przed nawracającym bólem i kontuzjami.",
 			summaryOptions: false,
 			description: "",
 			priceShort: 100,
