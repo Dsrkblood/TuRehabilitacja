@@ -41,7 +41,9 @@ export default function NavBar() {
 			<header className={classes.header}>
 				<HeaderLinks data={DATA.contact} />
 				<nav className={classes.navMobile}>
-					<div className={classes.logo}>{DATA.aboutUs.company}</div>
+					<div className={classes.logoContainer}>
+						<div className={classes.logo}></div>
+					</div>
 
 					<button
 						ref={buttonRef}
@@ -54,14 +56,12 @@ export default function NavBar() {
 					</button>
 				</nav>
 				<nav className={classes.navDesktop}>
-					<div className={classes.logo}>{DATA.aboutUs.company}</div>
+					<div className={classes.logoContainer}>
+						<div className={classes.logo}></div>
+					</div>
 					<DesktopLinks />
 				</nav>
-				<SidebarLinks
-					data={DATA.aboutUs}
-					ref={sidebarRef}
-					isOpen={isOpen}
-				/>
+				<SidebarLinks data={DATA.aboutUs} ref={sidebarRef} isOpen={isOpen} />
 			</header>
 			<div className={`${classes.overlay} ${isOpen ? classes.show : ""}`}></div>
 		</>

@@ -23,8 +23,21 @@
 	color: var(--linkActiveColor);
 }
 /* wkleić logo firmy */
+.logoConteiner{
+	position: relative;
+	width: 30rem;
+}
+
 .logo {
-	font-size: 2rem;
+	position: absolute;
+	top: 5.5rem;
+	left: .5rem;
+	background-image: url('/logoBig.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 50%;
+	height: 3rem;
+	z-index: -1;
 }
 
 .menuButton {
@@ -96,6 +109,9 @@
 	.header {
 		height: 10rem;
 	}
+	.logo{
+		height: 4rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -107,5 +123,9 @@
 	}
 	.navDesktop {
 		display: flex;
+	}
+	.logo{
+		
+		height: 6.5rem;
 	}
 }

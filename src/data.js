@@ -8,12 +8,11 @@ import drenaz_limfatyczny from "/massage/drenaz_limfatyczny.jpg";
 import masaz_banka_chinska from "/massage/masaz_banka_chinska.jpg";
 import masaz_twarzy from "/massage/masaz_twarzy.jpg";
 import masaz_dla_kobiet_w_ciazy from "/massage/masaz_dla_kobiet_w_ciazy.jpg";
-
+import fala_uderzeniowa_aplikacja_lecznicza from "/massage/fala_uderzeniowa_aplikacja_lecznicza.jpg";
+import fala_uderzeniowa_aplikacja_antycellulitowa from "/massage/fala_uderzeniowa_aplikacja_antycellulitowa.jpg";
 //Potrzebne zdjęcia do uzupełnienia
-import fala_uderzeniowa_aplikacja_lecznicza from "/massage/masaz_klasyczny.jpg";
-import fala_uderzeniowa_aplikacja_antycellulitowa from "/massage/masaz_klasyczny.jpg";
-import kinezyterapia from "/massage/masaz_klasyczny.jpg";
-import trening_funkcjonalny from "/massage/masaz_klasyczny.jpg";
+import kinezyterapia from "/massage/kinezyterapia.jpg";
+import trening_funkcjonalny from "/massage/trening_funkcjonalny.jpg";
 
 export const DATA = {
 	contact: {
