@@ -1,0 +1,18 @@
+.section {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0rem;
+}
+
+.header {
+	font-size: 3.6rem;
+	letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    font-weight: 300;
+}
+.offertsBox{
+    margin: 2rem 0;
+    min-width: 30rem;
+}

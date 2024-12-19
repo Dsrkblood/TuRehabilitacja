@@ -151,8 +151,8 @@ export const DATA = {
 			description: "",
 			priceShort: null,
 			priceLong: 180,
-			timeShort: 45,
-			timeLong: 60,
+			timeShort: null,
+			timeLong: '45/60',
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene

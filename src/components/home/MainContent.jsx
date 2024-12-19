@@ -10,6 +10,7 @@ export default function MainContent() {
 		summaryOptions: offer.summaryOptions,
 		img: offer.image,
 	}));
+
 	return (
 		<>
 			<div
