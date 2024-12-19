@@ -8,6 +8,7 @@
 	padding-top: 0.5rem;
 	font-size: 2.4rem;
 	font-weight: 300;
+	/* font-weight: 400; */
 	letter-spacing: 0.1rem;
 	color: var(--primaryColor);
 	border-top: 0.1rem solid #00000040;
@@ -30,7 +31,8 @@
 .listItem {
 	margin-top: 0.5rem;
 	font-size: 1.6rem;
-	font-weight: 200;
+	/* font-weight: 200; */
+	font-weight: 300;
 	line-height: 2rem;
 	letter-spacing: 0.1rem;
 	color: var(--secondaryColor);

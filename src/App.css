@@ -11,14 +11,16 @@ html {
 
 :root {
 	--primaryColor: #2b79c1;
-	--secondaryColor: #27303f;
+	/* --secondaryColor: #27303f; */
+	--secondaryColor: #111111;
 	--tertiaryColor: #4e92d1;
 
 	--linkColor: #64748b;
 	--linkHoverColor: #4b586b;
 	--linkActiveColor: #3a4350;
 
-	--generalBackgroundColor: #e4e4e4;
+	/* --generalBackgroundColor: #e4e4e4; */
+	--generalBackgroundColor: #f7f7f7;
 	--sectionBackgroundColor: #f7f7f7;
 	--navigationBackgroundColor: #f7f7f7e6;
 
