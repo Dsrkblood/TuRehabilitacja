@@ -20,7 +20,7 @@ export default function MainContent() {
 				}}></div>
 
 			<section className={classes.container}>
-				<h1>o nas</h1>
+				<h1 className={classes.headerOne}>o nas</h1>
 				<div className={classes.containerDesktop}>
 					<p className={classes.paragraph}>{DATA.aboutUs.header}</p>
 					<iframe
@@ -31,7 +31,25 @@ export default function MainContent() {
 				</div>
 			</section>
 			<section className={classes.container}>
-				<h2>W czym możemy Tobie pomóc?</h2>
+				<h2 className={classes.headerOther}>Nasz personel</h2>
+				<div className={classes.containerPersonel}>
+					<div className={classes.aboutMe}>
+						<p>{DATA.aboutUs.Emilia.aboutMe}</p>
+					</div>
+					<div className={classes.person}>
+						<div className={classes.personBackground}>
+							<div
+								className={classes.imgaPerson}
+								style={{
+									backgroundImage: `url(${DATA.aboutUs.Emilia.imgPerson})`,
+								}}></div>
+						</div>
+						<p className={classes.personName}>{DATA.aboutUs.Emilia.name}</p>
+					</div>
+				</div>
+			</section>
+			<section className={classes.container}>
+				<h3 className={classes.headerOther}>W czym możemy Tobie pomóc?</h3>
 				<div className={classes.row}>
 					{offers.map(offer => (
 						<CirclePhoto key={offer.id} data={offer} />

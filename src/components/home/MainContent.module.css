@@ -9,40 +9,106 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0rem 0 4rem;
-	padding: 2rem 0;
+	margin: 2rem 0;
+	padding: 2rem;
 }
 
 .container:nth-child(even) {
 	background-color: var(--sectionBackgroundColor);
 }
 
-.container h1,
-h2 {
+.headerOne,
+.headerOther {
 	margin-bottom: 1rem;
-	font-size: 3.2rem;
 	font-weight: 300;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	color: var(--secondaryColor);
 }
 
-.container h2 {
-	margin-top: 1rem;
+.headerOne {
+	font-size: 3.2rem;
+}
+
+.headerOther {
 	font-size: 2.6rem;
-	text-transform: none;
+	text-align: center;
 }
 
 .container .paragraph {
-	margin: 0 2rem 1rem;
 	font-size: 1.6rem;
 	letter-spacing: 0.05rem;
 	text-align: justify;
 	color: var(--linkColor);
 }
+
+.containerPersonel {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 90rem;
+}
+
+.aboutMe {
+	padding-right: 1rem;
+	font-size: 1.2rem;
+	text-align: justify;
+	width: 60%;
+	color: var(--linkColor);
+}
+
+.person {
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.personBackground {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 15rem;
+	width: 15rem;
+	background-color: var(--sectionBackgroundColor);
+	border-radius: 100%;
+	box-shadow: 0 0 1rem -0.5rem black;
+}
+.imgaPerson {
+	height: 13rem;
+	width: 13rem;
+	border-radius: 100%;
+	background-position: 0 -2rem;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.personName {
+	margin-top: 1rem;
+	font-size: 1.6rem;
+	font-weight: 500;
+	text-align: center;
+	color: var(--primaryColor);
+}
+
 .map {
 	display: none;
 	border: none;
+}
+
+@media (min-width: 481px) {
+	.aboutMe {
+		font-size: 1.4rem;
+		letter-spacing: 0.1rem;
+	}
+	.personBackground {
+		width: 18rem;
+		height: 18rem;
+	}
+	.imgaPerson {
+		width: 16rem;
+		height: 16rem;
+	}
 }
 
 @media (min-width: 768px) {
@@ -52,12 +118,24 @@ h2 {
 	.containerDesktop {
 		display: flex;
 		flex-direction: row;
-		padding: 0 2rem;
+
 		max-width: 90rem;
 	}
-	.container .paragraph  {
+	.container .paragraph {
+		margin-right: 2rem;
 		font-size: 1.8rem;
 		width: 50%;
+	}
+	.aboutMe {
+		font-size: 1.8rem;
+	}
+	.personBackground {
+		width: 25rem;
+		height: 25rem;
+	}
+	.imgaPerson {
+		width: 22rem;
+		height: 22rem;
 	}
 	.map {
 		display: block;
@@ -67,7 +145,7 @@ h2 {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		padding: 0 2rem;
+		/* padding: 0 2rem; */
 		max-width: 90rem;
 	}
 }

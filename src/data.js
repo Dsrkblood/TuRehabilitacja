@@ -10,9 +10,10 @@ import masaz_twarzy from "/massage/masaz_twarzy.jpg";
 import masaz_dla_kobiet_w_ciazy from "/massage/masaz_dla_kobiet_w_ciazy.jpg";
 import fala_uderzeniowa_aplikacja_lecznicza from "/massage/fala_uderzeniowa_aplikacja_lecznicza.jpg";
 import fala_uderzeniowa_aplikacja_antycellulitowa from "/massage/fala_uderzeniowa_aplikacja_antycellulitowa.jpg";
-//Potrzebne zdjęcia do uzupełnienia
 import kinezyterapia from "/massage/kinezyterapia.jpg";
 import trening_funkcjonalny from "/massage/trening_funkcjonalny.jpg";
+
+import Emilia from "/personel/Emilia.jpg";
 
 export const DATA = {
 	contact: {
@@ -68,6 +69,12 @@ export const DATA = {
 		company: "TuRehabilitacja",
 		header:
 			"Jesteśmy gabinetem fizjoterapii i masażu znajdującym się na warszawskich Bielanach. Zajmujemy się leczeniem i profilaktyką schorzeń układu ruchu - bólu kręgosłupa i stawów obwodowych, przeciążeń spowodowanych m.in. wielogodzinną pracą przy biurku, rehabilitacją ortopedyczną po urazach i operacjach, treningiem funkcjonalnym oraz masażem (leczniczym, relaksacyjnym, masażem twarzy itp.). W naszej ofercie znajduje się również fala uderzeniowa, która ma szerokie zastosowanie zarówno w leczeniu takich schorzeń jak ostroga piętowa czy łokieć tenisisty i golfisty, jak również w walce z cellulitem. Do każdego pacjenta podchodzimy indywidualnie, z pełną dbałością o jak najlepszą diagnostykę i terapię dostosowaną do Państwa potrzeb.",
+		Emilia: {
+			name: "Mgr Emilia Strzałkowska",
+			aboutMe:
+				" Jestem magistrem fizjoterapii, absolwentką Akademii Wychowania Fizycznego w Warszawie. Aktualnie studiuję na kierunku psychoterapia w Instytucie Integralnej Psychoterapii Gestalt. Zajmuję się rehabilitacją osób po operacjach, urazach, ze stanami bólowymi i przeciążeniami układu ruchu. W pracy z pacjentami wykorzystuję terapię manualną i masaż tkanek głębokich. Zajmuję się również planowaniem i prowadzeniem treningu funkcjonalnego z wykorzystaniem technik stabilizacji tułowia, oceny posturalnej oraz treningu core.",
+				imgPerson: Emilia,
+		},
 	},
 	offers: {
 		offer1: {
@@ -152,7 +159,7 @@ export const DATA = {
 			priceShort: null,
 			priceLong: 180,
 			timeShort: null,
-			timeLong: '45/60',
+			timeLong: "45/60",
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene
