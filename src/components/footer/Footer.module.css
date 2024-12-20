@@ -4,6 +4,7 @@
 	align-items: center;
 	width: 100%;
 	background-color: var(--sectionBackgroundColor);
+	border-top: 0.1rem solid #00000030;
 }
 .container {
 	display: flex;
@@ -35,13 +36,21 @@
 	background-color: var(--secondaryColor);
 }
 
+.gitPromo {
+	font-size: 1rem;
+}
+
+.gitPromo a {
+	color: var(--linkColor);
+}
+
 @media (min-width: 481px) {
 	.footer p,
 	.footer a {
 		font-size: 1.4rem;
 		margin: 0.5rem 0;
 	}
-	.brand{
+	.brand {
 		font-size: 1.4rem;
 	}
 }

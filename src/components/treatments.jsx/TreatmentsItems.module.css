@@ -8,9 +8,9 @@
 
 .header {
 	font-size: 3.6rem;
+    font-weight: 300;
 	letter-spacing: 0.2rem;
     text-transform: uppercase;
-    font-weight: 300;
 }
 .offertsBox{
     margin: 2rem 0;

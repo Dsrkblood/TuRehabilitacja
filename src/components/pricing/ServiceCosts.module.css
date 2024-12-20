@@ -3,15 +3,16 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 2rem 1rem 4rem;
+	padding: 0rem 2rem;
 }
 
 .header {
+	margin-bottom: 2rem;
 	font-size: 3.6rem;
 	font-weight: 300;
-	letter-spacing: 0.2rem;
+	letter-spacing: 0.1rem;
 	text-transform: uppercase;
-	margin-bottom: 2rem;
+	color: var(--secondaryColor);
 }
 
 .listTable {
@@ -21,7 +22,6 @@
 }
 
 .listItem {
-	width: 100%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -48,7 +48,6 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* text-align: left; */
 }
 
 .priceBox p {
@@ -69,8 +68,8 @@
 
 .promoParagraph{
 	margin: 1rem 0 2rem;
-	text-align: center;
 	font-size: 1.6rem;
+	text-align: center;
 	color: var(--alertColor);
 }
 

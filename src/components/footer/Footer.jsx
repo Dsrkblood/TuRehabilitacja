@@ -20,6 +20,17 @@ export default function Footer() {
 				<p>
 					{DATA.aboutUs.company} &copy; {year}
 				</p>
+				<p>
+					<p className={classes.gitPromo}>
+						created by
+						<a
+							href='https://github.com/Dsrkblood'
+							target='_blank'
+							rel='noopener noreferrer'>
+							&nbsp;Dsrkblood
+						</a>
+					</p>
+				</p>
 			</div>
 		</>
 	);
