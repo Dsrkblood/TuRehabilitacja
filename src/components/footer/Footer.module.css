@@ -1,17 +1,24 @@
 .footer {
 	display: flex;
-	justify-content: space-between;
-	align-items: center;
+	flex-direction: column;
+	margin-top: 2rem;
 	width: 100%;
 	background-color: var(--sectionBackgroundColor);
 	border-top: 0.1rem solid #00000030;
 }
 .container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+}
+
+.box {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 0.5rem 2rem;
 }
 
 .footer p,

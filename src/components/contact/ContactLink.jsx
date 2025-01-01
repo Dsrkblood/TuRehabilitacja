@@ -56,7 +56,14 @@ export default function ContactLink() {
 					{DATA.contact.phone}
 				</a>
 				<a
-					className={classes.linkItem}
+					className={`${classes.linkItem} ${classes.instagram}`}
+					href={DATA.contact.instagram}
+					target='_blank'
+					rel='noopener noreferrer'>
+					Instagram
+				</a>
+				<a
+					className={`${classes.linkItem} ${classes.facebook}`}
 					href={DATA.contact.facebook}
 					target='_blank'
 					rel='noopener noreferrer'>
@@ -73,9 +80,11 @@ export default function ContactLink() {
 			</div>
 			<div className={classes.container}>
 				<iframe
-					src='https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2440.952131898628!2d20.957305!3d52.280571!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecbcfda1815f7%3A0xee788b3ba9acee39!2sPodczaszy%C5%84skiego%2031%2C%2001-866%20Warszawa!5e0!3m2!1spl!2spl!4v1734554943446!5m2!1spl!2spl'
+					src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2440.952267404277!2d20.955327156148073!3d52.28056853996331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecb00457e2ecd%3A0xb15262a59cffec36!2sTuRehabilitacja!5e0!3m2!1spl!2spl!4v1735468663199!5m2!1spl!2spl'
+					allowFullScreen=''
 					loading='lazy'
 					referrerPolicy='no-referrer-when-downgrade'
+					sandbox='allow-scripts allow-same-origin'
 					className={classes.mapGoogle}></iframe>
 			</div>
 		</section>

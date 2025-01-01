@@ -6,7 +6,7 @@ import ScrollToTop from "../components/ScrollToTop";
 export default function Root() {
 	return (
 		<>
-		<ScrollToTop />
+			<ScrollToTop />
 			<NavBar />
 			<main>
 				<Outlet />

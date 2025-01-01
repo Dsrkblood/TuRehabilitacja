@@ -61,19 +61,59 @@ export const DATA = {
 		email: "turehabilitacja@gmail.com",
 		facebook:
 			"https://www.facebook.com/profile.php?id=61568131195051&locale=pl_PL",
+		instagram: "https://www.instagram.com/turehabilitacja",
 		booksy: "https://booksy.com/pl-pl/",
 		saleData: "2025-01-31",
 	},
 	aboutUs: {
 		photo: mainPhoto,
 		company: "TuRehabilitacja",
-		header:
-			"Jesteśmy gabinetem fizjoterapii i masażu znajdującym się na warszawskich Bielanach. Zajmujemy się leczeniem i profilaktyką schorzeń układu ruchu - bólu kręgosłupa i stawów obwodowych, przeciążeń spowodowanych m.in. wielogodzinną pracą przy biurku, rehabilitacją ortopedyczną po urazach i operacjach, treningiem funkcjonalnym oraz masażem (leczniczym, relaksacyjnym, masażem twarzy itp.). W naszej ofercie znajduje się również fala uderzeniowa, która ma szerokie zastosowanie zarówno w leczeniu takich schorzeń jak ostroga piętowa czy łokieć tenisisty i golfisty, jak również w walce z cellulitem. Do każdego pacjenta podchodzimy indywidualnie, z pełną dbałością o jak najlepszą diagnostykę i terapię dostosowaną do Państwa potrzeb.",
+		header: {
+			text1:
+				"Jesteśmy gabinetem fizjoterapii i masażu znajdującym się na warszawskich Bielanach. Do każdego pacjenta podchodzimy indywidualnie, z pełną dbałością o jak najlepszą diagnostykę i terapię dostosowaną do Państwa potrzeb.",
+			text2: "Zajmujemy się leczeniem i profilaktyką:",
+			list1: [
+				"schorzeń układu ruchu - bólu kręgosłupa i stawów obwodowych,",
+				"przeciążeń spowodowanych m.in. wielogodzinną pracą przy biurku,",
+				"rehabilitacją po urazach i operacjach,",
+				"treningiem funkcjonalnym,",
+				"masażem leczniczym,",
+				"masażem relaksacyjnym,",
+				"masażem twarzy,",
+				"masażem odchudzającym.",
+			],
+			text3: "W naszej ofercie znajduje się również ",
+			span1: "fala uderzeniowa",
+			text4: ", która ma szerokie zastosowanie leczeniu takich schorzeń jak:",
+			list2: [
+				"ostroga piętowa,",
+				"łokieć tenisisty i golfisty,",
+				"przeciążenia i zwapnienia,",
+				"skręcenia i zwichnięcia stawów,",
+				"kolano biegacza,",
+				"zamrożony bark,",
+				" i wiele więcej.",
+			],
+			text5: " jest też doskonałym narzędziem w walce z cellulitem.",
+			span2: "Fala uderzeniowa",
+		},
 		Emilia: {
 			name: "Mgr Emilia Strzałkowska",
-			aboutMe:
-				" Jestem magistrem fizjoterapii, absolwentką Akademii Wychowania Fizycznego w Warszawie. Aktualnie studiuję na kierunku psychoterapia w Instytucie Integralnej Psychoterapii Gestalt. Zajmuję się rehabilitacją osób po operacjach, urazach, ze stanami bólowymi i przeciążeniami układu ruchu. W pracy z pacjentami wykorzystuję terapię manualną i masaż tkanek głębokich. Zajmuję się również planowaniem i prowadzeniem treningu funkcjonalnego z wykorzystaniem technik stabilizacji tułowia, oceny posturalnej oraz treningu core.",
-				imgPerson: Emilia,
+			aboutMe: {
+				text1:
+					"Jestem magistrem fizjoterapii, absolwentką Akademii Wychowania Fizycznego w Warszawie. Aktualnie studiuję psychoterapię w Instytucie Integralnej Psychoterapii Gestalt.",
+				text2: "Zajmuję się rehabilitacją:",
+				list: [
+					"po operacjach,",
+					"po urazach,",
+					"zespołów bólowych kręgosłupa i stawów obwodowych,",
+					"dolegliwościami spowodowanymi siedzącym trybem życia,",
+					"przeciążeniami układu ruchu.",
+				],
+				text3:
+					"W pracy z pacjentami wykorzystuję terapię manualną, masaż leczniczy i masaż tkanek głębokich. Zajmuję się również planowaniem i prowadzeniem treningu funkcjonalnego z wykorzystaniem technik stabilizacji tułowia, oceny posturalnej oraz treningu core.",
+			},
+			imgPerson: Emilia,
 		},
 	},
 	offers: {
@@ -159,7 +199,7 @@ export const DATA = {
 			priceShort: null,
 			priceLong: 180,
 			timeShort: null,
-			timeLong: "45/60",
+			timeLong: 45,
 			//promocja na krótki zabieg - wystarczy wpisać cene
 			saleShort: null,
 			//promocja na długi zabieg - wystarczy wpisać cene

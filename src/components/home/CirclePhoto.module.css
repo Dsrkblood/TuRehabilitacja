@@ -2,22 +2,18 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 100%;
 	padding: 1rem 0rem;
+	max-width: 90%;
+	height: 100%;
+	border-bottom: 0.1rem solid #0000004d;
+}
+
+.offer:last-child{
+	border: none;
 }
 
 .offer:nth-child(odd) {
 	flex-direction: row-reverse;
-}
-
-.containerImg {
-	display: flex;
-	align-items: center;
-	justify-content: start;
-	min-width: 50%;
-}
-.offer:nth-child(odd) .containerImg {
-	justify-content: end;
 }
 
 .circleImg {
@@ -31,35 +27,83 @@
 	box-shadow: 0 0 1rem -0.5rem black;
 }
 
-.offerImg {
+.circleImg .offerImg {
 	height: 13rem;
 	width: 13rem;
 	border-radius: 100%;
 	background-position: center;
 	background-size: cover;
 }
+
 .containerTitle {
-	max-width: 50%;
+	display: block;
+	width: 50%;
+	min-height: 15rem;
 }
+
 .offerTitle {
 	font-size: 1.6rem;
-	text-align: right;
+	text-align: left;
 	text-transform: uppercase;
 	color: var(--primaryColor);
 }
-.offer:nth-child(odd) .offerTitle {
-	text-align: left;
+
+.offer:nth-child(even) .offerTitle {
+	text-align: right;
+}
+
+.moreInfoOffer {
+	height: 100%;
+	width: 100%;
+}
+
+.toggleButton {
+	display: flex;
+	justify-content: end;
+	align-items: center;
+	padding: 1rem 0;
+	width: 100%;
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: color 0.3s ease-in;
+}
+
+.offer:nth-child(odd) .toggleButton {
+	justify-content: start;
+}
+
+.toggleButton:hover {
+	color: var(--primaryColor);
+}
+
+.toggleButton .fontAwesome {
+	margin-left: 1rem;
+}
+
+.additionalInfo {
+	max-height: 0;
+	margin-top: 10px;
+	overflow: hidden;
+	transition: max-height 0.3s ease-in;
+}
+
+.additionalInfo.show {
+	max-height: 90rem;
 }
 
 .summaryOffer {
-	display: none;
 	font-size: 1.4rem;
 	color: var(--secondaryColor);
 }
 
+.summaryOffer.show {
+	display: block;
+}
+
 .listContainer {
-	display: none;
 	list-style: disc;
+	padding-left: 0.5rem;
 }
 
 .listItem {
@@ -70,41 +114,29 @@
 	color: var(--secondaryColor);
 }
 
-@media (min-width: 481px) {
-	.offer {
-		width: 44rem;
-	}
-}
-
 @media (min-width: 768px) {
 	.offer,
 	.offer:nth-child(odd) {
 		height: 100%;
 		width: 100%;
 	}
-	.containerImg,
-	.offer:nth-child(odd) .containerImg {
-		justify-content: center;
-		align-items: center;
-	}
 	.circleImg {
 		width: 20rem;
 		height: 20rem;
 	}
-	.offerImg {
+	.circleImg .offerImg {
 		width: 18rem;
 		height: 18rem;
 	}
-	.offerTitle,
-	.offer:nth-child(odd) .offerTitle {
+	.offerTitle {
 		margin: 1rem 0;
 		font-size: 2.4rem;
 		text-align: start;
 	}
-	.summaryOffer {
-		display: inline;
+	.toggleButton{
+		display: none;
 	}
-	.listContainer {
-		display: block;
+	.additionalInfo{
+		max-height: 90rem;
 	}
 }

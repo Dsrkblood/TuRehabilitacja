@@ -1,23 +1,29 @@
 import { forwardRef } from "react";
 import classes from "./SidebarLinks.module.css";
 import LinkItem from "./LinkItem";
-const SidebarLink = forwardRef(({ isOpen, data}, ref) => {
+const SidebarLink = forwardRef(({ isOpen, data,handleClose }, ref) => {
 	const year = new Date().getFullYear();
 	return (
 		<div
 			ref={ref}
 			className={`${classes.sidebar} ${isOpen ? classes.open : ""}`}>
 			<div className={classes.linkList}>
-				<LinkItem to={"/"} icon='fa-solid fa-house'>
+				<LinkItem onClick={handleClose} to={"/"} icon='fa-solid fa-house'>
 					Menu
 				</LinkItem>
-				<LinkItem to={"/uslugi"} icon='fa-solid fa-handshake-simple'>
+				<LinkItem
+					onClick={handleClose}
+					to={"/uslugi"}
+					icon='fa-solid fa-handshake-simple'>
 					Usługi
 				</LinkItem>
-				<LinkItem to={"/cennik"} icon='fa-solid fa-coins'>
+				<LinkItem onClick={handleClose} to={"/cennik"} icon='fa-solid fa-coins'>
 					Cennik
 				</LinkItem>
-				<LinkItem to={"/kontakt"} icon='fa-solid fa-address-book'>
+				<LinkItem
+					onClick={handleClose}
+					to={"/kontakt"}
+					icon='fa-solid fa-address-book'>
 					Kontakt
 				</LinkItem>
 			</div>

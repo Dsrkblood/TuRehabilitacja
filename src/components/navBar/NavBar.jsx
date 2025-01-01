@@ -61,7 +61,7 @@ export default function NavBar() {
 					
 					<DesktopLinks />
 				</nav>
-				<SidebarLinks data={DATA.aboutUs} ref={sidebarRef} isOpen={isOpen} />
+				<SidebarLinks handleClose={handleOpenSidebar}data={DATA.aboutUs} ref={sidebarRef} isOpen={isOpen} />
 			</header>
 			<div className={`${classes.overlay} ${isOpen ? classes.show : ""}`}></div>
 		</>

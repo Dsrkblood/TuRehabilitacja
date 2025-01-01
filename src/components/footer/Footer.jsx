@@ -8,19 +8,26 @@ export default function Footer() {
 		<>
 			<div className={classes.footer}>
 				<div className={classes.container}>
-					<p>{`${DATA.contact.postcode} ${DATA.contact.city}`}</p>
-					<p>{DATA.contact.street}</p>
+					<div className={classes.box}>
+						<a
+							className={classes.box}
+							href='https://maps.app.goo.gl/mLwYxHpzQqbk8jem8'
+							target='_blank'
+							rel='noopener noreferrer'>
+							<p>{`${DATA.contact.postcode} ${DATA.contact.city}`}</p>
+							<p>{DATA.contact.street}</p>
+						</a>
+					</div>
+					<div className={classes.box}>
+						<a href={`mailto:${DATA.contact.email}`}>{DATA.contact.email}</a>
+						<a href={`tel:${phone}`}>{DATA.contact.phone}</a>
+					</div>
 				</div>
-				<div className={classes.container}>
-					<a href={`mailto:${DATA.contact.email}`}>{DATA.contact.email}</a>
-					<a href={`tel:${phone}`}>{DATA.contact.phone}</a>
-				</div>
-			</div>
-			<div className={classes.brand}>
-				<p>
-					{DATA.aboutUs.company} &copy; {year}
-				</p>
-				<p>
+				<div className={classes.brand}>
+					<p>
+						{DATA.aboutUs.company} &copy; {year}
+					</p>
+
 					<p className={classes.gitPromo}>
 						created by
 						<a
@@ -30,7 +37,7 @@ export default function Footer() {
 							&nbsp;Dsrkblood
 						</a>
 					</p>
-				</p>
+				</div>
 			</div>
 		</>
 	);

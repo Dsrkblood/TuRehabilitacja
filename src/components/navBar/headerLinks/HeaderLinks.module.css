@@ -25,6 +25,33 @@
 	color: var(--tertiaryColor);
 }
 
+.socialMedia {
+	display: flex;
+	justify-content: center;
+	align-items: end;
+}
+.socialMedia .link {
+	margin-left: 0rem;
+}
+
+.instagram {
+	background: linear-gradient(
+		45deg,
+		#f58529,
+		#feda77,
+		#dd2a7b,
+		#8134af,
+		#515bd4
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.facebook {
+	color: #1877f2;
+}
+
 .booksy,
 .booksy:visited {
 	color: #33b5bd;

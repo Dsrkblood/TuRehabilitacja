@@ -2,6 +2,7 @@
 	height: 20rem;
 	background-position: center;
 	background-size: cover;
+	width: 100%;
 }
 
 .container {
@@ -12,11 +13,9 @@
 	margin: 2rem 0;
 	padding: 2rem;
 }
-
-.container:nth-child(even) {
-	background-color: var(--sectionBackgroundColor);
+.rowMap {
+	display: none;
 }
-
 .headerOne,
 .headerOther {
 	margin-bottom: 1rem;
@@ -35,10 +34,27 @@
 	text-align: center;
 }
 
-.container .paragraph {
+.headerParagraph {
+	margin-top: 0.2rem;
 	font-size: 1.6rem;
 	letter-spacing: 0.05rem;
-	text-align: justify;
+	text-indent: 1.2rem;
+	color: var(--linkColor);
+}
+
+.headerParagraph span {
+	font-weight: 600;
+	color: var(--primaryColor);
+}
+
+.headerParagraph:nth-child(2) {
+	text-indent: 0;
+}
+
+.headerList {
+	padding-left: 1.6rem;
+	font-size: 1.6rem;
+	letter-spacing: 0.05rem;
 	color: var(--linkColor);
 }
 
@@ -52,9 +68,23 @@
 .aboutMe {
 	padding-right: 1rem;
 	font-size: 1.2rem;
-	text-align: justify;
+	text-align: left;
+	text-indent: 1.2rem;
 	width: 60%;
 	color: var(--linkColor);
+}
+
+.aboutMeParagraph {
+	margin-top: 0.2rem;
+}
+
+.aboutMe .aboutMeParagraph:nth-child(2) {
+	text-indent: 0;
+}
+
+.aboutMeList {
+	padding-left: 1.6rem;
+	text-indent: 0;
 }
 
 .person {
@@ -91,6 +121,14 @@
 	color: var(--primaryColor);
 }
 
+.offerRowContainer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 90rem;
+}
+
 .map {
 	display: none;
 	border: none;
@@ -117,9 +155,17 @@
 	}
 	.containerDesktop {
 		display: flex;
+		justify-content: center;
 		flex-direction: row;
-
 		max-width: 90rem;
+	}
+	.rowText {
+		width: 50%;
+	}
+
+	.rowMap {
+		display: block;
+		width: 50%;
 	}
 	.container .paragraph {
 		margin-right: 2rem;
@@ -139,13 +185,7 @@
 	}
 	.map {
 		display: block;
-		width: 50%;
-	}
-	.row {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		/* padding: 0 2rem; */
-		max-width: 90rem;
+		width: 100%;
+		height: 100%;
 	}
 }
