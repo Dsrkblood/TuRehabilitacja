@@ -1,7 +1,7 @@
 .header {
 	position: sticky;
 	top: 0;
-	height: 9rem;
+	height: 8rem;
 	background-color: var(--navigationBackgroundColor);
 	box-shadow: 0 0rem 1rem -0.4rem var(--primaryColor);
 	z-index: 5;
@@ -11,7 +11,7 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	padding: 0.5rem 1rem;
+	padding: 0.5rem 0rem;
 	color: var(--secondaryColor);
 }
 
@@ -23,17 +23,12 @@
 	color: var(--linkActiveColor);
 }
 
-.logo {
-	background-image: url("/logoBig.png");
-	background-size: contain;
-	background-position: start;
-	background-repeat: no-repeat;
-	width: 25rem;
-	height: 3rem;
-	z-index: -1;
+.logo img {
+	width: 30rem;
 }
 
 .menuButton {
+	margin-right: 1rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -98,15 +93,6 @@
 	opacity: 2;
 }
 
-@media (min-width: 481px) {
-	.header {
-		height: 10rem;
-	}
-	.logo {
-		height: 4rem;
-	}
-}
-
 @media (min-width: 768px) {
 	.header {
 		height: auto;
@@ -117,7 +103,7 @@
 	.navDesktop {
 		display: flex;
 	}
-	.logo {
-		width: 30rem;
+	.logo img{
+		width: 32rem;
 	}
 }

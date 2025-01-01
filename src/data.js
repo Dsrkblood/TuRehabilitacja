@@ -13,6 +13,8 @@ import fala_uderzeniowa_aplikacja_antycellulitowa from "/massage/fala_uderzeniow
 import kinezyterapia from "/massage/kinezyterapia.jpg";
 import trening_funkcjonalny from "/massage/trening_funkcjonalny.jpg";
 
+import logo from "/logoBig.png";
+
 import Emilia from "/personel/Emilia.jpg";
 
 export const DATA = {
@@ -66,6 +68,7 @@ export const DATA = {
 		saleData: "2025-01-31",
 	},
 	aboutUs: {
+		logo: logo,
 		photo: mainPhoto,
 		company: "TuRehabilitacja",
 		header: {

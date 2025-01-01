@@ -69,14 +69,14 @@ export default function ContactLink() {
 					rel='noopener noreferrer'>
 					Facebook
 				</a>
-				<a
+				{/* <a
 					className={classes.linkItem}
 					href={DATA.contact.booksy}
 					target='_blank'
 					rel='noopener noreferrer'>
 					Zapisz się na <i className='fa-solid fa-share'></i>{" "}
 					<span>Boosky</span>
-				</a>
+				</a> */}
 			</div>
 			<div className={classes.container}>
 				<iframe

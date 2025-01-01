@@ -51,6 +51,29 @@
 	color: var(--linkColor);
 }
 
+.instagram {
+	background: linear-gradient(
+		45deg,
+		#f58529,
+		#feda77,
+		#dd2a7b,
+		#8134af,
+		#515bd4
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.facebook {
+	color: #1877f2;
+}
+
+.facebook i,
+.instagram i {
+	margin-right: 0.5rem;
+}
+
 @media (min-width: 481px) {
 	.footer p,
 	.footer a {

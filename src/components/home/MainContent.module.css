@@ -11,27 +11,24 @@
 	justify-content: center;
 	align-items: center;
 	margin: 2rem 0;
-	padding: 2rem;
+	padding: 2rem 2rem;
 }
+
+.container:last-of-type{
+	padding: 2rem .5rem;
+}
+
 .rowMap {
 	display: none;
 }
-.headerOne,
-.headerOther {
+.header {
 	margin-bottom: 1rem;
 	font-weight: 300;
+	font-size: 3.2rem;
+	text-align: center;
 	text-transform: uppercase;
 	letter-spacing: 0.1rem;
 	color: var(--secondaryColor);
-}
-
-.headerOne {
-	font-size: 3.2rem;
-}
-
-.headerOther {
-	font-size: 2.6rem;
-	text-align: center;
 }
 
 .headerParagraph {
@@ -60,17 +57,18 @@
 
 .containerPersonel {
 	display: flex;
+	flex-direction: column-reverse;
 	justify-content: center;
 	align-items: center;
 	max-width: 90rem;
 }
 
 .aboutMe {
+	margin-top: 1rem;
 	padding-right: 1rem;
-	font-size: 1.2rem;
+	font-size: 1.6rem;
 	text-align: left;
 	text-indent: 1.2rem;
-	width: 60%;
 	color: var(--linkColor);
 }
 
@@ -88,7 +86,7 @@
 }
 
 .person {
-	width: 40%;
+	/* width: 40%; */
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -99,15 +97,15 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 15rem;
-	width: 15rem;
+	height: 18rem;
+	width: 18rem;
 	background-color: var(--sectionBackgroundColor);
 	border-radius: 100%;
 	box-shadow: 0 0 1rem -0.5rem black;
 }
 .imgaPerson {
-	height: 13rem;
-	width: 13rem;
+	height: 16rem;
+	width: 16rem;
 	border-radius: 100%;
 	background-position: 0 -2rem;
 	background-size: cover;
@@ -134,20 +132,7 @@
 	border: none;
 }
 
-@media (min-width: 481px) {
-	.aboutMe {
-		font-size: 1.4rem;
-		letter-spacing: 0.1rem;
-	}
-	.personBackground {
-		width: 18rem;
-		height: 18rem;
-	}
-	.imgaPerson {
-		width: 16rem;
-		height: 16rem;
-	}
-}
+
 
 @media (min-width: 768px) {
 	.mainPhoto {
@@ -172,16 +157,19 @@
 		font-size: 1.8rem;
 		width: 50%;
 	}
-	.aboutMe {
-		font-size: 1.8rem;
+
+	.containerPersonel {
+
+		flex-direction: row;
+		max-width: 90rem;
 	}
 	.personBackground {
 		width: 25rem;
 		height: 25rem;
 	}
 	.imgaPerson {
-		width: 22rem;
-		height: 22rem;
+		width: 23rem;
+		height: 23rem;
 	}
 	.map {
 		display: block;

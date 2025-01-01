@@ -41,11 +41,12 @@ export default function NavBar() {
 			<header className={classes.header}>
 				<HeaderLinks data={DATA.contact} />
 				<nav className={classes.navMobile}>
-					
-						<div className={classes.logo}></div>
-					
+					<div className={classes.logo}>
+						<img src={DATA.aboutUs.logo} alt='logo TuRehabilitacja' />
+					</div>
 
 					<button
+						aria-label='Otwórz menu nawigacji'
 						ref={buttonRef}
 						onClick={handleOpenSidebar}
 						className={classes.menuButton}>
@@ -56,12 +57,17 @@ export default function NavBar() {
 					</button>
 				</nav>
 				<nav className={classes.navDesktop}>
-					
-						<div className={classes.logo}></div>
-					
+					<div className={classes.logo}>
+						<img src={DATA.aboutUs.logo} alt='logo TuRehabilitacja' />
+					</div>
 					<DesktopLinks />
 				</nav>
-				<SidebarLinks handleClose={handleOpenSidebar}data={DATA.aboutUs} ref={sidebarRef} isOpen={isOpen} />
+				<SidebarLinks
+					handleClose={handleOpenSidebar}
+					data={DATA.aboutUs}
+					ref={sidebarRef}
+					isOpen={isOpen}
+				/>
 			</header>
 			<div className={`${classes.overlay} ${isOpen ? classes.show : ""}`}></div>
 		</>

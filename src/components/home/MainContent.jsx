@@ -20,7 +20,7 @@ export default function MainContent() {
 				}}></div>
 
 			<section className={classes.container}>
-				<h1 className={classes.headerOne}>o nas</h1>
+				<h1 className={classes.header}>o nas</h1>
 				<div className={classes.containerDesktop}>
 					<div className={classes.rowText}>
 						<p className={classes.headerParagraph}>
@@ -61,7 +61,7 @@ export default function MainContent() {
 				</div>
 			</section>
 			<section className={classes.container}>
-				<h2 className={classes.headerOther}>Mój gabinet</h2>
+				<h2 className={classes.header}>Mój gabinet</h2>
 				<div className={classes.containerPersonel}>
 					<div className={classes.aboutMe}>
 						<p className={classes.aboutMeParagraph}>
@@ -92,14 +92,13 @@ export default function MainContent() {
 				</div>
 			</section>
 			<section className={classes.container}>
-				<h3 className={classes.headerOther}>W czym możemy Tobie pomóc?</h3>
+				<h3 className={classes.header}>W czym możemy Tobie pomóc?</h3>
 				<div className={classes.offerRowContainer}>
 					{offers.map(offer => (
 						<CirclePhoto key={offer.id} data={offer} />
 					))}
 				</div>
 			</section>
-			<section></section>
 		</>
 	);
 }
