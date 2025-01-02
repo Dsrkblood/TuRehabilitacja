@@ -19,10 +19,16 @@ export default function Footer() {
 						</a>
 					</div>
 					<div className={classes.box}>
-						<a className={classes.facebook} href={DATA.contact.facebook}>
+						<a
+							target='_blank'
+							className={classes.facebook}
+							href={DATA.contact.facebook}>
 							<i className='fa-brands fa-square-facebook'></i>Facebook
 						</a>
-						<a className={classes.instagram} href={DATA.contact.instagram}>
+						<a
+							target='_blank'
+							className={classes.instagram}
+							href={DATA.contact.instagram}>
 							<i className='fa-brands fa-instagram'></i>Instagram
 						</a>
 					</div>
