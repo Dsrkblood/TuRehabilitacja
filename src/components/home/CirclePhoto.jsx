@@ -14,22 +14,25 @@ export default function CirclePhoto({ data }) {
 	} else {
 		return (
 			<>
-				<div className={classes.offer}>
-					<div className={classes.circleImg}>
-						<div
-							className={classes.offerImg}
-							style={{ backgroundImage: `url(${data.img})` }}></div>
+				<div className={classes.containerWrapper}>
+					<div className={classes.imgBackground}>
+						<img
+							src={data.image}
+							alt={data.imageAlt}
+							className={classes.imgOffer}
+							loading='lazy'></img>
 					</div>
 
-					<div className={classes.containerTitle}>
-						<h3
-							className={classes.offerTitle}
+					<div className={classes.offerInfo}>
+						<h6
+							className={classes.treatmentTitle}
 							onClick={handleShowAdditionalInfo}>
 							{data.title}
-						</h3>
+						</h6>
 
-						<div className={classes.moreInfoOffer}>
+						<div className={classes.treatmentInfo}>
 							<button
+								aria-label='Pokaż więcej informacji'
 								name='Pokaż więcej informacji'
 								className={classes.toggleButton}
 								onClick={handleShowAdditionalInfo}>
@@ -40,12 +43,12 @@ export default function CirclePhoto({ data }) {
 									}`}></i>
 							</button>
 							<div
-								className={`${classes.additionalInfo} ${
-									isShow ? classes.show : ''
+								className={`${classes.hiddenDetails} ${
+									isShow ? classes.show : ""
 								}`}>
-								<p className={classes.summaryOffer}>{data.summary}</p>
+								<p className={classes.extendedInfo}>{data.summary}</p>
 								{summaryTable.length > 0 && (
-									<ul className={classes.listContainer}>
+									<ul className={classes.listInfo}>
 										{summaryTable.map((item, index) => (
 											<li className={classes.listItem} key={index}>
 												{item}

@@ -1,4 +1,4 @@
-.offer {
+.containerWrapper {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -8,15 +8,15 @@
 	border-bottom: 0.1rem solid #0000004d;
 }
 
-.offer:last-child {
+.containerWrapper:last-child {
 	border: none;
 }
 
-.offer:nth-child(odd) {
+.containerWrapper:nth-child(odd) {
 	flex-direction: row-reverse;
 }
 
-.circleImg {
+.imgBackground {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -27,32 +27,31 @@
 	box-shadow: 0 0 1rem -0.5rem black;
 }
 
-.circleImg .offerImg {
+.imgBackground .imgOffer {
 	height: 13rem;
 	width: 13rem;
 	border-radius: 100%;
-	background-position: center;
-	background-size: cover;
+	object-fit: cover;
 }
 
-.containerTitle {
+.offerInfo {
 	display: block;
 	width: 50%;
 	min-height: 15rem;
 }
 
-.offerTitle {
+.treatmentTitle {
 	font-size: 1.6rem;
 	text-align: left;
 	text-transform: uppercase;
 	color: var(--primaryColor);
 }
 
-.offer:nth-child(even) .offerTitle {
+.containerWrapper:nth-child(even) .treatmentTitle {
 	text-align: right;
 }
 
-.moreInfoOffer {
+.treatmentInfo {
 	height: 100%;
 	width: 100%;
 }
@@ -70,7 +69,7 @@
 	transition: color 0.3s ease-in;
 }
 
-.offer:nth-child(odd) .toggleButton {
+.containerWrapper:nth-child(odd) .toggleButton {
 	justify-content: start;
 }
 
@@ -82,7 +81,7 @@
 	margin-left: 1rem;
 }
 
-.additionalInfo {
+.hiddenDetails {
 	max-height: 0;
 	margin-top: 10px;
 	color: var(--linkColor);
@@ -92,15 +91,15 @@
 	transition: max-height 0.5s ease-in-out;
 }
 
-.additionalInfo.show {
+.hiddenDetails.show {
 	max-height: 90rem;
 }
 
-.summaryOffer {
+.extendedInfo {
 	font-size: 1.6rem;
 }
 
-.summaryOffer.show {
+.extendedInfo.show {
 	display: block;
 }
 
@@ -109,35 +108,40 @@
 	padding-left: 0.5rem;
 }
 
-.listItem {
+.listInfo {
 	margin-top: 1rem;
 	margin-left: 1rem;
 	font-size: 1.6rem;
 }
 
 @media (min-width: 768px) {
-	.offer,
-	.offer:nth-child(odd) {
+	.containerWrapper,
+	.containerWrapper:nth-child(odd) {
 		height: 100%;
 		width: 100%;
 	}
-	.circleImg {
+
+	.imgBackground {
 		width: 20rem;
 		height: 20rem;
 	}
-	.circleImg .offerImg {
+
+	.imgBackground .imgOffer {
 		width: 18rem;
 		height: 18rem;
 	}
-	.offerTitle {
+
+	.treatmentTitle {
 		margin: 1rem 0;
 		font-size: 2.4rem;
 		text-align: start;
 	}
+
 	.toggleButton {
 		display: none;
 	}
-	.additionalInfo {
+
+	.hiddenDetails {
 		max-height: 90rem;
 	}
 }

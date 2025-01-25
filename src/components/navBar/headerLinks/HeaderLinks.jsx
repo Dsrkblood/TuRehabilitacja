@@ -9,30 +9,11 @@ export default function HeaderLinks({ data }) {
 					href={`tel:${phone}`}>
 					<i className='fa-solid fa-square-phone'></i> {data.phone}
 				</a>
-				<a
+				{/* <a
 					className={`${classes.link} ${classes.contact}`}
 					href={`mailto:${data.email}`}>
 					<i className='fa-solid fa-envelope'></i> {data.email}
-				</a>
-						{/* <div className={classes.socialMedia}>
-							<a
-								className={`${classes.link} ${classes.contact} ${classes.instagram}`}
-								href={data.instagram}
-								target='_blank'
-								rel='noopener noreferrer'>
-								<i className='fa-brands fa-instagram'></i> Instagram
-							</a>
-							<a
-								className={`${classes.link} ${classes.contact} ${classes.facebook}`}
-								href={data.facebook}
-								target='_blank'
-								rel='noopener noreferrer'>
-								<i className='fa-brands fa-square-facebook'></i> TuRehabilitacja
-							</a>
-						</div> */}
-			</div>
-			{/* <div className={classes.links}>
-
+				</a> */}
 				<a
 					className={`${classes.link} ${classes.booksy}`}
 					href={`${data.booksy}`}
@@ -42,7 +23,8 @@ export default function HeaderLinks({ data }) {
 					Zapisz się na <i className='fa-solid fa-share'></i>{" "}
 					<span>Booksy</span>
 				</a>
-			</div> */}
+			</div>
+			
 		</div>
 	);
 }

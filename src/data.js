@@ -1,21 +1,24 @@
-import mainPhoto from "/mainPhoto.jpg";
+import heroImg1 from "/karuzela/heroImg1.webp";
+import heroImg2 from "/karuzela/heroImg2.webp";
+import heroImg3 from "/karuzela/heroImg3.webp";
+import heroImg4 from "/karuzela/heroImg4.webp";
 import masaz_klasyczny from "/massage/masaz_klasyczny.jpg";
-import masaz_relaksacyjny from "/massage/masaz_relaksacyjny.jpg";
+import masaz_relaksacyjny from "/massage/masaz_relaksacyjny.webp";
 import masaz_sportowy from "/massage/masaz_sportowy.jpg";
-import masaz_leczniczy from "/massage/masaz_leczniczy.jpg";
+import masaz_leczniczy from "/massage/masaz_leczniczy.webp";
 import terapia_manualna from "/massage/terapia_manualna.jpg";
 import drenaz_limfatyczny from "/massage/drenaz_limfatyczny.jpg";
-import masaz_banka_chinska from "/massage/masaz_banka_chinska.jpg";
-import masaz_twarzy from "/massage/masaz_twarzy.jpg";
-import masaz_dla_kobiet_w_ciazy from "/massage/masaz_dla_kobiet_w_ciazy.jpg";
-import fala_uderzeniowa_aplikacja_lecznicza from "/massage/fala_uderzeniowa_aplikacja_lecznicza.jpg";
-import fala_uderzeniowa_aplikacja_antycellulitowa from "/massage/fala_uderzeniowa_aplikacja_antycellulitowa.jpg";
-import kinezyterapia from "/massage/kinezyterapia.jpg";
-import trening_funkcjonalny from "/massage/trening_funkcjonalny.jpg";
+import masaz_banka_chinska from "/massage/masaz_banka_chinska.webp";
+import masaz_twarzy from "/massage/masaz_twarzy.webp";
+import masaz_dla_kobiet_w_ciazy from "/massage/masaz_dla_kobiet_w_ciazy.webp";
+import fala_uderzeniowa_aplikacja_lecznicza from "/massage/fala_uderzeniowa_aplikacja_lecznicza.webp";
+import fala_uderzeniowa_aplikacja_antycellulitowa from "/massage/fala_uderzeniowa_aplikacja_antycellulitowa.webp";
+import kinezyterapia from "/massage/kinezyterapia.webp";
+import trening_funkcjonalny from "/massage/trening_funkcjonalny.webp";
 
-import logo from "/logoBig.png";
+import logo from "/Icon/logo.png";
 
-import Emilia from "/personel/Emilia.jpg";
+import Emilia from "/personel/Emilia.webp";
 
 export const DATA = {
 	contact: {
@@ -25,27 +28,27 @@ export const DATA = {
 		openinghours: {
 			monday: {
 				day: "poniedziałek",
-				timeStart: "8",
+				timeStart: "9",
 				timeEnd: "19",
 			},
 			tuesday: {
 				day: "wtorek",
-				timeStart: "8",
+				timeStart: "9",
 				timeEnd: "19",
 			},
 			wednesday: {
 				day: "środa",
-				timeStart: "8",
+				timeStart: "9",
 				timeEnd: "19",
 			},
 			thursday: {
 				day: "czwartek",
-				timeStart: "8",
+				timeStart: "9",
 				timeEnd: "19",
 			},
 			friday: {
 				day: "piątek",
-				timeStart: "8",
+				timeStart: "9",
 				timeEnd: "19",
 			},
 			saturday: {
@@ -64,12 +67,20 @@ export const DATA = {
 		facebook:
 			"https://www.facebook.com/profile.php?id=61568131195051&locale=pl_PL",
 		instagram: "https://www.instagram.com/turehabilitacja",
-		booksy: "https://booksy.com/pl-pl/",
+		booksy:
+			"https://booksy.com/pl-pl/dl/show-business/278665?utm_medium=c2c_referral",
 		saleData: "2025-01-31",
 	},
 	aboutUs: {
 		logo: logo,
-		photo: mainPhoto,
+		heroImg1: heroImg1,
+		heroImgAlt1: "Grafika przedstawia masaż pleców",
+		heroImg2: heroImg2,
+		heroImgAlt2: "Grafika przedstawia masaż pleców",
+		heroImg3: heroImg3,
+		heroImgAlt3: "Grafika przedstawia masaż pleców",
+		heroImg4: heroImg4,
+		heroImgAlt4: "Grafika przedstawia masaż pleców",
 		company: "TuRehabilitacja",
 		header: {
 			text1:
@@ -117,6 +128,7 @@ export const DATA = {
 					"W pracy z pacjentami wykorzystuję terapię manualną, masaż leczniczy i masaż tkanek głębokich. Zajmuję się również planowaniem i prowadzeniem treningu funkcjonalnego z wykorzystaniem technik stabilizacji tułowia, oceny posturalnej oraz treningu core.",
 			},
 			imgPerson: Emilia,
+			imgPersonAlt: "Zdjęcie Emilii Strzałkowskiej",
 		},
 	},
 	offers: {
@@ -136,6 +148,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: masaz_klasyczny,
+			imageAlt: "Grafika przedstawiaąca masaz pleców",
 		},
 		offer2: {
 			id: 2,
@@ -153,6 +166,8 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: masaz_relaksacyjny,
+			imageAlt:
+				"Grafika przedstawiqająca zwiniete ręczniki i czapalone świeczki",
 		},
 		offer3: {
 			id: 3,
@@ -174,6 +189,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: masaz_sportowy,
+			imageAlt: "Grafika przedstawiająca masaż stopy",
 		},
 		offer4: {
 			id: 4,
@@ -191,6 +207,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: masaz_leczniczy,
+			imageAlt: "Grafika przedstawiająca masaż leczniczy pleców",
 		},
 		offer5: {
 			id: 5,
@@ -208,6 +225,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: terapia_manualna,
+			imageAlt: "Grafika przedstawiająca terapię manualną",
 		},
 		offer6: {
 			id: 6,
@@ -225,6 +243,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: drenaz_limfatyczny,
+			imageAlt: "Grafika przedstawiająca masaż limfatyczny nóg",
 		},
 		offer7: {
 			id: 7,
@@ -242,6 +261,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: masaz_banka_chinska,
+			imageAlt: "Grafikia przedstawiająca masaz bańką chińską",
 		},
 		offer8: {
 			id: 8,
@@ -263,6 +283,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 100,
 			image: masaz_twarzy,
+			imageAlt: "Grafika przedstawiająca masaż twarzy kobiety",
 		},
 		offer9: {
 			id: 9,
@@ -280,6 +301,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: masaz_dla_kobiet_w_ciazy,
+			imageAlt: "Grafika przedstawiająca masaż kobiety w ciązy",
 		},
 		offer10: {
 			id: 10,
@@ -297,6 +319,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: null,
 			image: fala_uderzeniowa_aplikacja_lecznicza,
+			imageAlt: "Grafika przedstawiająca masaż falą uderzeniową stóp",
 		},
 		offer11: {
 			id: 11,
@@ -315,6 +338,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: null,
 			image: fala_uderzeniowa_aplikacja_antycellulitowa,
+			imageAlt: "Grafika przedstawiająca masaż falą uderzeniową ud",
 		},
 		offer12: {
 			id: 12,
@@ -333,6 +357,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: null,
 			image: fala_uderzeniowa_aplikacja_antycellulitowa,
+			imageAlt: "Grafika przedstawiająca masaż falą uderzeniową ud",
 		},
 		offer13: {
 			id: 13,
@@ -354,6 +379,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: kinezyterapia,
+			imageAlt: "Grafika przedstawiająca rozciąganie",
 		},
 		offer14: {
 			id: 14,
@@ -371,6 +397,7 @@ export const DATA = {
 			//promocja na długi zabieg - wystarczy wpisać cene
 			saleLong: 160,
 			image: trening_funkcjonalny,
+			imageAlt: "Grafika przedstawiająca rozciągającego się mężczyznę",
 		},
 	},
 };

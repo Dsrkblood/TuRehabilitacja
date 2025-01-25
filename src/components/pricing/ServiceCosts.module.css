@@ -1,4 +1,4 @@
-.section {
+.containerWrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -6,7 +6,7 @@
 	padding: 0rem 2rem;
 }
 
-.header {
+.heading {
 	margin-bottom: 2rem;
 	font-size: 3.6rem;
 	font-weight: 300;
@@ -15,7 +15,22 @@
 	color: var(--secondaryColor);
 }
 
-.listTable {
+.headingHighlighted{
+	font-size: 3.2rem;
+	font-weight: 500;
+	text-align: center;
+	letter-spacing: .1rem;
+	color: var(--primaryColor)
+}
+
+.paragrapHighlighted{
+	margin: 1rem 0 2rem;
+	font-size: 1.6rem;
+	text-align: center;
+	color: var(--alertColor);
+}
+
+.offerList {
 	min-width: 30rem;
 	list-style: none;
 	letter-spacing: 0.1rem;
@@ -31,46 +46,31 @@
 	border-bottom: 0.1rem solid #00000040;
 }
 
-.listItemTitle {
+.itemTitle {
 	width: 60%;
 	text-align: left;
 }
 
-.listItemCol {
+.itemContainer {
 	width: 40%;
 	display: flex;
 	flex-direction: column;
 	text-align: center;
 }
 
-.priceBox {
+.priceContainer {
 	width: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.priceBox p {
+.priceContainer p {
 	width: 50%;
 }
 
 .saleOn {
 	text-decoration: line-through;
-}
-
-.promoHeader{
-	font-size: 3.2rem;
-	font-weight: 500;
-	text-align: center;
-	letter-spacing: .1rem;
-	color: var(--primaryColor)
-}
-
-.promoParagraph{
-	margin: 1rem 0 2rem;
-	font-size: 1.6rem;
-	text-align: center;
-	color: var(--alertColor);
 }
 
 .bonusOffer{
@@ -82,13 +82,15 @@
 }
 
 @media (min-width: 768px) {
-	.listTable {
+	.offerList {
 		min-width: 60rem;
 	}
+
 	.listItem {
 		font-size: 1.6rem;
 	}
-	.listItemCol {
+	
+	.itemContainer {
 		width: 15rem;
 		display: flex;
 		flex-direction: column;

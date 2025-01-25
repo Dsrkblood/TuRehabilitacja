@@ -1,4 +1,4 @@
-.section {
+.containerWrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -19,7 +19,7 @@
 	padding-bottom: 0;
 }
 
-.header {
+.heading {
 	margin-bottom: 1rem;
 	font-size: 3.2rem;
 	font-weight: 300;
@@ -28,7 +28,7 @@
 	color: var(--secondaryColor);
 }
 
-.listTab {
+.openingHours {
 	min-width: 25rem;
 }
 
@@ -46,14 +46,14 @@
 	font-weight: 300;
 }
 
-.addresItem {
+.address {
 	margin: 1rem 0;
 	font-size: 1.6rem;
 	font-weight: 300;
 	letter-spacing: 0.1rem;
 }
 
-.linkItem {
+.contactLinks {
 	margin: 1rem 0;
 	font-size: 1.6rem;
 	color: var(--tertiaryColor);
@@ -61,21 +61,21 @@
 	transition: color 0.3s ease-in;
 }
 
-.linkItem:visited {
+.contactLinks:visited {
 	color: var(--tertiaryColor);
 }
 
-.linkItem:hover {
+.contactLinks:hover {
 	color: var(--primaryColor);
 }
 
-.linkItem span {
+.contactLinks span {
 	color: #33b5bd;
 	font-weight: 800;
 	letter-spacing: -0.05rem;
 }
 
-.mapGoogle {
+.map {
 	height: 40rem;
 	width: 100%;
 	border: none;
@@ -100,15 +100,17 @@
 }
 
 @media (min-width: 768px) {
-	.header {
+	.heading {
 		font-size: 4rem;
 	}
-	.listTab {
+
+	.openingHours {
 		min-width: 40rem;
 	}
+	
 	.listItem,
 	.linkItem,
-	.addresItem {
+	.address {
 		font-size: 2.4rem;
 	}
 }

@@ -12,9 +12,9 @@ export default function TreatmentsItems() {
 	}));
 
 	return (
-		<section className={classes.section}>
-			<h2 className={classes.header}>Nasze usługi</h2>
-			<div className={classes.offertsBox}>
+		<section className={classes.containerWrapper}>
+			<h1 className={classes.heading}>Nasze usługi</h1>
+			<div className={classes.treatmentsContainer}>
 				{offerts.map(offer => (
 					<OfferItem key={offer.id} data={offer} />
 				))}

@@ -38,12 +38,15 @@ export default function NavBar() {
 
 	return (
 		<>
-			<header className={classes.header}>
+			<header className={classes.containerWrapper}>
 				<HeaderLinks data={DATA.contact} />
-				<nav className={classes.navMobile}>
-					<div className={classes.logo}>
-						<img src={DATA.aboutUs.logo} alt='logo TuRehabilitacja' />
-					</div>
+				<nav className={classes.mobile}>
+					<img
+						className={classes.logo}
+						src={DATA.aboutUs.logo}
+						alt='logo TuRehabilitacja'
+						loading='lazy'
+					/>
 
 					<button
 						aria-label='Otwórz menu nawigacji'
@@ -56,10 +59,14 @@ export default function NavBar() {
 							}`}></div>
 					</button>
 				</nav>
-				<nav className={classes.navDesktop}>
-					<div className={classes.logo}>
-						<img src={DATA.aboutUs.logo} alt='logo TuRehabilitacja' />
-					</div>
+				<nav className={classes.desktop}>
+					<img
+						className={classes.logo}
+						src={DATA.aboutUs.logo}
+						alt='logo TuRehabilitacja'
+						loading='lazy'
+					/>
+
 					<DesktopLinks />
 				</nav>
 				<SidebarLinks

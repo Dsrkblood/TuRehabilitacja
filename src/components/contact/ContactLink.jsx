@@ -10,10 +10,10 @@ export default function ContactLink() {
 		timeEnd: item.timeEnd,
 	}));
 	return (
-		<section className={classes.section}>
+		<section className={classes.containerWrapper}>
 			<div className={classes.container}>
-				<h1 className={classes.header}>Godziny otwarcia</h1>
-				<ul className={classes.listTab}>
+				<h1 className={classes.heading}>Godziny otwarcia</h1>
+				<ul className={classes.openingHours}>
 					{openingHours.map((item, index) => (
 						<li key={index} className={classes.listItem}>
 							<p>{item.weekDay}</p>
@@ -40,43 +40,43 @@ export default function ContactLink() {
 				</ul>
 			</div>
 			<div className={classes.container}>
-				<h2 className={classes.header}>nasz adres</h2>
-				<p className={classes.addresItem}>
+				<h2 className={classes.heading}>nasz adres</h2>
+				<p className={classes.address}>
 					{DATA.contact.postcode} {DATA.contact.city}
 				</p>
-				<p className={classes.addresItem}>{DATA.contact.street}</p>
+				<p className={classes.address}>{DATA.contact.street}</p>
 			</div>
 			<div className={classes.container}>
-				<h3 className={classes.header}>kontakt z nami</h3>
-				<a className={classes.linkItem} href={`mailto:${DATA.contact.email}`}>
+				<h3 className={classes.heading}>kontakt z nami</h3>
+				<a className={classes.contactLinks} href={`mailto:${DATA.contact.email}`}>
 					{DATA.contact.email}
 				</a>
 
-				<a className={classes.linkItem} href={`tel:${phone}`}>
+				<a className={classes.contactLinks} href={`tel:${phone}`}>
 					{DATA.contact.phone}
 				</a>
 				<a
-					className={`${classes.linkItem} ${classes.instagram}`}
+					className={`${classes.contactLinks} ${classes.instagram}`}
 					href={DATA.contact.instagram}
 					target='_blank'
 					rel='noopener noreferrer'>
 					Instagram
 				</a>
 				<a
-					className={`${classes.linkItem} ${classes.facebook}`}
+					className={`${classes.contactLinks} ${classes.facebook}`}
 					href={DATA.contact.facebook}
 					target='_blank'
 					rel='noopener noreferrer'>
 					Facebook
 				</a>
-				{/* <a
-					className={classes.linkItem}
+				<a
+					className={classes.contactLinks}
 					href={DATA.contact.booksy}
 					target='_blank'
 					rel='noopener noreferrer'>
 					Zapisz się na <i className='fa-solid fa-share'></i>{" "}
-					<span>Boosky</span>
-				</a> */}
+					<span>Booksy</span>
+				</a>
 			</div>
 			<div className={classes.container}>
 				<iframe
@@ -85,7 +85,7 @@ export default function ContactLink() {
 					loading='lazy'
 					referrerPolicy='no-referrer-when-downgrade'
 					sandbox='allow-scripts allow-same-origin'
-					className={classes.mapGoogle}></iframe>
+					className={classes.map}></iframe>
 			</div>
 		</section>
 	);

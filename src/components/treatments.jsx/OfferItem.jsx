@@ -13,17 +13,17 @@ export default function Offer({ data }) {
 		null;
 	} else {
 		return (
-			<div className={classes.offerItem}>
-				<h3
+			<div className={classes.offerInfo}>
+				<p
 					ref={summaryRef}
 					onClick={handleOpenSumary}
 					className={classes.titleOffer}>
 					{data.title}
-				</h3>
-				<div className={`${classes.summaryBox} ${isOpen ? classes.open : ""}`}>
-					<p className={classes.summaryOffer}>{data.summary}</p>
+				</p>
+				<div className={`${classes.hiddenDetails} ${isOpen ? classes.open : ""}`}>
+					<p className={classes.extendedInfo}>{data.summary}</p>
 					{offerOption.length > 0 && (
-						<ul className={classes.listTable}>
+						<ul className={classes.listOffer}>
 							{offerOption.map((item, index) => (
 								<li className={classes.listItem} key={index}>
 									{item}

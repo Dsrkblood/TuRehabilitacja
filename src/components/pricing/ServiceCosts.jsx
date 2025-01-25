@@ -20,23 +20,23 @@ export default function ServiceCosts() {
 	finishSale.setHours(23, 59, 0, 0);
 
 	return (
-		<section className={classes.section}>
-			<h1 className={classes.header}>Cennik</h1>
+		<section className={classes.containerWrapper}>
+			<h1 className={classes.heading}>Cennik</h1>
 			{today <= finishSale ? (
-				<>
-					<h2 className={classes.promoHeader}>Promocja z okazji otwarcia!</h2>
-					<p className={classes.promoParagraph}>
+				<div>
+					<h2 className={classes.headingHighlighted}>Promocja z okazji otwarcia!</h2>
+					<p className={classes.paragrapHighlighted}>
 						Skorzystaj z oferty do 31 stycznia 2025 r.
 					</p>{" "}
-				</>
+				</div>
 			) : null}
-			<ul className={classes.listTable}>
+			<ul className={classes.offerList}>
 				{offers.map(offer => (
 					<li className={classes.listItem} key={offer.id}>
-						<p className={classes.listItemTitle}>{offer.title}</p>
-						<div className={classes.listItemCol}>
+						<p className={classes.itemTitle}>{offer.title}</p>
+						<div className={classes.itemContainer}>
 							{/* Czas zabiegu */}
-							<div className={classes.priceBox}>
+							<div className={classes.priceContainer}>
 								{offer.timeShort ? (
 									<>
 										<p>
@@ -58,7 +58,7 @@ export default function ServiceCosts() {
 								)}
 							</div>
 							{/* Cena standardowa */}
-							<div className={classes.priceBox}>
+							<div className={classes.priceContainer}>
 								{offer.priceShort ? (
 									<>
 										<p
@@ -91,7 +91,7 @@ export default function ServiceCosts() {
 								)}
 							</div>
 							{/* Wyprzedaż */}
-							<div className={classes.priceBox}>
+							<div className={classes.priceContainer}>
 								{today <= finishSale ? <Sale data={offer} /> : null}
 							</div>
 						</div>

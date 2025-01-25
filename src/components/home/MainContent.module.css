@@ -1,27 +1,21 @@
-.mainPhoto {
+.heroImg {
 	height: 20rem;
-	background-position: center;
-	background-size: cover;
+	object-fit: cover;
 	width: 100%;
 }
 
-.container {
+.containerWrapper {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin: 2rem 0;
-	padding: 2rem 2rem;
+	padding: 4rem 2rem 2rem;
 }
 
-.container:last-of-type{
-	padding: 2rem .5rem;
-}
-
-.rowMap {
+.flexContainerMap {
 	display: none;
 }
-.header {
+.heading {
 	margin-bottom: 1rem;
 	font-weight: 300;
 	font-size: 3.2rem;
@@ -31,7 +25,7 @@
 	color: var(--secondaryColor);
 }
 
-.headerParagraph {
+.sectionParagraph {
 	margin-top: 0.2rem;
 	font-size: 1.6rem;
 	letter-spacing: 0.05rem;
@@ -39,23 +33,23 @@
 	color: var(--linkColor);
 }
 
-.headerParagraph span {
+.sectionParagraph .highlight {
 	font-weight: 600;
 	color: var(--primaryColor);
 }
 
-.headerParagraph:nth-child(2) {
+.sectionParagraph:nth-child(2) {
 	text-indent: 0;
 }
 
-.headerList {
+.sectionList {
 	padding-left: 1.6rem;
 	font-size: 1.6rem;
 	letter-spacing: 0.05rem;
 	color: var(--linkColor);
 }
 
-.containerPersonel {
+.employeeContainer {
 	display: flex;
 	flex-direction: column-reverse;
 	justify-content: center;
@@ -63,7 +57,7 @@
 	max-width: 90rem;
 }
 
-.aboutMe {
+.employeeInfo {
 	margin-top: 1rem;
 	padding-right: 1rem;
 	font-size: 1.6rem;
@@ -72,20 +66,16 @@
 	color: var(--linkColor);
 }
 
-.aboutMeParagraph {
-	margin-top: 0.2rem;
-}
-
-.aboutMe .aboutMeParagraph:nth-child(2) {
+.employeeInfo .sectionParagraph:nth-child(2) {
 	text-indent: 0;
 }
 
-.aboutMeList {
+.employeeList {
 	padding-left: 1.6rem;
 	text-indent: 0;
 }
 
-.person {
+.employeePhoto {
 	/* width: 40%; */
 	display: flex;
 	flex-direction: column;
@@ -93,7 +83,7 @@
 	justify-content: center;
 }
 
-.personBackground {
+.photoBackground {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -103,15 +93,14 @@
 	border-radius: 100%;
 	box-shadow: 0 0 1rem -0.5rem black;
 }
-.imgaPerson {
+.photoEmployee {
 	height: 16rem;
 	width: 16rem;
 	border-radius: 100%;
-	background-position: 0 -2rem;
-	background-size: cover;
-	background-repeat: no-repeat;
+	object-position: center;
+	object-fit: cover;
 }
-.personName {
+.employeeName {
 	margin-top: 1rem;
 	font-size: 1.6rem;
 	font-weight: 500;
@@ -119,7 +108,7 @@
 	color: var(--primaryColor);
 }
 
-.offerRowContainer {
+.flexContainerOffer {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -132,45 +121,52 @@
 	border: none;
 }
 
-
-
 @media (min-width: 768px) {
-	.mainPhoto {
+	.heroImg {
 		height: 40rem;
 	}
-	.containerDesktop {
+
+	.containerWrapperDesktop {
 		display: flex;
 		justify-content: center;
 		flex-direction: row;
 		max-width: 90rem;
 	}
-	.rowText {
+
+	.flexContainer {
 		width: 50%;
 	}
 
-	.rowMap {
+	.flexContainerMap {
 		display: block;
 		width: 50%;
 	}
-	.container .paragraph {
+
+	.sectionParagraph {
 		margin-right: 2rem;
 		font-size: 1.8rem;
 		width: 50%;
 	}
 
-	.containerPersonel {
+	.sectionList {
+		font-size: 1.8rem;
+	}
 
+	.employeeContainer {
 		flex-direction: row;
 		max-width: 90rem;
 	}
-	.personBackground {
+
+	.photoBackground {
 		width: 25rem;
 		height: 25rem;
 	}
-	.imgaPerson {
+
+	.photoEmployee {
 		width: 23rem;
 		height: 23rem;
 	}
+
 	.map {
 		display: block;
 		width: 100%;
