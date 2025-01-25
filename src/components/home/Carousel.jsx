@@ -1,38 +1,38 @@
-import React, { useState, useEffect } from "react";
-import { DATA } from "../../data.js";
+import React from "react";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
 import classes from "./Carousel.module.css";
 
-const Carousel = () => {
-	const images = [
-		DATA.aboutUs.heroImg1,
-		DATA.aboutUs.heroImg2,
-		DATA.aboutUs.heroImg3,
-		DATA.aboutUs.heroImg4,
-	];
-	const imagesAlt = [
-		DATA.aboutUs.heroImgAlt1,
-		DATA.aboutUs.heroImgAlt2,
-		DATA.aboutUs.heroImgAlt3,
-		DATA.aboutUs.heroImgAlt4,
-	];
-
-	const [currentIndex, setCurrentIndex] = useState(0);
+export default function Carousel({ data }) {
+	const [offset, setOffset] = useState(0);
 
 	useEffect(() => {
 		const interval = setInterval(() => {
-			setCurrentIndex(prevIndex => (prevIndex + 1) % images.length);
-		}, 5000); // zmiana co 5 sekundy
+			setOffset(prevOffset =>
+				prevOffset === data.length - 1 ? 0 : prevOffset + 1
+			);
+		}, 5000);
 
-		return () => clearInterval(interval); // cleanup po zakończeniu
-	}, []);
-	console.log(currentIndex);
+		return () => clearInterval(interval);
+	}, [data.length]);
+
 	return (
-		<img
-			className={classes.heroImg}
-			src={images[currentIndex]}
-			alt={imagesAlt[currentIndex]}
-		/>
+		<div className={classes.carouselWrapper}>
+			<motion.div
+				className={classes.carouselTrack}
+				animate={{ x: `-${offset * 100}%` }}
+				transition={{ duration: 2, ease: "easeInOut" }}>
+				{data.map(item => (
+					<img
+						key={item.id}
+						src={item.heroImgLowRes}
+						srcSet={`${item.heroImgLowRes} 764w, ${item.heroImgHighRes} 1200w`}
+						sizes='(max-width: 764px) 100vw, 1200px' 
+						alt={item.alt}
+						className={classes.carouselImage}
+					/>
+				))}
+			</motion.div>
+		</div>
 	);
-};
-
-export default Carousel;
+}

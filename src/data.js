@@ -1,7 +1,11 @@
-import heroImg1 from "/karuzela/heroImg1.webp";
-import heroImg2 from "/karuzela/heroImg2.webp";
-import heroImg3 from "/karuzela/heroImg3.webp";
-import heroImg4 from "/karuzela/heroImg4.webp";
+import heroImgLowRes1 from "/karuzela/heroImgLowRes1.webp";
+import heroImgLowRes2 from "/karuzela/heroImgLowRes2.webp";
+import heroImgLowRes3 from "/karuzela/heroImgLowRes3.webp";
+import heroImgLowRes4 from "/karuzela/heroImgLowRes4.webp";
+import heroImgHighRes1 from "/karuzela/heroImgHighRes1.webp";
+import heroImgHighRes2 from "/karuzela/heroImgHighRes2.webp";
+import heroImgHighRes3 from "/karuzela/heroImgHighRes3.webp";
+import heroImgHighRes4 from "/karuzela/heroImgHighRes4.webp";
 import masaz_klasyczny from "/massage/masaz_klasyczny.jpg";
 import masaz_relaksacyjny from "/massage/masaz_relaksacyjny.webp";
 import masaz_sportowy from "/massage/masaz_sportowy.jpg";
@@ -73,14 +77,33 @@ export const DATA = {
 	},
 	aboutUs: {
 		logo: logo,
-		heroImg1: heroImg1,
-		heroImgAlt1: "Grafika przedstawia masaż pleców",
-		heroImg2: heroImg2,
-		heroImgAlt2: "Grafika przedstawia masaż pleców",
-		heroImg3: heroImg3,
-		heroImgAlt3: "Grafika przedstawia masaż pleców",
-		heroImg4: heroImg4,
-		heroImgAlt4: "Grafika przedstawia masaż pleców",
+		heroImg: [
+			{
+				id: 1,
+				heroImgLowRes: heroImgLowRes1,
+				heroImgHighRes: heroImgHighRes1,
+				alt: "Masaż twarzy",
+			},
+			{
+				id: 2,
+				heroImgLowRes: heroImgLowRes2,
+				heroImgHighRes: heroImgHighRes2,
+				alt: "Masaż relaksacyjny",
+			},
+			{
+				id: 3,
+				heroImgLowRes: heroImgLowRes3,
+				heroImgHighRes: heroImgHighRes3,
+				alt: "Fala uderzeniowa aplikacja antycellulitowa",
+			},
+			{
+				id: 4,
+				heroImgLowRes: heroImgLowRes4,
+				heroImgHighRes: heroImgHighRes4,
+				alt: "Kinezyterapia",
+			},
+		],
+
 		company: "TuRehabilitacja",
 		header: {
 			text1:

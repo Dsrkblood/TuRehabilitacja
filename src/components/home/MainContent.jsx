@@ -20,7 +20,7 @@ export default function MainContent() {
 				alt={DATA.aboutUs.heroImgAlt}
 				className={classes.heroImg}
 				loading='lazy'></img> */}
-			<Carousel />
+			<Carousel data={DATA.aboutUs.heroImg} />
 			<section className={classes.containerWrapper}>
 				<h1 className={classes.heading}>o nas</h1>
 				<div className={classes.containerWrapperDesktop}>
