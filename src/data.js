@@ -162,8 +162,8 @@ export const DATA = {
 				"Jest to najstarsza metoda masażu. Ma działanie lecznicze i relaksacyjne, poprawia krążenie krwi, zmniejsza dolegliwości bólowe.",
 			summaryOptions: false,
 			description: "",
-			priceShort: 100,
-			priceLong: 180,
+			priceShort: 130,
+			priceLong: 200,
 			timeShort: 30,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -180,8 +180,8 @@ export const DATA = {
 				"Ma na celu wyciszenie i odpoczynek dla ciała i duszy. Wprowadza ciało w stan idealnej harmonii.",
 			summaryOptions: false,
 			description: "",
-			priceShort: 100,
-			priceLong: 180,
+			priceShort: 130,
+			priceLong: 200,
 			timeShort: 30,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -203,8 +203,8 @@ export const DATA = {
 					"Masaż izometryczny - ma na celu wzmocnienie siły mięśniowej, dzięki odpowiedniej sekwencji ruchów masażysty i współpracy pacjenta. Jest polecany pacjentom po kontuzjach, którzy chcą szybko wrócić do formy oraz dla osób, które przygotowują się do zawodów, dla wzmocnienia efektów treningu.",
 			},
 			description: "",
-			priceShort: 100,
-			priceLong: 180,
+			priceShort: 130,
+			priceLong: 200,
 			timeShort: 30,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -216,13 +216,35 @@ export const DATA = {
 		},
 		offer4: {
 			id: 4,
+			title: "Masaż całego ciała",
+			summary: "",
+			summaryOptions: {
+				option1:
+					"",
+				option2:
+					"",
+			},
+			description: "",
+			priceShort: null,
+			priceLong: 280,
+			timeShort: null,
+			timeLong: 90,
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: 160,
+			image: masaz_sportowy,
+			imageAlt: "Grafika przedstawiająca masaż stopy",
+		},
+		offer5: {
+			id: 5,
 			title: "Masaż leczniczy",
 			summary:
 				"Redukuje napięcie i ból mięśni, przyśpiesza regenerację tkanek, zmniejsza odczucie sztywności.",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
-			priceLong: 180,
+			priceLong: 200,
 			timeShort: null,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -232,15 +254,15 @@ export const DATA = {
 			image: masaz_leczniczy,
 			imageAlt: "Grafika przedstawiająca masaż leczniczy pleców",
 		},
-		offer5: {
-			id: 5,
+		offer6: {
+			id: 6,
 			title: "Terapia manualna",
 			summary:
 				"Jest to metoda diagnostyki i leczenia zaburzeń układu ruchu. Przynosi zdecydowaną ulgę w bólu kręgosłupa i stawów obwodowych.",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
-			priceLong: 180,
+			priceLong: 200,
 			timeShort: null,
 			timeLong: 45,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -250,15 +272,15 @@ export const DATA = {
 			image: terapia_manualna,
 			imageAlt: "Grafika przedstawiająca terapię manualną",
 		},
-		offer6: {
-			id: 6,
+		offer7: {
+			id: 7,
 			title: "Drenaż limfatyczny",
 			summary:
 				"Polega na pozbyciu się zastojów limfatycznych. Jest polecany pacjentom u których występują obrzęki kończyn, zarówno po urazach jak i w przebiegu chorób przewlekłych oraz dla osób wykonujących pracę stojąca.",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
-			priceLong: 180,
+			priceLong: 200,
 			timeShort: null,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -268,15 +290,15 @@ export const DATA = {
 			image: drenaz_limfatyczny,
 			imageAlt: "Grafika przedstawiająca masaż limfatyczny nóg",
 		},
-		offer7: {
-			id: 7,
+		offer8: {
+			id: 8,
 			title: "Masaż bańką chińska",
 			summary:
 				"Jest to masaż o działaniu antycellulitowym i odchudzającym. Skóra po zabiegu staje się jędrna i elastyczna.",
 			summaryOptions: false,
 			description: "",
-			priceShort: 100,
-			priceLong: 180,
+			priceShort: 130,
+			priceLong: 200,
 			timeShort: 30,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -286,8 +308,8 @@ export const DATA = {
 			image: masaz_banka_chinska,
 			imageAlt: "Grafikia przedstawiająca masaz bańką chińską",
 		},
-		offer8: {
-			id: 8,
+		offer9: {
+			id: 9,
 			title: "Masaż twarzy",
 			summary: "Proponujemy dwa rodzaje masażu twarzy: ",
 			summaryOptions: {
@@ -298,7 +320,7 @@ export const DATA = {
 			},
 			description: "",
 			priceShort: null,
-			priceLong: 120,
+			priceLong: 130,
 			timeShort: null,
 			timeLong: 30,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -308,15 +330,37 @@ export const DATA = {
 			image: masaz_twarzy,
 			imageAlt: "Grafika przedstawiająca masaż twarzy kobiety",
 		},
-		offer9: {
-			id: 9,
+		offer10: {
+			id: 10,
+			title: "Masaż twarzy i dekoltu",
+			summary: "",
+			summaryOptions: {
+				option1:
+					"",
+				option2:
+					"",
+			},
+			description: "",
+			priceShort: null,
+			priceLong: 180,
+			timeShort: null,
+			timeLong: 45,
+			//promocja na krótki zabieg - wystarczy wpisać cene
+			saleShort: null,
+			//promocja na długi zabieg - wystarczy wpisać cene
+			saleLong: 100,
+			image: masaz_twarzy,
+			imageAlt: "Grafika przedstawiająca masaż twarzy kobiety",
+		},
+		offer11: {
+			id: 11,
 			title: "Masaż dla kobiet w ciąży",
 			summary:
 				"W tym wyjątkowym dla Kobiety stanie Jej ciało szczególnie wymaga troski i zaopiekowania. Masaż może przynieść duża ulgę w bólu nie tylko kręgosłupa, ale też zmęczonych ramion i nóg. ",
 			summaryOptions: false,
 			description: "",
 			priceShort: null,
-			priceLong: 180,
+			priceLong: 200,
 			timeShort: null,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -326,8 +370,8 @@ export const DATA = {
 			image: masaz_dla_kobiet_w_ciazy,
 			imageAlt: "Grafika przedstawiająca masaż kobiety w ciązy",
 		},
-		offer10: {
-			id: 10,
+		offer12: {
+			id: 12,
 			title: "Fala uderzeniowa - aplikacja lecznicza",
 			summary:
 				"Jest to wysokiej klasy sprzęt, który pomaga rozbić zwapnienia takie jak ostroga piętowa, łokieć golfisty/tenisisty, a także wspomóc leczenie przewlekłego i otrego bólu tkanek miękkich.",
@@ -344,8 +388,8 @@ export const DATA = {
 			image: fala_uderzeniowa_aplikacja_lecznicza,
 			imageAlt: "Grafika przedstawiająca masaż falą uderzeniową stóp",
 		},
-		offer11: {
-			id: 11,
+		offer13: {
+			id: 13,
 			title:
 				"Fala uderzeniowa - aplikacja antycellulitowa | wybrana partia ciała ",
 			summary:
@@ -363,8 +407,8 @@ export const DATA = {
 			image: fala_uderzeniowa_aplikacja_antycellulitowa,
 			imageAlt: "Grafika przedstawiająca masaż falą uderzeniową ud",
 		},
-		offer12: {
-			id: 12,
+		offer14: {
+			id: 14,
 			title:
 				"Fala uderzeniowa - aplikacja antycellulitowa | pakiet - uda, pośladki, brzuch ",
 			summary:
@@ -382,19 +426,19 @@ export const DATA = {
 			image: fala_uderzeniowa_aplikacja_antycellulitowa,
 			imageAlt: "Grafika przedstawiająca masaż falą uderzeniową ud",
 		},
-		offer13: {
-			id: 13,
+		offer15: {
+			id: 15,
 			title: "Kinezyterapia (ćwiczenia)",
 			summary: "Są to ćwiczenia rehabilitacyjne. Wyróżniamy tu ćwiczenia: ",
 			summaryOptions: {
 				option1:
 					"Przygotowujące do zabiegu operacyjnego np. Endopotezoplastyki stawów",
 				option2: "Rehabilitacyjne po zabiegach operacyjnych oraz urazach ",
-				option2: "Z zakresu profilaktyki bólu kręgosłupa ",
+				// option2: "Z zakresu profilaktyki bólu kręgosłupa ",
 			},
 			description: "",
-			priceShort: 100,
-			priceLong: 180,
+			priceShort: 130,
+			priceLong: 200,
 			timeShort: 30,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
@@ -404,15 +448,15 @@ export const DATA = {
 			image: kinezyterapia,
 			imageAlt: "Grafika przedstawiająca rozciąganie",
 		},
-		offer14: {
-			id: 14,
+		offer16: {
+			id: 16,
 			title: "Trening funkcjonalny",
 			summary:
 				"Ma na celu wzmocnienie mięśni głębokich, będących naszym fundamentem. Następnie skupiamy się na ich elastyczności, sile,  poprawie czucia głębokiego i lepszej koordynacji. Ćwiczenia tego typu mogą być dostosowane zarówno do pacjentów, którzy na codzień wykonują pracę biurową jak i dla osób uprawiających sport (amatorsko i zawodowo). Pomagają zabezpieczyć organizm przed nawracającym bólem i kontuzjami.",
 			summaryOptions: false,
 			description: "",
-			priceShort: 100,
-			priceLong: 180,
+			priceShort: 130,
+			priceLong: 200,
 			timeShort: 30,
 			timeLong: 60,
 			//promocja na krótki zabieg - wystarczy wpisać cene
