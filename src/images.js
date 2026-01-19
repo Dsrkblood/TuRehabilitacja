@@ -22,12 +22,16 @@ import trening_funkcjonalny from "/massage/trening_funkcjonalny.webp";
 
 import logo from "/Icon/logo.png";
 
-import Emilia from "/personel/Emilia.webp";
+import EmiliaStrzalkowska from "/personel/EmiliaStrzalkowska.webp";
+import WeronikaChmiel from "/personel/WeronikaChmiel.webp";
+import PaulinaNowoscia from "/personel/PaulinaNowoscia.webp";
 
 export const logoImg = logo;
 
 export const staffImgs = {
-  Emilia,
+  EmiliaStrzalkowska,
+  WeronikaChmiel,
+  PaulinaNowoscia,
 };
 export const heroImgs = {
   heroImgLowRes1,

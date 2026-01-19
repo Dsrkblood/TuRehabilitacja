@@ -90,20 +90,55 @@ export const DATA = {
     },
     staff: [
       {
+        id: nanoid(),
         name: "Mgr Emilia Strzałkowska",
-        img: staffImgs.Emilia,
+        img: staffImgs.EmiliaStrzalkowska,
         alt: "Zdjęcie Emilii Strzałkowskiej",
-        about:
+        bio: [
           "Jestem magistrem fizjoterapii, absolwentką Akademii Wychowania Fizycznego w Warszawie. Aktualnie studiuję psychoterapię w Instytucie Integralnej Psychoterapii Gestalt.",
-        focusAreas: [
+          "Zajmuje się rehabilitacją:",
+        ],
+        treatmentScope: [
           "po operacjach,",
           "po urazach,",
           "zespołów bólowych kręgosłupa i stawów obwodowych,",
           "dolegliwościami spowodowanymi siedzącym trybem życia,",
           "przeciążeniami układu ruchu.",
         ],
-        methods:
+        approach: [
           "W pracy z pacjentami wykorzystuję terapię manualną, masaż leczniczy i masaż tkanek głębokich. Zajmuję się również planowaniem i prowadzeniem treningu funkcjonalnego z wykorzystaniem technik stabilizacji tułowia, oceny posturalnej oraz treningu core.",
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Mgr Weronika Chmiel",
+        img: staffImgs.WeronikaChmiel,
+        alt: "Zdjęcie Weroniki Chmiel",
+        bio: [
+          "Jestem absolwentką Warszawskiego Uniwersytetu Medycznego, która łączy wiedzę medyczną z holistycznym podejściem.",
+        ],
+        treatmentScope: [],
+        approach: [
+          "Pracuję z empatią i uważnością, pomagając pacjentom zmniejszyć ból, odzyskać swobodę ruchu i poprawić samopoczucie. Specjalizuję się w terapii bólu głowy, kręgosłupa oraz kończyn górnych. Korzystam z różnorodnych metod m.in. masażu Kobido, pinoterapii i technik manualnych — dzięki czemu dobieram terapię idealnie do Twoich potrzeb. Regularnie szkolę się, aby oferować skuteczne i bezpieczne rozwiązania.",
+          "Od 15 lat śpiewam, dlatego dodatkowo zajmuję się rehabilitacją głosu, wspierając osoby pracujące głosem lub odczuwające napięcia w obrębie szyi.",
+          "Tworzę w gabinecie atmosferę spokoju i uważności, czerpiąc także z pasji do psychologii, rękodzieła i Bieszczad.",
+          "Zapraszam na terapię, która pomoże Ci poczuć ulgę, lekkość i większą równowagę na co dzień.",
+        ],
+      },
+      {
+        id: nanoid(),
+        name: "Mgr Paulina Nowością",
+        img: staffImgs.PaulinaNowoscia,
+        alt: "Zdjęcie Pauliny Nowością",
+        bio: [
+          "Od kilku lat na co dzień pracuję z osobami, które zmagają się z konsekwencjami urazów i przeciążeń narządu ruchu. Towarzyszę pacjentom w powrocie do sprawności po operacjach, złamaniach, skręceniach i kontuzjach, ale także pomagam wtedy, gdy ból nie jest efektem jednego urazu, a narasta stopniowo — w kręgosłupie, barkach czy głowie.",
+        ],
+        treatmentScope: [],
+        approach: [
+          "Fizjoterapia ortopedyczna jest solidnym fundamentem mojej pracy. To dzięki niej potrafię spojrzeć na ciało jako całość i skutecznie łączyć objawy z ich rzeczywistą przyczyną. Takie podejście szczególnie sprawdza się u osób żyjących w ciągłym napięciu, stresie i pośpiechu, gdzie przeciążenia stają się codziennością.",
+          "Szczególną uwagę poświęcam rehabilitacji stomatologicznej — obszarowi, który stał się moją zawodową pasją. Pracuję z pacjentami odczuwającymi ból żuchwy, napięcia w obrębie twarzy i szyi, bruksizm oraz dolegliwości wpływające na komfort jedzenia, snu i koncentracji. W terapii nie skupiam się wyłącznie na jednym miejscu — uwzględniam napięcia całego ciała, styl życia i poziom stresu.",
+          "Moim celem jest nie tylko zmniejszenie bólu, ale realna poprawa jakości codziennego funkcjonowania oraz poczucie, że ciało znów zaczyna współpracować, a nie ograniczać.",
+        ],
       },
     ],
     heroImages: [

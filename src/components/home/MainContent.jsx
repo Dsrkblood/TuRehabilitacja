@@ -61,20 +61,28 @@ export default function MainContent() {
       </section>
       <section className={classes.containerWrapper}>
         <h2 className={classes.heading}>Mój gabinet</h2>
-        {DATA.aboutUs.staff.map((employee, index) => (
-          <div key={index} className={classes.employeeContainer}>
+        {DATA.aboutUs.staff.map((employee) => (
+          <div key={employee.id} className={classes.employeeContainer}>
             <div className={classes.employeeInfo}>
-              <p className={classes.sectionParagraph}>{employee.about}</p>
-              <p className={classes.sectionParagraph}>
-                Zajmuję się rehabilitacją:
-              </p>
+              {employee.bio.map((item, index) => (
+                <p key={index} className={classes.sectionParagraph}>
+                  {item}
+                </p>
+              ))}
 
-              <ul className={classes.sectionList}>
-                {employee.focusAreas.map((item, index) => (
-                  <li key={index}>{item}</li>
-                ))}
-              </ul>
-              <p className={classes.sectionParagraph}>{employee.methods}</p>
+              {employee.treatmentScope.length > 0 && (
+                <ul className={classes.sectionList}>
+                  {employee.treatmentScope.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ul>
+              )}
+
+              {employee.approach.map((item, index) => (
+                <p key={index} className={classes.sectionParagraph}>
+                  {item}
+                </p>
+              ))}
             </div>
             <div className={classes.employeePhoto}>
               <div className={classes.photoBackground}>

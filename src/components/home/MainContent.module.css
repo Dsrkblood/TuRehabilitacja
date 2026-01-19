@@ -1,175 +1,172 @@
 .heroImg {
-	height: 20rem;
-	object-fit: cover;
-	width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  width: 100%;
 }
 
 .containerWrapper {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	padding: 4rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem 2rem;
 }
 
 .flexContainerMap {
-	display: none;
+  display: none;
 }
 .heading {
-	margin-bottom: 1rem;
-	font-weight: 300;
-	font-size: 3.2rem;
-	text-align: center;
-	text-transform: uppercase;
-	letter-spacing: 0.1rem;
-	color: var(--secondaryColor);
+  margin-bottom: 1rem;
+  font-weight: 300;
+  font-size: 3.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: var(--secondaryColor);
 }
 
 .sectionParagraph {
-	margin-top: 0.2rem;
-	font-size: 1.6rem;
-	letter-spacing: 0.05rem;
-	text-indent: 1.2rem;
-	color: var(--linkColor);
+  margin-top: 0.2rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  text-indent: 1.2rem;
+  color: var(--linkColor);
 }
 
 .sectionParagraph .highlight {
-	font-weight: 600;
-	color: var(--primaryColor);
-}
-
-.sectionParagraph:nth-child(2) {
-	text-indent: 0;
+  font-weight: 600;
+  color: var(--primaryColor);
 }
 
 .sectionList {
-	padding-left: 1.6rem;
-	font-size: 1.6rem;
-	letter-spacing: 0.05rem;
-	color: var(--linkColor);
+  padding-left: 1.6rem;
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  color: var(--linkColor);
 }
 
 .employeeContainer {
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: center;
-	align-items: center;
-	max-width: 90rem;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  max-width: 90rem;
 }
 
 .employeeInfo {
-	margin-top: 1rem;
-	padding-right: 1rem;
-	font-size: 1.6rem;
-	text-align: left;
-	text-indent: 1.2rem;
-	color: var(--linkColor);
-}
-
-.employeeInfo .sectionParagraph:nth-child(2) {
-	text-indent: 0;
-}
-
-.employeeList {
-	padding-left: 1.6rem;
-	text-indent: 0;
+  margin: 1rem 0 2rem;
+  padding-right: 1rem;
+  font-size: 1.6rem;
+  text-align: left;
+  text-indent: 1.2rem;
+  color: var(--linkColor);
 }
 
 .employeePhoto {
-	/* width: 40%; */
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .photoBackground {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 18rem;
-	width: 18rem;
-	background-color: var(--sectionBackgroundColor);
-	border-radius: 100%;
-	box-shadow: 0 0 1rem -0.5rem black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 18rem;
+  width: 18rem;
+  background-color: var(--sectionBackgroundColor);
+  border-radius: 100%;
+  box-shadow: 0 0 1rem -0.5rem black;
 }
 .photoEmployee {
-	height: 16rem;
-	width: 16rem;
-	border-radius: 100%;
-	object-position: center;
-	object-fit: cover;
+  height: 16rem;
+  width: 16rem;
+  border-radius: 100%;
+  object-position: center;
+  object-fit: cover;
 }
 .employeeName {
-	margin-top: 1rem;
-	font-size: 1.6rem;
-	font-weight: 500;
-	text-align: center;
-	color: var(--primaryColor);
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--primaryColor);
 }
 
 .flexContainerOffer {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	max-width: 90rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 90rem;
 }
 
 .map {
-	display: none;
-	border: none;
+  display: none;
+  border: none;
 }
 
 @media (min-width: 768px) {
-	.heroImg {
-		height: 40rem;
-	}
+  .heroImg {
+    height: 40rem;
+  }
 
-	.containerWrapperDesktop {
-		display: flex;
-		justify-content: center;
-		flex-direction: row;
-		max-width: 90rem;
-	}
+  .containerWrapperDesktop {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: 90rem;
+  }
 
-	.flexContainer {
-		width: 50%;
-	}
+  .flexContainer {
+    width: 50%;
+  }
 
-	.flexContainerMap {
-		display: block;
-		width: 50%;
-	}
+  .flexContainerMap {
+    display: block;
+    width: 50%;
+  }
 
-	.sectionParagraph {
-		margin-right: 2rem;
-		font-size: 1.8rem;
-		width: 50%;
-	}
+  .sectionParagraph {
+    margin-right: 2rem;
+    font-size: 1.8rem;
+    width: 50%;
+  }
 
-	.sectionList {
-		font-size: 1.8rem;
-	}
+  .sectionList {
+    font-size: 1.8rem;
+  }
 
-	.employeeContainer {
-		flex-direction: row;
-		max-width: 90rem;
-	}
+  .employeeContainer {
+    flex-direction: row;
+    max-width: 90rem;
+  }
+  .employeeContainer:nth-child(odd) {
+    flex-direction: row-reverse;
+  }
 
-	.photoBackground {
-		width: 25rem;
-		height: 25rem;
-	}
+  .employeeContainer:nth-child(odd) .sectionParagraph {
+    margin-left: 2rem;
+  }
 
-	.photoEmployee {
-		width: 23rem;
-		height: 23rem;
-	}
+  .sectionParagraph {
+    width: 90%;
+  }
 
-	.map {
-		display: block;
-		width: 100%;
-		height: 100%;
-	}
+  .photoBackground {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  .photoEmployee {
+    width: 23rem;
+    height: 23rem;
+  }
+
+  .map {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
 }
