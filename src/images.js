@@ -24,14 +24,14 @@ import logo from "/Icon/logo.png";
 
 import EmiliaStrzalkowska from "/personel/EmiliaStrzalkowska.webp";
 import WeronikaChmiel from "/personel/WeronikaChmiel.webp";
-import PaulinaNowoscia from "/personel/PaulinaNowoscia.webp";
+import PaulinaNowosada from "/personel/PaulinaNowosada.webp";
 
 export const logoImg = logo;
 
 export const staffImgs = {
   EmiliaStrzalkowska,
   WeronikaChmiel,
-  PaulinaNowoscia,
+  PaulinaNowosada,
 };
 export const heroImgs = {
   heroImgLowRes1,

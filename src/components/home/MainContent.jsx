@@ -60,7 +60,7 @@ export default function MainContent() {
         </div>
       </section>
       <section className={classes.containerWrapper}>
-        <h2 className={classes.heading}>Mój gabinet</h2>
+        <h2 className={classes.heading}>Nasz zespół</h2>
         {DATA.aboutUs.staff.map((employee) => (
           <div key={employee.id} className={classes.employeeContainer}>
             <div className={classes.employeeInfo}>
