@@ -48,16 +48,49 @@ export default function CirclePhoto({ data }) {
                   isShow ? classes.show : ""
                 }`}
               >
-                <p className={classes.extendedInfo}>{data.description}</p>
+                {data.description.map((item, index) => (
+                  <p key={index} className={classes.extendedInfo}>
+                    {item}
+                  </p>
+                ))}
 
                 {data.hasDescriptionList ? (
-                  <ul className={classes.listInfo}>
+                  <ul className={classes.hasDescriptionList}>
                     {data.hasDescriptionList.map((item, index) => (
-                      <li className={classes.listItem} key={index}>
+                      <li className={classes.hasDescriptionItem} key={index}>
                         {item}
                       </li>
                     ))}
                   </ul>
+                ) : null}
+
+                {data.recommendations ? (
+                  <>
+                    <p className={classes.recommendationsTitle}>
+                      Wskazania do terapii:
+                    </p>
+                    <ul className={classes.recommendationsList}>
+                      {data.recommendations.map((item, index) => (
+                        <li className={classes.recommendationsItem} key={index}>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : null}
+                {data.contraindications ? (
+                  <>
+                    <p className={classes.recommendationsTitle}>
+                      Przeciwwskazania do terapii:
+                    </p>
+                    <ul className={classes.recommendationsList}>
+                      {data.contraindications.map((item, index) => (
+                        <li className={classes.recommendationsItem} key={index}>
+                          {item}
+                        </li>
+                      ))}
+                    </ul>
+                  </>
                 ) : null}
               </div>
             </div>
@@ -74,6 +107,14 @@ CirclePhoto.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     hasDescriptionList: PropTypes.oneOfType([
+      PropTypes.bool,
+      PropTypes.arrayOf(PropTypes.string),
+    ]),
+    contraindications: PropTypes.oneOfType([
+      PropTypes.bool,
+      PropTypes.arrayOf(PropTypes.string),
+    ]),
+    recommendations: PropTypes.oneOfType([
       PropTypes.bool,
       PropTypes.arrayOf(PropTypes.string),
     ]),

@@ -9,6 +9,8 @@ export default function TreatmentsItems() {
     title: offer.title,
     description: offer.description,
     hasDescriptionList: offer.hasDescriptionList,
+    contraindications: offer.contraindications,
+    recommendations: offer.recommendations,
     image: offer.image,
   }));
 

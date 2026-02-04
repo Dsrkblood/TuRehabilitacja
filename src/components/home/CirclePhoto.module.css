@@ -1,147 +1,162 @@
 .containerWrapper {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 1rem 0rem;
-	max-width: 90%;
-	height: 100%;
-	border-bottom: 0.1rem solid #0000004d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0rem;
+  max-width: 90%;
+  height: 100%;
+  border-bottom: 0.1rem solid #0000004d;
 }
 
 .containerWrapper:last-child {
-	border: none;
+  border: none;
 }
 
 .containerWrapper:nth-child(odd) {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 .imgBackground {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 15rem;
-	height: 15rem;
-	border-radius: 100%;
-	background-color: var(--sectionBackgroundColor);
-	box-shadow: 0 0 1rem -0.5rem black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  background-color: var(--sectionBackgroundColor);
+  box-shadow: 0 0 1rem -0.5rem black;
 }
 
 .imgBackground .imgOffer {
-	height: 13rem;
-	width: 13rem;
-	border-radius: 100%;
-	object-fit: cover;
+  height: 13rem;
+  width: 13rem;
+  border-radius: 100%;
+  object-fit: cover;
 }
 
 .offerInfo {
-	display: block;
-	width: 50%;
-	min-height: 15rem;
+  display: block;
+  width: 50%;
+  min-height: 15rem;
 }
 
 .treatmentTitle {
-	font-size: 1.6rem;
-	text-align: left;
-	text-transform: uppercase;
-	color: var(--primaryColor);
+  font-size: 1.6rem;
+  text-align: left;
+  text-transform: uppercase;
+  color: var(--primaryColor);
 }
 
 .containerWrapper:nth-child(even) .treatmentTitle {
-	text-align: right;
+  text-align: right;
 }
 
 .treatmentInfo {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .toggleButton {
-	display: flex;
-	justify-content: end;
-	align-items: center;
-	padding: 1rem 0;
-	font-size: 1.4rem;
-	width: 100%;
-	border: none;
-	background: none;
-	cursor: pointer;
-	transition: color 0.3s ease-in;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  width: 100%;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: color 0.3s ease-in;
 }
 
 .containerWrapper:nth-child(odd) .toggleButton {
-	justify-content: start;
+  justify-content: start;
 }
 
 .toggleButton:hover {
-	color: var(--primaryColor);
+  color: var(--primaryColor);
 }
 
 .toggleButton .fontAwesome {
-	margin-left: 1rem;
+  margin-left: 1rem;
 }
 
 .hiddenDetails {
-	max-height: 0;
-	margin-top: 10px;
-	color: var(--linkColor);
-	font-weight: 300;
-	letter-spacing: -0.02rem;
-	overflow: hidden;
-	transition: max-height 0.5s ease-in-out;
+  max-height: 0;
+  margin-top: 10px;
+  color: var(--linkColor);
+  font-weight: 300;
+  letter-spacing: -0.02rem;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
 }
 
 .hiddenDetails.show {
-	max-height: 90rem;
+  max-height: 90rem;
 }
 
 .extendedInfo {
-	font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 
 .extendedInfo.show {
-	display: block;
+  display: block;
 }
 
-.listContainer {
-	list-style: disc;
-	padding-left: 0.5rem;
+.hasDescriptionList {
+  list-style: none;
+  padding: 1rem 0;
+  letter-spacing: 0.05rem;
 }
 
-.listInfo {
-	margin-top: 1rem;
-	margin-left: 1rem;
-	font-size: 1.6rem;
+.hasDescriptionList .hasDescriptionItem {
+  font-size: 1.4rem;
+}
+
+.recommendationsTitle {
+  margin: 1rem 0 0.5rem;
+  font-size: 1.6rem;
+}
+
+.recommendationsList {
+  list-style: disc;
+  padding-left: 1.4rem;
+}
+
+.recommendationsList .recommendationsItem {
+  margin-top: 0.2rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.05rem;
 }
 
 @media (min-width: 768px) {
-	.containerWrapper,
-	.containerWrapper:nth-child(odd) {
-		height: 100%;
-		width: 100%;
-	}
+  .containerWrapper,
+  .containerWrapper:nth-child(odd) {
+    height: 100%;
+    width: 100%;
+  }
 
-	.imgBackground {
-		width: 20rem;
-		height: 20rem;
-	}
+  .imgBackground {
+    width: 20rem;
+    height: 20rem;
+  }
 
-	.imgBackground .imgOffer {
-		width: 18rem;
-		height: 18rem;
-	}
+  .imgBackground .imgOffer {
+    width: 18rem;
+    height: 18rem;
+  }
 
-	.treatmentTitle {
-		margin: 1rem 0;
-		font-size: 2.4rem;
-		text-align: start;
-	}
+  .treatmentTitle {
+    margin: 1rem 0;
+    font-size: 2.4rem;
+    text-align: start;
+  }
 
-	.toggleButton {
-		display: none;
-	}
+  .toggleButton {
+    display: none;
+  }
 
-	.hiddenDetails {
-		max-height: 90rem;
-	}
+  .hiddenDetails {
+    max-height: 90rem;
+  }
 }

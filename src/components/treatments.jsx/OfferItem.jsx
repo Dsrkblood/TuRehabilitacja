@@ -22,7 +22,12 @@ export default function Offer({ data }) {
         <div
           className={`${classes.hiddenDetails} ${isOpen ? classes.open : ""}`}
         >
-          <p className={classes.extendedInfo}>{data.description}</p>
+          {data.description.map((item, index) => (
+            <p key={index} className={classes.extendedInfo}>
+              {item}
+            </p>
+          ))}
+
           {data.hasDescriptionList !== false && (
             <ul className={classes.listOffer}>
               {data.hasDescriptionList.map((listItem, index) => (
@@ -32,6 +37,37 @@ export default function Offer({ data }) {
               ))}
             </ul>
           )}
+          <div className={classes.recommendationsSection}>
+            {data.recommendations !== false && (
+              <div>
+                <p className={classes.recommendationsTitle}>
+                  Wskazania do terapii:
+                </p>
+                <ul className={classes.recomendationList}>
+                  {data.recommendations.map((listItem, index) => (
+                    <li className={classes.recomendationItem} key={index}>
+                      &bull; {listItem}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {data.contraindications !== false && (
+              <div>
+                <p className={classes.recommendationsTitle}>
+                  Przeciwwskazania do terapii:
+                </p>
+                <ul className={classes.recomendationList}>
+                  {data.contraindications.map((listItem, index) => (
+                    <li className={classes.recomendationItem} key={index}>
+                      &bull; {listItem}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     );
@@ -44,6 +80,14 @@ Offer.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     hasDescriptionList: PropTypes.oneOfType([
+      PropTypes.bool,
+      PropTypes.arrayOf(PropTypes.string),
+    ]),
+    contraindications: PropTypes.oneOfType([
+      PropTypes.bool,
+      PropTypes.arrayOf(PropTypes.string),
+    ]),
+    recommendations: PropTypes.oneOfType([
       PropTypes.bool,
       PropTypes.arrayOf(PropTypes.string),
     ]),

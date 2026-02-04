@@ -3,8 +3,10 @@ import { offerImgs, heroImgs, logoImg as logo, staffImgs } from "./images.js";
 
 export const defaultOffer = {
   isActive: true,
-  hasDescriptionList: false,
   description: "",
+  hasDescriptionList: false,
+  contraindications: false,
+  recommendations: false,
   variants: {
     basic: { price: 130, time: 30 },
     extended: { price: 200, time: 60 },
@@ -168,8 +170,9 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Masaż klasyczny",
-      description:
+      description: [
         "Jest to najstarsza metoda masażu. Ma działanie lecznicze i relaksacyjne, poprawia krążenie krwi, zmniejsza dolegliwości bólowe.",
+      ],
       image: {
         src: offerImgs.masaz_klasyczny,
         alt: "Masaż pleców",
@@ -178,8 +181,9 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Masaż relaksacyjny",
-      description:
+      description: [
         "Ma na celu wyciszenie i odpoczynek dla ciała i duszy. Wprowadza ciało w stan idealnej harmonii.",
+      ],
       image: {
         src: offerImgs.masaz_relaksacyjny,
         alt: "Relaksacyjny masaż pleców",
@@ -188,7 +192,7 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Masaż sportowy",
-      description: "Proponujemy dwa rodzaje masażu sportowego:",
+      description: ["Proponujemy dwa rodzaje masażu sportowego:"],
       hasDescriptionList: [
         "regeneracja po treningu - ma na celu zredukowanie nadmiernych napięć mięśniowych i przygotowanie ich do następnego treningu",
         "masaż izometryczny - ma na celu wzmocnienie siły mięśniowej, dzięki odpowiedniej sekwencji ruchów masażysty i współpracy pacjenta. Jest polecany pacjentom po kontuzjach, którzy chcą szybko wrócić do formy oraz dla osób, które przygotowują się do zawodów, dla wzmocnienia efektów treningu.",
@@ -201,22 +205,24 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Masaż całego ciała",
-      description:
+      description: [
         "Zredukuje napięcie całego ciała, sprawi, że poczujesz się zrelaksowany i wypoczęty.",
+      ],
       variants: {
         basic: { price: null, time: null },
         extended: { price: 280, time: 90 },
       },
       image: {
-        src: offerImgs.masaz_klasyczny,
+        src: offerImgs.masaz_calego_ciala,
         alt: "Masaż całego ciała na stole do masażu",
       },
     },
     {
       id: nanoid(),
       title: "Masaż leczniczy",
-      description:
+      description: [
         "Redukuje napięcie i ból mięśni, przyśpiesza regenerację tkanek, zmniejsza odczucie sztywności",
+      ],
       variants: { basic: { price: null, time: null } },
       image: {
         src: offerImgs.masaz_leczniczy,
@@ -226,8 +232,9 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Terapia manualna",
-      description:
+      description: [
         "Jest to metoda diagnostyki i leczenia zaburzeń układu ruchu. Przynosi zdecydowaną ulgę w bólu kręgosłupa i stawów obwodowych.",
+      ],
       variants: {
         basic: { price: null, time: null },
         extended: { price: 200, time: 45 },
@@ -240,9 +247,44 @@ export const DATA = {
     },
     {
       id: nanoid(),
+      title: "Terapia manualna twarzy i głowy",
+      description: [
+        "Terapia manualna twarzy i głowy to forma fizjoterapii ukierunkowana na pracę z mięśniami, powięzią oraz stawami skroniowo-żuchwowymi. Obejmuje również odcinek szyjny kręgosłupa. Celem terapii jest zmniejszenie napięć oraz poprawa funkcji tkanek w obrębie głowy i szyi.",
+        "Zabieg może zawierać elementy mobilizacji krtani i  drenażu manualnego. Wspiera to funkcję głosu, oddychanie oraz prawidłowy przepływ płynów. Terapia może wpływać zarówno na dolegliwości miejscowe, jak i objawy odległe wynikające z zaburzeń napięcia.",
+      ],
+      contraindications: [
+        "stany zapalne i infekcje",
+        "choroby skóry w fazie ostrej",
+        "świeże urazy lub zabiegi w obrębie głowy i szyi",
+        "ostre choroby neurologiczne",
+        "choroba nowotworowa",
+      ],
+      recommendations: [
+        "bóle i zawroty głowy",
+        "dysfunkcje stawów skroniowo-żuchwowych",
+        "bruksizm, nadmierne napięcie żuchwy",
+        "napięcia mięśniowe twarzy, głowy i szyi",
+        "dolegliwości zatok",
+        "szumy uszne",
+        "zaburzenia głosu, napięcia krtani",
+        "przeciążenia odcinka szyjnego",
+      ],
+      variants: {
+        basic: { price: 130, time: 30 },
+        extended: { price: 200, time: 60 },
+      },
+
+      image: {
+        src: offerImgs.terapia_manulana_twarzy_i_glowy,
+        alt: "Terapia manualna twarzy i głowy",
+      },
+    },
+    {
+      id: nanoid(),
       title: "Drenaż limfatyczny",
-      description:
+      description: [
         "Polega na pozbyciu się zastojów limfatycznych. Jest polecany pacjentom u których występują obrzęki kończyn, zarówno po urazach jak i w przebiegu chorób przewlekłych oraz dla osób wykonujących pracę stojąca.",
+      ],
       variants: { basic: { price: null, time: null } },
       image: {
         src: offerImgs.drenaz_limfatyczny,
@@ -252,8 +294,9 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Masaż bańką chińską",
-      description:
+      description: [
         "Jest to masaż o działaniu antycellulitowym i odchudzającym. Skóra po zabiegu staje się jędrna i elastyczna.",
+      ],
       image: {
         src: offerImgs.masaz_banka_chinska,
         alt: "Masaż bańką chińską na nogach",
@@ -261,8 +304,32 @@ export const DATA = {
     },
     {
       id: nanoid(),
+      title: "Kobido",
+      description: [
+        "Masaż Kobido to intensywna terapia manualna twarzy, szyi i dekoltu. Opiera się na pracy z mięśniami oraz strukturami powięziowymi. Zabieg poprawia mikrokrążenie, wspiera naturalne procesy drenażu limfatycznego i zmniejsza nadmierne napięcia mięśniowe. Efektem jest zdrowszy i bardziej promienny wygląd skóry. Pojawia się także uczucie lekkości, rozluźnienia i głębokiego spokoju.",
+        "Zabieg jest szczególnie polecany osobom z nadmiernym napięciem mięśni twarzy, bruksizmem i bólami głowy. Sprawdzi się również przy uczuciu „ciężkiej” twarzy oraz oznakach zmęczenia tkanek.",
+      ],
+      variants: {
+        basic: { price: 220, time: 70 },
+        extended: { price: 280, time: 90 },
+      },
+      contraindications: [
+        "stany zapalne i infekcje",
+        "choroby skóry w fazie ostrej",
+        "rany, przerwana ciągłość skóry",
+        "świeże zabiegi medycyny estetycznej",
+        "gorączka, złe samopoczucie",
+      ],
+
+      image: {
+        src: offerImgs.kobido,
+        alt: "Kobido",
+      },
+    },
+    {
+      id: nanoid(),
       title: "Masaż twarzy",
-      description: "Proponujemy dwa rodzaje masażu twarzy: ",
+      description: ["Proponujemy dwa rodzaje masażu twarzy: "],
       hasDescriptionList: [
         "relaksacyjny - masaż ten pozwoli Ci się wyciszyć i zrelaksować.",
         "powięziowy o dzialaniu przeciwzmarszczkowym - poprawia krążenie krwi, zmniejsza napięcie mięśni, poprawia wygląd skóry twarzy i zwiększa jej elastyczność.",
@@ -279,8 +346,34 @@ export const DATA = {
     },
     {
       id: nanoid(),
+      title: "Terapia blizny",
+      description: [
+        "Terapia manualna blizny to forma fizjoterapii ukierunkowana na poprawę jakości, elastyczności i funkcji tkanek w obrębie blizny oraz okolic z nią powiązanych. Prawidłowo opracowana blizna wspiera biomechanikę całego ciała i zmniejsza ryzyko utrwalania niekorzystnych napięć.",
+        "Zabieg obejmuje techniki manualne oraz elementy pinoterapii. Ich celem jest poprawa ślizgu tkanek, zmniejszenie napięcia i wsparcie prawidłowego funkcjonowania struktur. Terapia może wpływać zarówno na dolegliwości w obrębie blizny, jak i na objawy odległe wynikające z kompensacji napięciowych.",
+        "Terapia manualna blizny jest możliwa po całkowitym wygojeniu rany. Najczęściej odbywa się to po 4–6 tygodniach od zabiegu, po ustąpieniu strupów i objawów zapalnych. Termin rozpoczęcia terapii ustalany jest indywidualnie po wywiadzie.",
+      ],
+      contraindications: [
+        "niewygojona rana lub świeża blizna",
+        "strupy, sączenie lub objawy stanu zapalnego w obrębie blizny",
+        "infekcje ogólne lub miejscowe",
+        "choroby skóry w fazie ostrej",
+        "przerwana ciągłość skóry w miejscu zabiegu",
+      ],
+      variants: {
+        basic: { price: 130, time: 30 },
+        extended: { price: 200, time: 60 },
+      },
+
+      image: {
+        src: offerImgs.terapia_blizny,
+        alt: "Terapia blizny",
+      },
+    },
+
+    {
+      id: nanoid(),
       isActive: false,
-      title: "Masaż twarzy i dekoltu",
+      title: ["Masaż twarzy i dekoltu"],
       // no description
       variants: {
         basic: { price: null, time: null },
@@ -292,8 +385,9 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Masaż dla kobiet w ciąży",
-      description:
+      description: [
         "W tym wyjątkowym dla Kobiety stanie Jej ciało szczególnie wymaga troski i zaopiekowania. Masaż może przynieść duża ulgę w bólu nie tylko kręgosłupa, ale też zmęczonych ramion i nóg.",
+      ],
       variants: { basic: { price: null, time: null } },
       image: {
         src: offerImgs.masaz_dla_kobiet_w_ciazy,
@@ -303,8 +397,9 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Fala uderzeniowa - aplikacja lecznicza",
-      description:
+      description: [
         "Wysokiej klasy sprzęt, który pomaga rozbić zwapnienia takie jak ostroga piętowa, łokieć golfisty/tenisisty, a także wspomóc leczenie przewlekłego i otrego bólu tkanek miękkich.",
+      ],
       variants: {
         basic: { price: null, time: null },
         extended: { price: 80, time: null },
@@ -319,8 +414,9 @@ export const DATA = {
       id: nanoid(),
       title:
         "Fala uderzeniowa - aplikacja antycellulitowa | wybrana partia ciała",
-      description:
+      description: [
         "Zabieg ma za zadanie rozbicie komórek tłuszczowych, ktore dzięki zwiększenonemu krążeniu są szybszciej usuwane z organizmu. Efekty widoczne są już po kilku zabiegach",
+      ],
       variants: {
         basic: { price: null, time: null },
         extended: { price: 100, time: null },
@@ -345,7 +441,9 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Kinezyterapia (ćwiczenia)",
-      description: "Są to ćwiczenia rehabilitacyjne. Wyróżniamy tu ćwiczenia: ",
+      description: [
+        "Są to ćwiczenia rehabilitacyjne. Wyróżniamy tu ćwiczenia: ",
+      ],
       hasDescriptionList: [
         "przygotowujące do zabiegu operacyjnego np. Endopotezoplastyki stawów",
         "rehabilitacyjne po zabiegach operacyjnych oraz urazach",
@@ -358,8 +456,9 @@ export const DATA = {
     {
       id: nanoid(),
       title: "Trening funkcjonalny",
-      description:
+      description: [
         "Ma na celu wzmocnienie mięśni głębokich, będących naszym fundamentem. Następnie skupiamy się na ich elastyczności, sile,  poprawie czucia głębokiego i lepszej koordynacji. Ćwiczenia tego typu mogą być dostosowane zarówno do pacjentów, którzy na codzień wykonują pracę biurową jak i dla osób uprawiających sport (amatorsko i zawodowo). Pomagają zabezpieczyć organizm przed nawracającym bólem i kontuzjami.",
+      ],
       image: {
         src: offerImgs.trening_funkcjonalny,
         alt: "Trening funkcjonalny na sali gimnastycznej",
