@@ -475,10 +475,10 @@ export const DATA = {
         basic: { price: null, time: null },
       },
 
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_klasyczny,
+        alt: "Masaz klasyczny",
+      },
     },
     {
       id: nanoid(),
@@ -491,10 +491,10 @@ export const DATA = {
         basic: { price: null, time: null },
       },
 
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_sportowy,
+        alt: "Masaż sportowy kostki",
+      },
     },
     {
       id: nanoid(),
@@ -507,10 +507,10 @@ export const DATA = {
         basic: { price: null, time: null },
       },
 
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.terapia_manualna,
+        alt: "Masaż leczniczy pleców",
+      },
     },
     {
       id: nanoid(),
@@ -525,10 +525,10 @@ export const DATA = {
         basic: { price: null, time: null },
       },
 
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.trening_funkcjonalny,
+        alt: "Terapia funkcjonalna",
+      },
     },
     {
       id: nanoid(),
@@ -541,10 +541,10 @@ export const DATA = {
         basic: { price: null, time: null },
       },
 
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.terapia_manulana_twarzy_i_glowy,
+        alt: "Terapia manualna twarzy i głowy",
+      },
     },
     {
       id: nanoid(),
@@ -557,10 +557,10 @@ export const DATA = {
         basic: { price: null, time: null },
       },
 
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_leczniczy,
+        alt: "Masaż leczniczy pleców",
+      },
     },
     {
       id: nanoid(),
@@ -572,10 +572,10 @@ export const DATA = {
         basic: { price: null, time: null },
       },
 
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_klasyczny,
+        alt: "Masaż klasyczny",
+      },
     },
     {
       id: nanoid(),
@@ -589,10 +589,10 @@ export const DATA = {
         extended: { price: 200, time: 45 },
       },
 
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.terapia_manualna,
+        alt: "Terapia manualna",
+      },
     },
     {
       id: nanoid(),
@@ -601,10 +601,10 @@ export const DATA = {
         "Ma na celu wzmocnienie mięśni głębokich, będących naszym fundamentem. Następnie skupiamy się na ich elastyczności, sile, poprawie czucia głębokiego i lepszej koordynacji.",
         "Ćwiczenia tego typu mogą być dostosowane zarówno do pacjentów, którzy na codzień wykonują pracę biurową jak i dla osób uprawiających sport (amatorsko i zawodowo). Pomagają zabezpieczyć organizm przed nawracającym bólem i kontuzjami.",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.trening_funkcjonalny,
+        alt: "Trening funkcjonalny",
+      },
     },
     {
       id: nanoid(),
@@ -613,10 +613,10 @@ export const DATA = {
         "Polega na stosowaniu odpowiednio dobranych ćwiczeń fizycznych w celu poprawy sprawności ruchowej, zmniejszenia bólu oraz przywrócenia prawidłowej funkcji organizmu.",
         "Ćwiczenia są dobierane indywidualnie do stanu zdrowia, wieku i możliwości pacjenta. Kinezyterapia ma zastosowanie w leczeniu bólu kręgosłupa i stawów obwodowych, pomaga wzmocnić mięśnie, poprawić kondycję, koordynację i równowagę, przywrócić zakres ruchomości w stawach, sprawność i samodzielność w życiu codziennym. Jest szczególnie polecana w leczeniu wad postawy oraz przed i po zabiegach operacyjnych (np. endoprotezoplastyka stawów).",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.kinezyterapia,
+        alt: "Kinezyterapia",
+      },
     },
     {
       id: nanoid(),
@@ -624,10 +624,10 @@ export const DATA = {
       description: [
         "Jest to najstarsza metoda masażu. Poprzez odpowiednio dobrane techniki – takie jak głaskanie, rozcieranie czy ugniatanie działa leczniczo i relaksacyjne, poprawia krążenie krwi, zmniejsza dolegliwości bólowe, zmniejsza napięcie mięśni i przyśpiesza ich regenerację.",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_klasyczny,
+        alt: "Masaż klasyczny",
+      },
     },
     {
       id: nanoid(),
@@ -635,10 +635,10 @@ export const DATA = {
       description: [
         "To delikatna, odprężająca forma masażu, której głównym celem jest redukcja stresu i głębokie wyciszenie organizmu. Wykonywany powolnymi, płynnymi ruchami, pomaga rozluźnić napięte mięśnie, uspokoić układ nerwowy oraz przywrócić wewnętrzną równowagę. Daje uczucie lekkości i harmonii. To idealny wybór dla osób przemęczonych, żyjących w ciągłym napięciu i potrzebujących chwili tylko dla siebie.",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_relaksacyjny,
+        alt: "Masaż relaksacyjny",
+      },
     },
     {
       id: nanoid(),
@@ -648,10 +648,10 @@ export const DATA = {
         "regeneracja po treningu - ma na celu zredukowanie nadmiernych napięć mięśniowych i przygotowanie ich do następnego treningu,",
         "masaż izometryczny - ma na celu wzmocnienie siły mięśniowej, dzięki odpowiedniej sekwencji ruchów masażysty i współpracy pacjenta. Jest polecany pacjentom po kontuzjach, którzy chcą szybko wrócić do formy oraz dla osób, które przygotowują się do zawodów, dla wzmocnienia efektówtreningu.",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_sportowy,
+        alt: "Masaż sportowy",
+      },
     },
     {
       id: nanoid(),
@@ -664,10 +664,10 @@ export const DATA = {
         basic: { price: null, time: null },
         extended: { price: 280, time: 90 },
       },
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_calego_ciala,
+        alt: "Masaż całego ciała",
+      },
     },
     {
       id: nanoid(),
@@ -681,10 +681,10 @@ export const DATA = {
         basic: { price: null, time: null },
         extended: { price: 200, time: 45 },
       },
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.terapia_manualna,
+        alt: "Terapia manualna",
+      },
     },
     {
       id: nanoid(),
@@ -710,10 +710,10 @@ export const DATA = {
         "zaburzenia głosu, napięcia krtani",
         "przeciążenia odcinka szyjnego",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.terapia_manulana_twarzy_i_glowy,
+        alt: "Terapia manualna twarzy i głowy",
+      },
     },
     {
       id: nanoid(),
@@ -723,10 +723,10 @@ export const DATA = {
         "Zabieg jest wykonywany manualnie przez terapeutę ruchami o niewielkiej sile nacisku, dzięki czemu działa skutecznie, a jednocześnie bardzo łagodnie.",
         "Drenaż limfatyczny poprawia krążenie, wspiera regenerację oraz daje uczucie lekkości i odprężenia. Jest polecany szczególnie przy obrzękach, uczuciu ciężkich nóg, cellulicie oraz jako wsparcie po zabiegach chirurgicznych i estetycznych.",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.drenaz_limfatyczny,
+        alt: "Drenaż limfatyczny",
+      },
     },
     {
       id: nanoid(),
@@ -734,10 +734,10 @@ export const DATA = {
       description: [
         "To intensywny zabieg wykonywany przy użyciu specjalnych silikonowych baniek, które zasysają skórę i tkankę podskórną, pobudzając krążenie krwi i limfy. Masaż pomaga redukować cellulit, ujędrnia skórę, zmniejsza napięcie mięśniowe oraz wspiera modelowanie sylwetki. To skuteczny zabieg dla osób, które chcą poprawić wygląd skóry, pobudzić metabolizm i zadbać o lepsze samopoczucie.",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_banka_chinska,
+        alt: "Masaż bańką chińską",
+      },
     },
     {
       id: nanoid(),
@@ -758,10 +758,10 @@ export const DATA = {
         basic: { price: 220, time: 70 },
         extended: { price: 280, time: 90 },
       },
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.kobido,
+        alt: "Kobido",
+      },
     },
     {
       id: nanoid(),
@@ -774,10 +774,10 @@ export const DATA = {
         basic: { price: null, time: null },
         extended: { price: 180, time: 45 },
       },
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_twarzy,
+        alt: "Masaż twarzy i dekoltu",
+      },
     },
     {
       id: nanoid(),
@@ -794,10 +794,10 @@ export const DATA = {
         "choroby skóry w fazie ostrej",
         "przerwana ciągłość skóry w miejscu zabiegu",
       ],
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.terapia_blizny,
+        alt: "Terapia blizny",
+      },
     },
     {
       id: nanoid(),
@@ -808,10 +808,10 @@ export const DATA = {
       variants: {
         basic: { price: null, time: null },
       },
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.masaz_dla_kobiet_w_ciazy,
+        alt: "Masaż dla kobiet w ciąży",
+      },
     },
     {
       id: nanoid(),
@@ -823,10 +823,10 @@ export const DATA = {
         basic: { price: null, time: null },
         extended: { price: 80, time: null },
       },
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.fala_uderzeniowa_aplikacja_lecznicza,
+        alt: "Fala uderzeniowa – aplikacja lecznicza",
+      },
     },
     {
       id: nanoid(),
@@ -839,10 +839,10 @@ export const DATA = {
         basic: { price: null, time: null },
         extended: { price: 100, time: null },
       },
-      // image: {
-      //   src: offerImgs.terapia_manulana_twarzy_i_glowy,
-      //   alt: "Terapia manualna twarzy i głowy",
-      // },
+      image: {
+        src: offerImgs.fala_uderzeniowa_aplikacja_antycellulitowa,
+        alt: "Fala uderzeniowa – aplikacja antycellulitowa",
+      },
     },
     {
       id: nanoid(),
