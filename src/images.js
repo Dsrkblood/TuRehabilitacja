@@ -23,6 +23,9 @@ import kobido from '/massage/kobido.webp';
 import terapia_blizny from '/massage/terapia_blizny.webp';
 import terapia_manulana_twarzy_i_glowy from '/massage/terapia_manualna_twarzy_i_glowy.webp';
 import masaz_calego_ciala from '/massage/masaz_calego_ciala.webp';
+import terapia_bolu_kolana_biodra_stawu_skokowego from '/massage/terapia_bolu_kolana_biodra_stawu_skokowego.webp';
+import fizjoterapia_stomatologiczna from '/massage/fizjoterapia_stomatologiczna.webp';
+import kolejna_wizyta from '/massage/kolejna_wizyta.webp';
 
 import logo from '/Icon/logo.png';
 
@@ -66,4 +69,7 @@ export const offerImgs = {
 	terapia_manualna,
 	terapia_manulana_twarzy_i_glowy,
 	trening_funkcjonalny,
+	terapia_bolu_kolana_biodra_stawu_skokowego,
+	fizjoterapia_stomatologiczna,
+	kolejna_wizyta,
 };

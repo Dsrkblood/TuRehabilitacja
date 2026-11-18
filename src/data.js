@@ -211,8 +211,8 @@ export const DATA = {
 			},
 
 			image: {
-				src: offerImgs.masaz_klasyczny,
-				alt: 'Masaż klasyczny',
+				src: offerImgs.kolejna_wizyta,
+				alt: 'Kolejna wizyta',
 			},
 		},
 		{
@@ -230,8 +230,8 @@ export const DATA = {
 			},
 
 			image: {
-				src: offerImgs.masaz_sportowy,
-				alt: 'Masaż sportowy kostki',
+				src: offerImgs.terapia_bolu_kolana_biodra_stawu_skokowego,
+				alt: 'Terapia bólu kolana/biodra/stawu skokowego',
 			},
 		},
 		{
@@ -310,8 +310,8 @@ export const DATA = {
 			},
 
 			image: {
-				src: offerImgs.terapia_manulana_twarzy_i_glowy,
-				alt: 'Terapia manualna twarzy i głowy',
+				src: offerImgs.fizjoterapia_stomatologiczna,
+				alt: 'Fizjoterapia stomatologiczna',
 			},
 		},
 		{
